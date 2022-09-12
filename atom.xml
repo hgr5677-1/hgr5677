@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CreeperBlog</title>
+  <icon>https://b.groupserver.xyz/icon.png</icon>
+  
+  <link href="https://b.groupserver.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://b.groupserver.xyz/"/>
+  <updated>2022-09-12T02:37:09.110Z</updated>
+  <id>https://b.groupserver.xyz/</id>
+  
+  <author>
+    <name>Creeper938</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Butterfly 主题配置教程</title>
+    <link href="https://b.groupserver.xyz/posts/47332/"/>
+    <id>https://b.groupserver.xyz/posts/47332/</id>
+    <published>2022-09-11T05:18:09.000Z</published>
+    <updated>2022-09-12T02:37:09.110Z</updated>
+    
+    
+    <summary type="html">这篇文章将教你如何配置 Butterfly 主题</summary>
+    
+    
+    
+    
+    <category term="建站" scheme="https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GroupServer 入门指南</title>
+    <link href="https://b.groupserver.xyz/posts/5131/"/>
+    <id>https://b.groupserver.xyz/posts/5131/</id>
+    <published>2022-09-10T00:52:05.000Z</published>
+    <updated>2022-09-12T01:13:00.432Z</updated>
+    
+    
+    <summary type="html">这是一篇关于 MC 1.16.5 服务器 GroupServer 的游玩指南（官方文档，超详细）</summary>
+    
+    
+    
+    
+    <category term="Minecraft" scheme="https://b.groupserver.xyz/tags/Minecraft/"/>
+    
+    <category term="游戏" scheme="https://b.groupserver.xyz/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开服经验之谈</title>
+    <link href="https://b.groupserver.xyz/posts/15587/"/>
+    <id>https://b.groupserver.xyz/posts/15587/</id>
+    <published>2022-07-03T05:37:26.000Z</published>
+    <updated>2022-09-10T06:52:35.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;粗体为重点内容。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;最基本的常识&quot;&gt;&lt;a href=&quot;#最基本的常识&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="开服" scheme="https://b.groupserver.xyz/tags/%E5%BC%80%E6%9C%8D/"/>
+    
+  </entry>
+  
+</feed>
