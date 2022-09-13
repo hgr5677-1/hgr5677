@@ -6,7 +6,7 @@
   <link href="https://b.groupserver.xyz/atom.xml" rel="self"/>
   
   <link href="https://b.groupserver.xyz/"/>
-  <updated>2022-09-12T11:35:57.678Z</updated>
+  <updated>2022-09-13T05:33:02.308Z</updated>
   <id>https://b.groupserver.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CModTool - 一个 MC 1.8.9 辅助整合包</title>
+    <link href="https://b.groupserver.xyz/posts/28402/"/>
+    <id>https://b.groupserver.xyz/posts/28402/</id>
+    <published>2022-09-13T04:41:57.000Z</published>
+    <updated>2022-09-13T05:33:02.308Z</updated>
+    
+    
+    <summary type="html">CModTool 是一个 Minecraft 1.8.9 的辅助整合包，非常适合游玩 Hypixel</summary>
+    
+    
+    
+    <category term="文档" scheme="https://b.groupserver.xyz/categories/%E6%96%87%E6%A1%A3/"/>
+    
+    
+    <category term="游戏" scheme="https://b.groupserver.xyz/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>浅谈 HT</title>
@@ -57,17 +76,19 @@
     <link href="https://b.groupserver.xyz/posts/5131/"/>
     <id>https://b.groupserver.xyz/posts/5131/</id>
     <published>2022-09-10T00:52:05.000Z</published>
-    <updated>2022-09-12T12:46:26.456Z</updated>
+    <updated>2022-09-13T04:43:08.162Z</updated>
     
     
     <summary type="html">这是一篇关于 MC 1.16.5 服务器 GroupServer 的游玩指南（官方文档，超详细）</summary>
     
     
     
+    <category term="文档" scheme="https://b.groupserver.xyz/categories/%E6%96%87%E6%A1%A3/"/>
     
-    <category term="Minecraft" scheme="https://b.groupserver.xyz/tags/Minecraft/"/>
     
     <category term="游戏" scheme="https://b.groupserver.xyz/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="Minecraft" scheme="https://b.groupserver.xyz/tags/Minecraft/"/>
     
   </entry>
   
