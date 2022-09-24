@@ -1,4 +1,5 @@
-"Allow: /"
-"Allow: /archives/"
-"Allow: /tags/"
-"Sitemap: https://b.groupserver.xyz/sitemap.xml" 
+User-Agent: *
+Allow: /
+Allow: /archives/
+Allow: /tags/
+Sitemap: https://b.groupserver.xyz/sitemap.xml
