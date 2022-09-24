@@ -4,7 +4,7 @@
   <url>
     <loc>https://b.groupserver.xyz/posts/5131/</loc>
     
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-09-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -72,7 +72,7 @@
   </url>
   
   <url>
-    <loc>https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://b.groupserver.xyz/tags/Minecraft/</loc>
     <lastmod>2022-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -86,14 +86,7 @@
   </url>
   
   <url>
-    <loc>https://b.groupserver.xyz/tags/Minecraft/</loc>
-    <lastmod>2022-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://b.groupserver.xyz/tags/%E5%BC%80%E6%9C%8D/</loc>
+    <loc>https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2022-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -101,6 +94,13 @@
   
   <url>
     <loc>https://b.groupserver.xyz/tags/%E9%97%B2%E8%81%8A/</loc>
+    <lastmod>2022-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://b.groupserver.xyz/tags/%E5%BC%80%E6%9C%8D/</loc>
     <lastmod>2022-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
