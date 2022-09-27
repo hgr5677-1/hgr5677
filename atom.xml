@@ -31,9 +31,9 @@
     <category term="教程" scheme="https://b.groupserver.xyz/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="游戏" scheme="https://b.groupserver.xyz/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -121,7 +121,7 @@
     <link href="https://b.groupserver.xyz/posts/5131/"/>
     <id>https://b.groupserver.xyz/posts/5131/</id>
     <published>2022-03-25T00:52:05.000Z</published>
-    <updated>2022-09-25T04:29:53.005Z</updated>
+    <updated>2022-09-27T12:57:20.453Z</updated>
     
     
     <summary type="html">这是一篇关于 Minecraft 1.16.5 服务器 GroupServer 的游玩指南（官方文档，超详细）</summary>
