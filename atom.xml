@@ -86,9 +86,9 @@
     
     
     
-    <category term="建站" scheme="https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
-    
     <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="建站" scheme="https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
@@ -121,7 +121,7 @@
     <link href="https://b.groupserver.xyz/posts/5131/"/>
     <id>https://b.groupserver.xyz/posts/5131/</id>
     <published>2022-03-25T00:52:05.000Z</published>
-    <updated>2022-10-07T13:38:55.586Z</updated>
+    <updated>2022-10-08T00:45:50.790Z</updated>
     
     
     <summary type="html">这是一篇关于 Minecraft 1.18.2 服务器 GroupServer 的游玩指南（官方文档，超详细）</summary>
