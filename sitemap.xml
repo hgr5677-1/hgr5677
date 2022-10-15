@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://b.groupserver.xyz/status/index.html</loc>
+    
+    <lastmod>2022-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://b.groupserver.xyz/resource/trchat-filter.json</loc>
     
     <lastmod>2022-09-25</lastmod>
@@ -88,14 +97,14 @@
   </url>
   
   <url>
-    <loc>https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2022-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
