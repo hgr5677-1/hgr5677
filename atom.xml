@@ -131,9 +131,9 @@
     <category term="文档" scheme="https://b.groupserver.xyz/categories/%E6%96%87%E6%A1%A3/"/>
     
     
-    <category term="Minecraft" scheme="https://b.groupserver.xyz/tags/Minecraft/"/>
-    
     <category term="游戏" scheme="https://b.groupserver.xyz/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="Minecraft" scheme="https://b.groupserver.xyz/tags/Minecraft/"/>
     
   </entry>
   
