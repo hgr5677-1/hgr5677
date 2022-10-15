@@ -6,7 +6,7 @@
   <link href="https://b.groupserver.xyz/atom.xml" rel="self"/>
   
   <link href="https://b.groupserver.xyz/"/>
-  <updated>2022-09-13T10:44:16.000Z</updated>
+  <updated>2022-10-15T10:19:06.719Z</updated>
   <id>https://b.groupserver.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 Win 上搭建 Geyser 让 BE 玩家进入 JE 服务器</title>
+    <link href="https://b.groupserver.xyz/posts/28839/"/>
+    <id>https://b.groupserver.xyz/posts/28839/</id>
+    <published>2022-10-15T08:58:59.000Z</published>
+    <updated>2022-10-15T10:19:06.719Z</updated>
+    
+    
+    <summary type="html">这是一篇在温都四系统上搭建 Geyser 让鸡眼版的Van家进入Jvav版服务器的教程</summary>
+    
+    
+    
+    
+    <category term="游戏" scheme="https://b.groupserver.xyz/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Minecraft 高版本插件服优化指南</title>
@@ -57,23 +76,6 @@
   </entry>
   
   <entry>
-    <title>浅谈 HT</title>
-    <link href="https://b.groupserver.xyz/posts/32950/"/>
-    <id>https://b.groupserver.xyz/posts/32950/</id>
-    <published>2022-09-12T10:28:05.000Z</published>
-    <updated>2022-09-12T11:35:57.000Z</updated>
-    
-    
-    <summary type="html">本篇文章将揭秘 HT 究竟是什么人</summary>
-    
-    
-    
-    
-    <category term="闲聊" scheme="https://b.groupserver.xyz/tags/%E9%97%B2%E8%81%8A/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo Butterfly 主题配置教程</title>
     <link href="https://b.groupserver.xyz/posts/47332/"/>
     <id>https://b.groupserver.xyz/posts/47332/</id>
@@ -86,9 +88,9 @@
     
     
     
-    <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="建站" scheme="https://b.groupserver.xyz/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+    <category term="教程" scheme="https://b.groupserver.xyz/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   

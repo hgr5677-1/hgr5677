@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>在 Win 上搭建 Geyser 让 BE 玩家进入 JE 服务器</title>
+      <link href="/posts/28839/"/>
+      <url>/posts/28839/</url>
+      
+        <content type="html"><![CDATA[<h1 id="啥是-Geyser"><a href="#啥是-Geyser" class="headerlink" title="啥是 Geyser"></a>啥是 Geyser</h1><blockquote><p>Geyser 是连接 Java 版和基岩版 的一座桥梁。<br>在最新版本下，Geyser 支持 Minecraft 基岩版 1.19.0/1.19.1x/1.19.20/1.19.21 和 Minecraft Java 版 1.19.1/1.19.2。<br>Geyser 旨在为 Java 版和基岩版 之间建立一座桥梁，使得基岩版客户端加入 Java 版服务器。该项目仍在开发中，所以仍有 BUG 存在！<br><a href="https://geyser.superiormc.cn/">https://geyser.superiormc.cn/</a></p></blockquote><div class="note warning flat"><p><strong>由于 Geyser 的转发并不是完美的，所以基岩版玩家在游玩服务器时可能会被服务器的反作弊误判！</strong><br><strong>由于基岩版没有 Java 版的一些特性，因此游玩体验可能不怎么好。比如说基岩版下界的建筑高度限制是 128 个方块</strong></p></div><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>在开始阅读本教程前，你需要准备：</p><ul><li>脑子、手、眼睛</li><li><strong>一台瘟都死系统的电脑（版本 ＞ 7）</strong></li></ul><p><strong>服务器也需要准备</strong>：</p><ul><li>跨版本插件 ViaVersion (如果服务器那边不是最新游戏版本)</li></ul><h2 id="检查-Java-环境"><a href="#检查-Java-环境" class="headerlink" title="检查 Java 环境"></a>检查 Java 环境</h2><p>Geyser 需要 Java 版本 ≥ 16 才能运行，请在搭建之前用一个非常简单的步骤检查你是否已正确安装 Java 16 或更高版本。</p><ul><li>在任意界面按下 <code>Windows 键 + R</code> 或直接在开始菜单中打开 “运行”</li><li> 输入 <code>cmd</code>，并按下 ENTER (回车键) 或直接点击确定按钮</li><li>输入 <code>java --version</code> 并按下 ENTER（回车键）</li><li>看看第一行输出的内容的数字是否大于 16</li><li> 以下是一个正确安装 Java 17 的示例：<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">C:\Users\Administrator&gt;java --version</span><br><span class="line">openjdk 17.0.4 2022-07-19</span><br><span class="line">OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8)</span><br><span class="line">OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing)</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator&gt;</span><br></pre></td></tr></tbody></table></figure></li><li>如果不大于 16，你需要去手动下载并安装 Java 16 或更高版本</li><li>这里提供一个 Java 17 的下载链接：<a href="https://download.fastgit.org/adoptium/temurin17-binaries/releases/download/jdk-17.0.4.1%2B1/OpenJDK17U-jre_x64_windows_hotspot_17.0.4.1_1.msi">https://download.fastgit.org/adoptium/temurin17-binaries/releases/download/jdk-17.0.4.1%2B1/OpenJDK17U-jre_x64_windows_hotspot_17.0.4.1_1.msi</a></li><li> 安装时一直下一步就好</li><li>记得安装完成后<strong>再次打开一个 CMD</strong> 来看看你是否正确安装了 Jaca 17！</li></ul><h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><h2 id="下载-amp-存放"><a href="#下载-amp-存放" class="headerlink" title="下载 &amp; 存放"></a>下载 &amp; 存放</h2><ul><li>用浏览器打开 <a href="https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/">https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/</a></li><li> 点击 <code>Geyser-Standalone.jar</code> 下载 Geyser 的最新独立版本</li></ul><div class="note info flat"><p><strong>下载速度太慢怎么办？</strong><br>推荐使用 IDM 这类的多线程下载器，你甚至还可以使用逊雷。如果你不会搞，那就耐心等吧</p></div><ul><li>下载完成后，复制 <code>Geyser-Standalone.jar</code> 到一个空文件夹</li></ul><h2 id="第一次启动"><a href="#第一次启动" class="headerlink" title="第一次启动"></a>第一次启动</h2><details class="toggle"><summary class="toggle-button" style="">继续前请先读我！！！</summary><div class="toggle-content"><p>Windows 可能默认不会显示文件的扩展名。为了能确保下面的步骤顺利进行，请先开启扩展名显示。<br>这里以最新的 Windows 10 为例。<br>点击文件资源管理器最上方的<code>查看</code>，然后勾选<code>文件扩展名</code>。<br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015173242"></p></div></details><ul><li>右键这个文件夹里面的空白处，点击<code>新建 - 文本文档</code></li><li>给这个文本文档随便起一个名字</li><li>打开这个文本文档，复制粘贴以下内容：<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">java -jar Geyser-Standalone.jar</span><br><span class="line">pause</span><br></pre></td></tr></tbody></table></figure></li><li>重命名这个文本文档，把它的<code>.txt</code> 改为<code>.bat</code></li><li>当 Windows 提示 “确定要更改吗？” 时，点击确定</li><li>双击打开你刚刚创建的 BAT 文件</li><li>耐心等待 30 秒左右的时间（取决于电脑性能）</li><li>当提示下面的内容时，你就可以继续下面的步骤了<br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015173729.png"></li><li>以后启动 Geyser 直接打开那个 BAT 文件即可</li></ul><h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>打开 Geyser 目录下的 <code>config.yml</code>，找到第 42 行左右的 <code>address'，把</code> auto <code>改成你要让基岩版玩家进入 Java 版的服务器的地址，例如你想让基岩版玩家进入 Hypixel，就改为</code> mc.hypixel.net<code> 再把下面的</code> port <code>的</code> 25565 <code>改成服务器的端口，例如你想让基岩版玩家进入 GroupServer（地址是</code> mcp3.rhymc.com:1079<code>），就把</code> port <code>改成</code> 1079<code>。如果你不知道服务器端口是什么，或者本来就是 25565，请保持默认即可 更改下面的</code> auth-type <code>选项，如果你要进的服务器有正版验证，就保持默认的</code> online <code>即可，如果服务器没有正版验证，就把</code> online <code>改成</code> offline`</p><p>下面是我改的，这些改动会让玩家不需要登录 Java 正版账号进入 GroupServer：</p><figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># Leave as "auto" if floodgate is installed.</span></span><br><span class="line"><span class="attr">address:</span> <span class="string">mcp3.rhymc.com</span></span><br><span class="line"><span class="comment"># The port of the remote (Java Edition) server</span></span><br><span class="line"><span class="comment"># For plugin versions, if address has been set to "auto", the port will also follow the server's listening port.</span></span><br><span class="line"><span class="attr">port:</span> <span class="number">1079</span></span><br><span class="line"><span class="comment"># Authentication type. Can be offline, online, or floodgate (see https://github.com/GeyserMC/Geyser/wiki/Floodgate).</span></span><br><span class="line"><span class="comment"># For plugin versions, it's recommended to keep the `address` field to "auto" so Floodgate support is automatically configured.</span></span><br><span class="line"><span class="comment"># If Floodgate is installed and `address:` is set to "auto", then "auth-type: floodgate" will automatically be used.</span></span><br><span class="line"><span class="attr">auth-type:</span> <span class="string">offline</span></span><br></pre></td></tr></tbody></table></figure><h2 id="重载配置文件"><a href="#重载配置文件" class="headerlink" title="重载配置文件"></a>重载配置文件</h2><p>保存好配置文件，打开 Geyser 的窗口，输入 <code>geyser reload</code> 耐心等待几十秒即可重载配置，此时玩家即可正常进入服务器。<br>如果你嫌这样重载配置慢，也可以直接关闭 Geyser 并重新打开。<br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015175001.png"></p><h1 id="进入"><a href="#进入" class="headerlink" title="进入"></a>进入</h1><h2 id="获取-Geyser-地址"><a href="#获取-Geyser-地址" class="headerlink" title="获取 Geyser 地址"></a>获取 Geyser 地址</h2><ul><li>如果你要进服务器的基岩版就在你部署 Geyser 的电脑上，直接使用地址 <code>127.0.0.1</code> 或 <code>localhost</code> 即可，端口默认 <code>19132</code></li><li>如果你要进服务器的基岩版不在你部署 Geyser 的电脑上，但都处在同一个网络的情况下，请在你部署 Geyser 的电脑上 打开 CMD，输入 <code>ipconfig</code>，下面红框的内容就是你的 Geyser 地址<strong>（别先用我这个，每个人都不是一样的）</strong><br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015175435.png"></li><li>如果你要进服务器的基岩版和你用的都不是同一个网络的话，请看下面的映射教程</li></ul><h2 id="开玩"><a href="#开玩" class="headerlink" title="开玩"></a>开玩</h2><p>现在，打开你的基岩版（什么平台的都可以，比如 Android、iOS、Windows 10/11 版，<strong>但是必须是最新版本的基岩版</strong>），用你获取的 Geyser 地址即可进入服务器！</p><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="更改-Geyser-的-MOTD"><a href="#更改-Geyser-的-MOTD" class="headerlink" title="更改 Geyser 的 MOTD"></a>更改 Geyser 的 MOTD</h2><p>在配置文件的 22 行左右，直接更改下面的内容即可：</p><figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true</span></span><br><span class="line"><span class="comment"># If either of these are empty, the respective string will default to "Geyser"</span></span><br><span class="line"><span class="attr">motd1:</span> <span class="string">"Geyser"</span></span><br><span class="line"><span class="attr">motd2:</span> <span class="string">"Another Geyser server."</span></span><br></pre></td></tr></tbody></table></figure><p>例如你想让 MOTD 的第一行显示 “这只是一个互通服”，第二行 “这真的只是一个互通服！”，就改成：</p><figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true</span></span><br><span class="line"><span class="comment"># If either of these are empty, the respective string will default to "Geyser"</span></span><br><span class="line"><span class="attr">motd1:</span> <span class="string">"这只是一个互通服"</span></span><br><span class="line"><span class="attr">motd2:</span> <span class="string">"这真的只是一个互通服！"</span></span><br></pre></td></tr></tbody></table></figure><h2 id="映射教程"><a href="#映射教程" class="headerlink" title="映射教程"></a>映射教程</h2><p>如果你要进服务器的基岩版的玩家和你不是同一个网络（例如你有一个四川的小伙伴也想用你搭建的 Geyser 进 Java 版服务器，而你在河北），则需要用到映射，这里以 Netplus 映射为例。</p><ul><li>前往 <a href="https://netplus.idc25.cn/download/netplus.exe">https://netplus.idc25.cn/download/netplus.exe</a> 下载 Netplus</li><li> 下载后放到一个空文件夹，并双击打开它</li><li>按照提示进行注册，注册后最好签个到领下余额</li><li>点击<code>映射管理</code><br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015180851.png"></li><li>点击第一个映射的设置<strong>（这里图中有错误，节点建议选 <code>BGP 10M - 北京 S2</code>）</strong><br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015181051.png"></li><li>按照图上内容进行填写<br><img src="/images/2022/10/QQ%E6%88%AA%E5%9B%BE20221015181323.png"></li><li>保存映射，然后点击<code>启动</code></li><li>把连接地址复制下来</li><li>地址中，<code>:</code> 后面的是端口，在基岩版进入服务器时地址就填<code>:</code> 前面的，端口填<code>:</code> 后面的<br>例如我的地址是 <code>bj.s2.6net.plus:11451</code>，就地址填 <code>bj.s2.6net.plus</code>，端口 <code>11451</code></li><li>别人想进你的互通服直接让他用映射地址进即可，你自己进的话请直接用 <code>127.0.0.1</code> 或 <code>localhost</code></li></ul><p><strong>NetPlus 不是完全免费的，在使用映射节点中会产生一定的费用，不用映射请关闭，每日请记得签到！</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Minecraft 高版本插件服优化指南</title>
       <link href="/posts/14390/"/>
       <url>/posts/14390/</url>
@@ -56,25 +77,6 @@
     
     
     <entry>
-      <title>浅谈 HT</title>
-      <link href="/posts/32950/"/>
-      <url>/posts/32950/</url>
-      
-        <content type="html"><![CDATA[<div class="note info flat"><p><strong>免责声明</strong><br>本篇文章仅仅是讨论博主为什么会和 HT、沙子小镇服务器保持敌对关系，不包含任何和个人信息有关的内容。</p></div><div class="note warning flat"><p><strong>可能存在部分虚构内容，或与事实不符！</strong><br>受时间因素影响，博主或许已经忘了部分事情是怎么发生的了。博主可能会虚构、遐想一部分内容来让其看起来恒河里。</p></div><div class="note warning flat"><p><strong>缺失大量图片</strong><br>可在评论区向博主补充。</p></div><h1 id="谁是-HT？什么是沙子小镇？"><a href="#谁是-HT？什么是沙子小镇？" class="headerlink" title="谁是 HT？什么是沙子小镇？"></a>谁是 HT？什么是沙子小镇？</h1><p>首先是 HT。HT 的全名是 MC_HtHtHt，本篇文章所有内容都将以 HT 来称呼他。HT 于 2012 年出生在北京市的某个城区（或许）。他有一个哥哥，今年 13 岁。（猜测）他们两个是一个自私、三观不正的人，看你不爽就禁言你。沙子小镇呢，是一个 1.16.5 的 Minecraft 服务器，腐竹以前是我的朋友，但是由于 HT 的原因，早已经不是朋友了，也和那个服务器保持了敌对关系。</p><h1 id="提建议被禁言-amp-开始纷争"><a href="#提建议被禁言-amp-开始纷争" class="headerlink" title="提建议被禁言 &amp; 开始纷争"></a>提建议被禁言 &amp; 开始纷争</h1><p>2022.07，我进入了沙子服务器（下文简称 “沙子群” 和 “沙子服”）。我去了他们的服务器看了看<br>进服之后，我发现这个服务器一堆缺点，比如说 ESSX、AuthMe 没中文，计分板过于丑陋，权限组插件还在用 GroupManager（现在用的都是 LuckPerms，功能多，性能好），甚至生存服还加了个起床战争插件<br>我去群里提了点建议，结果直接被禁言 30 天，我不知道是被谁禁言的，但我猜测很有可能是群主或者那个 HT 管理<br>被禁言后腐竹和 HT 直接拍手叫好。后来 HT 进了我的服务器群，语气就像什么都没有发生一样，还把我发的内容转发到沙子群。这时沙子群群主说” 你是不是把这个群当成你的群了”，” 你语气不行”，我寻思我语气没有问题啊，我当初是这么提建议的：</p><blockquote><p>2022-07-13 20:35:16 Creeper233(744198767)<br>服务器缺点：<br>1. 插件大多都没设置为中文，而这些插件只需要改配置文件就能设置为中文<br>2.ESS 自带传送，为什么还要单独装插件？<br>3. 没有菜单<br>4. 插件大多都是装进去就不配置<br>5.MOTD、Logo 很简陋，一个好的 Logo、MOTD 能给玩家留下好的印象<br>6. 生存服装起床战争插件干啥？？？这是生存服还是小游戏服务器？<br>7. 服务器加入提示可以美化一下，例如 [+] Player [-] Player 这种<br>8. 如果你的服务器能获取玩家 IP，就把 Authme 的下线后几分钟内自动登录功能开启吧<br>9.GroupManager 已经过时了！！！天哪，2202 年了开服居然还有人在用 GM，现在是 LuckPerms 的时代了</p></blockquote><p>大家看看我的语气有问题吗？况且我平时也就是这样说话的<br>由于 HT 当时在我的群，所以他把我在我群骂他们的聊天记录转发到沙子群了，<strong>关键是我也在沙子群，他把我当成瞎子了</strong><br>后来 HT 还说” 我们没这么无耻”。之后还把我群一堆进沙子群的人禁言了，说 “是我不想跟你们扯”<br>之后呢，他的语气还是像什么也没发生一样，然后就退群了</p><h1 id="《道歉》"><a href="#《道歉》" class="headerlink" title="《道歉》"></a>《道歉》</h1><p>几天后，这件事依然还在继续。有个群员跟我说，要不咱们互相道歉吧，就当什么都没发生一样。然后我先道歉了，那个群员让 HT 道歉，HT 磨叽了半天才跟我道歉，而且态度也不好，那个群员让他好好道歉，第二次道歉态度是好了点，但是实际上他根本不想让这件事结束<br>我有个朋友在那个群，给我发了沙子服里的聊天信息，里面是 HT 在骂我，显然他当初根本没有好好道歉</p><hr><p>事件暂时停止发酵了一段时间…</p><h1 id="开了个服务器"><a href="#开了个服务器" class="headerlink" title="开了个服务器"></a>开了个服务器</h1><p>最近 HT 又开了个服务器，我朋友发现里面没权限组插件，没反压测，倒是有 ESSX、CoreProtect、领地啥的。离谱的是 ESSX 能获取任意物品的指令 <code>/item</code> 普通玩家居然能用</p><hr><p>说累了，过几天再继续写</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 闲聊 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo Butterfly 主题配置教程</title>
       <link href="/posts/47332/"/>
       <url>/posts/47332/</url>
@@ -85,9 +87,9 @@
       
         <tags>
             
-            <tag> 教程 </tag>
-            
             <tag> 建站 </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       
