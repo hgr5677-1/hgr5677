@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://b.groupserver.xyz/status/index.html</loc>
-    
-    <lastmod>2022-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://b.groupserver.xyz/resource/trchat-filter.json</loc>
     
     <lastmod>2022-09-25</lastmod>
