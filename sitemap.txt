@@ -1,6 +1,5 @@
 https://b.groupserver.xyz/posts/5131/
 https://b.groupserver.xyz/posts/28839/
-https://b.groupserver.xyz/status/index.html
 https://b.groupserver.xyz/resource/trchat-filter.json
 https://b.groupserver.xyz/posts/15587/
 https://b.groupserver.xyz/posts/14390/
