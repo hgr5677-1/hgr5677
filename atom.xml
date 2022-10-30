@@ -88,9 +88,9 @@
     
     
     
-    <category term="建站" scheme="https://creeper938.ml/tags/%E5%BB%BA%E7%AB%99/"/>
-    
     <category term="教程" scheme="https://creeper938.ml/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="建站" scheme="https://creeper938.ml/tags/%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
@@ -123,7 +123,7 @@
     <link href="https://creeper938.ml/posts/5131/"/>
     <id>https://creeper938.ml/posts/5131/</id>
     <published>2022-03-25T00:52:05.000Z</published>
-    <updated>2022-10-29T04:31:59.494Z</updated>
+    <updated>2022-10-30T13:09:50.894Z</updated>
     
     
     <summary type="html">这是一篇关于 Minecraft 1.18.2 服务器 GroupServer 的游玩指南（官方文档，超详细）</summary>
@@ -133,9 +133,9 @@
     <category term="文档" scheme="https://creeper938.ml/categories/%E6%96%87%E6%A1%A3/"/>
     
     
-    <category term="游戏" scheme="https://creeper938.ml/tags/%E6%B8%B8%E6%88%8F/"/>
-    
     <category term="Minecraft" scheme="https://creeper938.ml/tags/Minecraft/"/>
+    
+    <category term="游戏" scheme="https://creeper938.ml/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
