@@ -725,7 +725,11 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 **提示！**服务器从2022年2月才开始记录更新日志，不要问我更久的更新日志哪去了！
 {% endnote %}
 
-{% hideToggle "2022年10月更新（当前）" %}
+{% hideToggle "2022年11月更新" %}
+**其他**
+* 试图提高刷怪效率。
+{% endhideToggle %}
+{% hideToggle "2022年10月更新" %}
 **Minecraft**
 * 更新到 Minecraft 1.18.2。这是自服务器成立以来第二次更新 Minecraft 版本。（上一次是 1.16.1 -> 1.16.5）
 
