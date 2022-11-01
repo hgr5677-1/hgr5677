@@ -1170,13 +1170,11 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 ## 本站 Github
 为了方便部署和管理，也为了方便玩家帮助纠正、补充此文档，本网站的所有文件已在 Github 公开，欢迎 PR。
 每一个 Commit 提交后都会被 Vercel 部署。
-{% gallery %}
 ![GitHub Forks](https://img.shields.io/github/forks/Creeper512/hexo?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/Creeper512/hexo?style=social)
 ![](https://img.shields.io/github/watchers/Creeper512/hexo?style=social)
 ![](https://img.shields.io/github/repo-size/Creeper512/hexo?style=social)
 ![](https://img.shields.io/github/last-commit/Creeper512/hexo?style=social)
-{% endgallery %}
 
 地址：https://github.com/Creeper512/hexo
 如果访问不了，请尝试使用魔法工具或 Steam++ 里的加速工具。
@@ -1195,7 +1193,7 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 {% gallery %}
 ![QQ钱包](/images/qq.webp)
 ![微信支付](/images/wechat.webp)
-![支付宝](/images/alipay.jpg)
+![支付宝](/images/alipay.webp)
 {% endgallery %}
 {% endhideToggle %}
 
