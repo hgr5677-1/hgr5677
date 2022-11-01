@@ -6,7 +6,7 @@ tags:
     - Minecraft
     - 游戏
 description: 这是一篇关于 Minecraft 1.18.2 服务器 GroupServer 的游玩指南（官方文档，超详细）
-top: 1
+sticky: 1
 categories: 文档
 cover: /images/2022/04/776274147.webp
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
