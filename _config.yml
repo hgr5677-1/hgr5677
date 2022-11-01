@@ -154,8 +154,8 @@ footer_beautify:
     name: footer-wrap
     index: 0
   # 计时器部分配置项
-  runtime_js: https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.js
-  runtime_css: https://unpkg.zhimg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
+  runtime_js: https://unpkg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.js
+  runtime_css: https://unpkg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
   # 徽标部分配置项
   swiperpara: 5 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
