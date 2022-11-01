@@ -136,44 +136,6 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
-  
-# footer_beautify
-# 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
-# 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
-footer_beautify:
-  enable:
-    timer: false # 计时器开关
-    bdage: true # 徽标开关
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  exclude: #屏蔽页面
-    # - /posts/
-    # - /about/
-  layout: # 挂载容器类型
-    type: id
-    name: footer-wrap
-    index: 0
-  # 计时器部分配置项
-  runtime_js: https://unpkg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.js
-  runtime_css: https://unpkg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
-  # 徽标部分配置项
-  swiperpara: 5 #若非0，则开启轮播功能，每行徽标个数
-  bdageitem:
-    - link: https://hexo.io/ #徽标指向网站链接
-      shields: https://img.shields.io/badge/框架-Hexo-blue?style=flat-square&logo=hexo #徽标API
-      message: 使用 Hexo v6.2.0 作为博客框架 #徽标提示语
-    - link: https://butterfly.js.org/
-      shields: https://img.shields.io/badge/主题-Butterfly-6513df?style=flat-square&logo=bitdefender
-      message: 使用 Butterfly v4.2.0 作为 Hexo 主题
-    - link: https://vercel.com/
-      shields: https://img.shields.io/badge/托管-Vercel-black?style=flat-square&logo=vercel
-      message: 本站使用 Vercel
-    - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-      shields: https://img.shields.io/badge/协议-BY--NC--SA%204.0-d42328?style=flat-square&logo=Claris
-      message: 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
-  swiper_css: https://unpkg.zhimg.com/hexo-butterfly-swiper/lib/swiper.min.css
-  swiper_js: https://unpkg.zhimg.com/hexo-butterfly-swiper/lib/swiper.min.js
-  swiperbdage_init_js: https://unpkg.zhimg.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
 
 nofollow:
   enable: true
