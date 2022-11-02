@@ -31,13 +31,6 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 当域名有改动时，会在本页的这个提示框和通知群有通知，当你进不去服务器时就请打开这个指南看看。
 {% endnote %}
 
-{% note danger %}
-**❌ 别玩 NS 星云影服务器**
-如果你正在玩一个群主QQ昵称是云容，B站名字叫玩游戏的hh的人的服务器，如果你还想玩本服务器，那么请你立即退服+退群+告知此群所有成员这个服务器（NS）是抄袭的。NS 服主曾经**严重抄袭**过我们服务器，**菜单完全复制粘贴，只改了一小小小部分，甚至照搬通知群，抄袭服务器名字，甚至是抄袭我的讲话风格**，它在服务器的时期还对服务器造成了很多不良影响。
-NS 和 GS 相比，GS 玩家更友善，玩法更多，服主、管理更靠谱，更能稳定运行，基础设施更完善，不像 NS 那样态度傲慢，回复慢，自以为是，NS 服主经验还很少，服务器不靠谱，不安全，玩家平均素质还低。就是 GS 人比较少。
-注：此人家住北京大兴，2008 年出生，声称父亲是联通员工且有 1000w RMB 的资产，声称去年（2021）数学成绩年级前四（初二）
-{% endnote %}
-
 这篇文章是GroupServer的游玩指南，旨在指导新玩家游玩GroupServer (同样适用于某些老玩家)。为了能让新玩家更好地熟悉服务器，这篇文章将会写的很详细，保姆级教学，傻子都能看得懂。
 
 # 什么是 GroupServer
@@ -735,6 +728,9 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 {% endnote %}
 
 {% hideToggle "2022年11月更新" %}
+**玩法相关**
+* 粘液科技更新到最新的汉化版的开发版。(https://github.com/StarWishsama/Slimefun4/actions/runs/3354345808)
+
 **其他**
 * 试图提高刷怪效率。
 {% endhideToggle %}
@@ -1168,14 +1164,10 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 ```
 
 ## 本站 Github
-为了方便部署和管理，也为了方便玩家帮助纠正、补充此文档，本网站的所有文件已在 Github 公开，欢迎 PR。
+为了方便部署和管理，也为了方便玩家帮助纠正、补充此文档，本网站的所有文件已在 Github 公开，欢迎提交 PR。
+**建议把 PR 提交到 dev 分支，方便合并。**
 每一个 Commit 提交后都会被 Vercel 部署。
-![GitHub Forks](https://img.shields.io/github/forks/Creeper512/hexo?style=social)
-![GitHub stars](https://img.shields.io/github/stars/Creeper512/hexo?style=social)
-![](https://img.shields.io/github/watchers/Creeper512/hexo?style=social)
-![](https://img.shields.io/github/repo-size/Creeper512/hexo?style=social)
-![](https://img.shields.io/github/last-commit/Creeper512/hexo?style=social)
-
+{% inlineImg https://img.shields.io/github/forks/Creeper512/hexo 20px %}{% inlineImg https://img.shields.io/github/stars/Creeper512/hexo 20px %}{% inlineImg https://img.shields.io/github/repo-size/Creeper512/hexo 20px %}{% inlineImg https://img.shields.io/github/last-commit/Creeper512/hexo 20px %}
 地址：https://github.com/Creeper512/hexo
 如果访问不了，请尝试使用魔法工具或 Steam++ 里的加速工具。
 
@@ -1215,6 +1207,8 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 一旦有人被封禁，就会出现在这个榜单上，且不可被擦除，你当初搞事的时候怎么没想想后果呢？
 如果玩家行为极其恶劣，可能会被公布IP地址、年龄
 {% endnote %}
+
+**如果被误封或对处罚不满，可前往 https://creeper938.ml/gs-appeal 申诉。**
 
 ## 玩家评论精选
 | 昵称 | 评价内容 |
