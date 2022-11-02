@@ -195,13 +195,13 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-     - img: /images/wechat.webp
+     - img: /images/donate/wechat.webp
        link: /images/wechat.webp
        text: 微信
-     - img: /images/alipay.webp
+     - img: /images/donate/alipay.webp
        link: /images/alipay.webp
        text: 支付宝
-     - img: /images/qq.webp
+     - img: /images/donate/qq.webp
        link: /images/qq.webp
        text: QQ 钱包
 
