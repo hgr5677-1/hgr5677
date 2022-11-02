@@ -3,6 +3,7 @@ title: 用 AdG Home 拦截你电脑上的广告
 tags:
   - 教程
 description: 在你的电脑上搭建个 AdGuard Home DNS 服务器来拦截各种小广告
+abbrlink: 9953
 date: 2022-11-02 12:32:21
 ---
 
@@ -73,14 +74,14 @@ https://doh.pub/dns-query
 
 这里推荐几个拦截规则：
 | 名称 | 描述 | 链接 | 评分 |
-| :---: | :---: | :---: | :---: |
-| anti-AD | 使用anti-AD能够屏蔽广告域名，能屏蔽电视盒子广告，屏蔽app内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传 | https://anti-ad.net/easylist.txt | 非常好 |
-| AdRules | 一个基于中文区强力去广告的规则 | https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt | 非常好 |
-| 大圣净化 | 针对国内视频网站 | https://raw.fastgit.org/jdlingyu/ad-wars/master/hosts | 好 |
-| StevenHosts | 专门去国外网站广告的，国内网站也有点，这个规则还会拦截恶意软件网站 | https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | 较好 |
-| yHosts | 拦截国内网站广告 | https://raw.fastgit.org/vokins/yhosts/master/hosts | 一般 |
-| AdGuard DNS 过滤器 | 此过滤器由其他几个过滤器组成，并经过简化，以便更好地与 DNS 级别的广告拦截兼容 | https://raw.fastgit.org/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt | 一般 |
-| notrack-blocklists | 拦截跟踪器（在国内好像效果不太好） | https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.list | 较差 |
+| :--- | :--- | :--- | :--- |
+| anti-AD | 命中率很高 | [点我](https://anti-ad.net/easylist.txt) | 非常好 |
+| AdRules | 一个基于中文区强力去广告的规则 | [点我](https://gitlab.com/cats-team/adrules/-/raw/main/dns.txt) | 非常好 |
+| 大圣净化 | 针对国内视频网站 | [点我](https://raw.fastgit.org/jdlingyu/ad-wars/master/hosts) | 好 |
+| StevenHosts | 专门去国外网站广告，有一些适用于国内的规则，还会拦截恶意网站 | [点我](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) | 较好 |
+| yHosts | 拦截国内网站广告 | [点我](https://raw.fastgit.org/vokins/yhosts/master/hosts) | 一般 |
+| AdGuard DNS 过滤器 | AdG 官方的过滤器 | [点我](https://raw.fastgit.org/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt) | 一般 |
+| notrack-blocklists | 拦截跟踪器，国内效果不太好 | [点我](https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.list) | 较差 |
 
 其他的：
 | 名称 | 描述 | 链接 |
