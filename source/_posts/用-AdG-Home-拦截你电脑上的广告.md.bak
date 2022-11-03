@@ -130,7 +130,7 @@ https://doh.pub/dns-query
 if "%1"=="h" goto begin
 start mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.close)&&exit
 :begin
-"你的AdGuardHome目录/AdGuardHome.exe"
+AdGuardHome.exe
 ```
 保存即可。
 关闭 AdGuardHome 窗口，再用这个`.bat`文件打开，看看任务管理器是否有 AdGuardHome 的进程。
@@ -138,7 +138,7 @@ start mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.c
 ## 开机自启
 按下`Windows 键 + R`，打开运行窗口，输入`regedit`并回车。
 在注册表编辑器的地址栏中粘贴`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`并回车，如果没有地址栏就手动去找。
-右键空白处，点击 "新建" - "字符串值"，将添加的新项命名为`AdGuardHome`。
+右键空白处，点击 "新疆" - "字符串值"，将添加的新项命名为`AdGuardHome`。
 双击刚刚添加的新项，数值数据填写`"你的AdGuardHome路径/你刚刚创建的bat文件的名字"`，例如`"E:\Tools\AdGuardHome\Start.bat"`
 
 # 注意事项
