@@ -12,11 +12,7 @@ cover: /images/2022/04/776274147.webp
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
 ---
 
-<<<<<<< HEAD
-![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=g.creeper938.ml&type=image&getmotd=%0a%0a&getbg=)
-=======
-![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mcp3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=)
->>>>>>> fd25aad5e8c638e765fc2f7abc5fa5e403953ae1
+![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mc3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=)
 ![互通服状态](https://api.imlazy.ink/mcapi/?name=GroupServer%20%E4%BA%92%E9%80%9A&host=mcp3.rhymc.com:1079&type=image&getbg=&be=true)
 
 **点击[这儿里儿](https://api.imlazy.ink/mcapi/?name=&host=mcp3.rhymc.com:1079&getbg=&type=html)查看服务器更多状态信息!**
@@ -34,7 +30,7 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 在接下来的 4 个月内，GroupServer 和其他服务的域名会逐步转移到`creeper938.ml`这个域名。
 当域名有改动时，会在本页的这个提示框和通知群有通知，当你进不去服务器时就请打开这个指南看看。
 
-提示：现在已可使用新的域名进入服务器：`g.creeper938.ml`。腐竹计划在 2023.02.19(服务器两周年) 左右废除`mc.groupserver.xyz`域名。
+提示：现在已可使用新的域名进入服务器：`g.creeper938.ml` **(可能连不上)**。腐竹计划在 2023.02.19(服务器两周年) 左右废除`mc.groupserver.xyz`域名。
 {% endnote %}
 
 这篇文章是GroupServer的游玩指南，旨在指导新玩家游玩GroupServer (同样适用于某些老玩家)。为了能让新玩家更好地熟悉服务器，这篇文章将会写的很详细，保姆级教学，傻子都能看得懂。
@@ -157,7 +153,6 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 
 ## 加入教程
 1. 用你喜欢的启动器启动 Minecraft 1.18.2。
-   如果觉得 1.18.2 很卡顿，建议安装 Fabric + 钠、锂 模组。
 2. 如果你想使用离线登录，请不要在你的游戏ID内包含非英文、阿拉伯数字或下划线。（示例：我是你爸爸【×】Im_your_father【√】）
 3. 启动游戏后，点击多人游戏 -> 添加服务器。
 4. 服务器地址填写`mc.groupserver.xyz`。
@@ -168,7 +163,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 
 {% note warning %}
 **熊孩子请勿进服！**
-从 22.9.22 开始，服务器允许玩家自助注册。如果不断有熊孩子，那么服务器可能又将会改为向腐竹申请注册的方式。
+从 22.9.22 开始，服务器允许玩家自助注册。如果有熊孩子，那么服务器又将会改为向腐竹申请注册的方式。
 **请勿破坏别人的劳动成果，否则后果自负。**
 {% endnote %}
 
@@ -308,6 +303,7 @@ mcMMO 是一个RPG技能插件，它为服务器添加了10多种技能，技能
 
 要想保护你的东西，你需要准备告示牌，然后右键支持被上锁的方块，这个方块就会被上锁，别人不能破坏、查看它，也不能用漏斗取出里面的物品。
 ![l32wgm4o.webp](/images/2022/05/522118589.webp)
+
 
 目前支持以下方块被上锁：
 
@@ -1225,8 +1221,6 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 | Ragebot | 2022.10.0? | 多次毁坏玩家、公益建筑，使用外挂并有机器人特征 | 12 小时（已解封） | - |
 | zhezhifeiji | 2022.10.0? | 多次毁坏玩家建筑、多次毁坏公益建筑、有明显的熊服特征 | 12 小时（封禁 IP 地址、已解封） | 2028586200 |
 | idid_2 | 2022.10.24 | 多次烧毁玩家建筑和公益建筑，有明显的熊服特征 | 10 天 | - | 
-| xiaoyu666 | 2022.11.05 | 使用矿物透视 XRay 且多次警告无效 | 30 分钟 | - |
-| hgr5677 | 2022.11.01 | 多次辱骂玩家，且警告无效 | 12 小时 | 3312387175 |
 
 {% note warning %}
 **注意事项**
@@ -1239,6 +1233,7 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 ## 玩家评论精选
 | 昵称 | 评价内容 |
 | :---- | :---- |
+| hgr5677 | **各位向我看齐！我是个傻逼！你们所有人都没我傻逼！我永远都比你们傻逼！** |
 | Lis\*\*\*\*\*\*me | 怎么说呢，我一开始找服务器是想控制我自己不开创造和多设备同步，也是为了和朋友一起玩（虽然说并没有人愿意陪我玩(悲)），然后我就发现了@我是老爷爷123 的宣传视频(传送门：【我的世界无正版验证生存服务器——GroupServer-哔哩哔哩】 [https://b23.tv/4e7D49U](https://b23.tv/4e7D49U))。一开始的我还有点怕腐竹，蛋是我很快发现，腐竹就是个傻辶……(被撅了)<br>服务器玩法很多(肝*你)(bushi)，具体的话……我再写一篇教程吧。<br>All in all(总而总之)，真\*\*好玩⊙▽⊙ |
 | CY\*\*B | very good |
 | 1\*\*4 | 还是牛的，毕竟是公益服，性能还不错，而且腐竹也很友好，模组也很多。当然，福利也是有很多的。能搞一些红石和建筑什么的。 |
@@ -1259,7 +1254,6 @@ Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEncha
 | 1_1024 | 赞助服务器20+元 |
 | Creepaid | 赞助服务器3+元 |
 | ListenSlime | 赞助了服务器（数额未知） |
-| Hanstress | 赞助服务器 42 元 |
 
 还有许多没有做出贡献但依然热爱服务器的玩家们...
 
