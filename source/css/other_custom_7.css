@@ -179,7 +179,3 @@
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* 去除表格下面的蓝条 */
-.table-warp {
-    overflow-x: auto;
-}
