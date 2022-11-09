@@ -12,10 +12,10 @@ cover: /images/2022/04/776274147.webp
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
 ---
 
-![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=g.creeper938.ml&type=image&getmotd=%0a%0a&getbg=)
+![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mcp3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=)
 ![互通服状态](https://api.imlazy.ink/mcapi/?name=GroupServer%20%E4%BA%92%E9%80%9A&host=mcp3.rhymc.com:1079&type=image&getbg=&be=true)
 
-**点击[这儿里儿](https://api.imlazy.ink/mcapi/?name=&host=mcp3.rhymc.com:1079&getbg=&type=html)查看服务器更多状态信息!**
+**点击[这里](https://api.imlazy.ink/mcapi/?name=&host=mcp3.rhymc.com:1079&getbg=&type=html)查看服务器更多状态信息!**
 
 {% note danger %}
 **依据许可证，你绝对不能在此文章上进行更改并分发（发布），否则你就会违反[CC BY-NC-ND 署名-非商业性使用-禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)。某些人请不要装聋作哑看不见这个警告，尤其是星云影服务器服主及其管理。**
@@ -35,12 +35,10 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 
 {% note success %}
 **🔔 你有事吗？**
-如果你有事要找腐竹的话，建议优先去闲聊群`966077526`艾特我跟我说。如果不想加群，也可以直接去给我私聊发窗口抖动（戳一戳）（没事我不会烦）。QQ 号：`744198767`。
+如果你有事要找腐竹的话，建议优先去闲聊群`966077526`艾特我跟我说。如果不想加群，也可以直接去给我私聊发窗口抖动（戳一戳）（没事我不会烦）。QQ 号：`744198767`
 如果你没有 QQ，也可以直接给我发邮件，建议优先给我发到 creeper512@qq.com，一直没答复再发到 creeper938@outlook.com
-如果你不会发邮件，就直接在评论区说吧，不过回复效率会奇慢。
+如果你不会发邮件，就直接在评论区说吧，不过回复效率会奇慢
 {% endnote %}
-
-这篇文章是GroupServer的游玩指南，旨在指导新玩家游玩GroupServer (同样适用于某些老玩家)。为了能让新玩家更好地熟悉服务器，这篇文章将会写的很详细，保姆级教学，傻子都能看得懂。
 
 **使用 RSS 客户端订阅[本站 RSS](https://creeper938.ml/atom.xml)，可在本文章有更新时第一时间知晓！**
 
@@ -49,24 +47,25 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创建的 Minecraft Java 版 1.18.2（原 1.16.5，2022.10.1 升级至 1.18.2） 插件生存服务器。由Creeper233创建。 这是一个公益服务器，盈利方式为赞助后获得纪念品。
 **本文虽长，但请仔细阅读，不然你会因为没发现一个功能而后悔一辈子。**
 
+你是 MC 新手但你也想要玩这个服务器？建议先阅读[Minecraft 新手教程](https://wiki.biligame.com/mc/%E6%95%99%E7%A8%8B/%E6%96%B0%E6%89%8B%E6%89%8B%E5%86%8C)。
+
 ## QQ 群
 
 * **服务器官方通知群（这里会发服务器的一些公告和通知，所以最好要加，本群全群禁言）**：867647687 {% btn 'https://qm.qq.com/cgi-bin/qm/qr?k=QY8-4iaD8nVtlDlpd4kK53qnCIEbLPI7&jump_from=webapi&authKey=FG4N3CIoBkTnAwd07IsSU2xHnc4u59eaoZHFfCa5RM4o7j0H5KHYZ2mGc2bM6Iiv',快速加群,far fa-plus,green block %}
 * **服务器闲聊群（其实就是个普普通通的MC交流群，但里面的群文件一定有你想要的东西，而且最最重要的是，腐竹有时会在群里发福利）**：966077526 {% btn 'https://qm.qq.com/cgi-bin/qm/qr?k=p-MeXsehYMJ_JPCB4WwLO3sjWEbBnehB&jump_from=webapi&authKey=Ky5ie8C4WhSIKwzePNysDtBqouukB1S/3pWgBDou9wVqgAofsnvIjc37LxkTzOGd',快速加群,far fa-plus,green block %}
 
+你也可以选择加入我们的[QQ 频道](https://pd.qq.com/s/gtkaan5qu)，不过目前几乎没人进。
+
 # 内容
 ## 有何特色？
-
-~~服务器：你才色~~ 
 
 -  **跨版本** —— 从 1.18.2 到最新版本都能加入服务器。
 -  **公益、不盈利**  —— GroupServer 始终是一个公益的 Minecraft 服务器，它永远都不会盈利，不会向玩家要一分钱，无任何氪金项目，服务器全靠玩家赞助活着
 -  **玩法多种多样** —— 服内有着十余种玩法，比如：粘液科技、mcMMO 技能系统、血月、宠物、签到、全球市场、跑酷......等等等等
 -  **玩家友好和谐** —— 从开服到现在，服内玩家发生冲突的事件为个位数。
 -  **对新人友好**  —— 出生点有大量的公益建筑可供新手玩家发展，例如服务中心、交易中心...运气好可能还会碰见大佬送你装备
--  **稳定、不掉线** —— 使用旋律云的面板服开服，100G DDoS 防御，河北移动30毫秒延迟。使用优化非常好的Purpur服务端，MSPT保持在20以内，TPS稳定20，在不有玩家搞事的情况下基本不会崩溃。
+-  **稳定、不掉线** —— 使用旋律云的面板服开服，河北移动30毫秒延迟。使用Purpur服务端，TPS稳定20，在不有玩家搞事的情况下基本不会崩溃。
 -  **自由**  —— 服内几乎所有不会破坏游戏平衡的指令全部开放，进一步提升玩家游戏体验
--  **腐竹态度友好** —— ~~不是我吹，我服务过的人他们都说好~~
 
 ## 有何特性？
 
@@ -114,7 +113,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 {% hideToggle "点我查看" %}
 {% note success %}
 **想让你的建筑出现在这里？**
-请联系腐竹QQ。
+请联系腐竹QQ或邮箱。
 **如果你在服务器混的比较好，而且建的房子、基地之类的也很不错，你的基地截图可能会被腐竹发到这里，但请放心，不会泄漏坐标。**
 {% endnote %}
 {% gallery %}
@@ -147,7 +146,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 ## 服务器规则
 你还需要遵守以下服务器规则：
 
-* 不能建造包含反动、X暗示、瑟琴内容的建筑，一经发现，封禁 7~30 天，第二次永久封禁 IP 地址
+* 不能建造包含反动、X暗示、瑟琴内容的建筑，一经发现，封禁 7~30 天（若非常恶劣将会直接永久封禁），第二次永久封禁 IP 地址
 * 不能发送反动、广告、色情、辱骂他人的聊天信息，违者禁言 6 小时 ~ 7 天，多次禁言无效后封禁 7 天
 * 禁止使用外挂（包括战斗类外挂、透视类外挂，如杀戮光环、长臂猿、ItemESP）
   *音符盒机器人、自动种地机器人、自动寻路机器人不在禁止列表内。*
@@ -485,6 +484,7 @@ mcMMO 是一个RPG技能插件，它为服务器添加了10多种技能，技能
 * /co inspect
   开启或关闭方块检查模式。
   开启后，你可以左击你要查询数据的方块。
+  若要关闭，请再次执行一遍这条指令。
 * /co lookup
   高级方块数据查询。
   你需要指定参数才能使用此指令，比如`t:10m`就是一个参数。
@@ -772,7 +772,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 
 **其他**
 * 试图提高刷怪效率。
-* 加入挂机验证码插件，玩家必须每隔 15 分钟输入一次验证码防止被踢（无论是否处于挂机状态之中）。
+* ~~加入挂机验证码插件，玩家必须每隔 15 分钟输入一次验证码防止被踢（无论是否处于挂机状态之中）。~~ **玩家反馈降低了游戏体验，已删除**
 * 死亡提示信息的生物名称现在是中文了，且更改了一些死亡提示。
 {% endhideToggle %}
 {% hideToggle "2022年10月更新" %}
@@ -1083,9 +1083,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * 管理员不会知道你的账号密码，因为没有查询密码的指令且数据库是加密的
 
 # 常见问题解答
-接下来就是各位喜欢的FA♂Q时间了
-
-{% hideToggle "点老子查看" %}
+{% hideToggle "点我查看" %}
 **玩家：能不能加XXX模组？**
 腐竹：抱歉，服务器不是模组服，加不了Mod，而且我也不想加
 
@@ -1147,6 +1145,12 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 
 **玩家：为什么我进去经常提示我已经再现了？进去的速度还很慢**
 腐竹：这可能是你的网络原因。建议在提示已经在线后等待 30 秒左右的时间再尝试进入。
+
+**玩家：中国版可不可以进服务器？**
+腐竹：这是不可能的。
+
+**玩家：服务器以后会不会变成商业服？**
+腐竹：同上，不可能。
 {% endhideToggle %}
 
 # 其他
@@ -1163,7 +1167,6 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 | :----- | :----- | :----- | :----- |
 | Creeper233_ | 腐竹 | 744198767 | 有事优先问腐竹，非节假日晚 8-10 点在线 |
 | CYASB | 管理 | 3268574489 | 最优秀的管理，职务从 2021.09 - 现在 |
-| Creepaid | 管理 | 3097516943 | 偶尔上线，职务从 2021 - 现在 | 
 
 **目前服务器没有招募管理员的计划。**
 
@@ -1201,9 +1204,9 @@ Cloud-Thesaurus:
 ## 服务器所装插件
 
 ```text
-2022.11.08
+2022.11.09
 
-Plugins (108): AdvancedAchievements, AdvancedBan, ajParkour, AntiAntiAFK*, AuthMe, BetterEnchantBook*, BetterRTP, BiliReward*, BlockLocker, BloodMoon, BNes, BossLand, Bump, ChestSort, ClayTech, ColoredEnderChests, CoreProtect, CrystamaeHistoria, DeathMessages, DeEnchantment, DyedBackpacks, DynaTech, EcoPower, ElectricSpawners, Elevator, Endrex, Essentials, EssentialsSpawn, ExcellentEnchants, ExoticGarden, ExtraGear, ExtraHeads, ExtraTools, FartherViewDistance, FinalTECH, FluffyMachines, FNAmplifications, FoxyMachines, GeneticChickengineering, Geyser-Spigot, GSit, GuizhanCraft, GuizhanLibPlugin, HotbarPets, ImageOnMap, InfinityExpansion, InteractionVisualizer, InventoryRollbackPlus, LiteSignIn, LiteXpansion, LuckPerms, LWC, mcMMO, McMmoView, MessageAnnouncer, MissileWarfare, MobCapturer, MoneyFromMobs, Multiverse-Core, NBTAPI, Networks, NexEngine, OpenInv, PetBlocks*, PistonMOTD, PlaceholderAPI, PlayerReleaseTasks*, PlayerTitle, PlayerWarps, PlugManX (PlugMan), ProtocolLib, QuickShop-Hikari, RedstoneConnector, RelicsOfCthonia, ServerMonitor, SFCalc, Shopkeepers, SimpleMaterialGenerators, SimpleUtils, SkinsRestorer, Slimefun, SlimefunLuckyBlocks, SlimefunOreChunks, SlimefunWarfare, SlimeHUDPlus, SlimeTinker, SlimyTreeTaps, SoulJars, spark, SuperVanish, Supreme, TAB, TabTPS, Tamablefoxes, TileDataSaver, TranscEndence, TrChat, TrMenu, UltimateGenerators, UltimateTimber, Vault, ViaVersion, ViewSlimeChunk, VillagerUtil, Wildernether, WkKit, Yhfarm, ZMusic
+Plugins (107): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEnchantBook*, BetterRTP, BiliReward*, BlockLocker, BloodMoon, BNes, BossLand, Bump, ChestSort, ClayTech, ColoredEnderChests, CoreProtect, CrystamaeHistoria, DeathMessages, DeEnchantment, DyedBackpacks, DynaTech, EcoPower, ElectricSpawners, Elevator, Endrex, Essentials, EssentialsSpawn, ExcellentEnchants, ExoticGarden, ExtraGear, ExtraHeads, ExtraTools, FartherViewDistance, FinalTECH, FluffyMachines, FNAmplifications, FoxyMachines, GeneticChickengineering, Geyser-Spigot, GSit, GuizhanCraft, GuizhanLibPlugin, HotbarPets, ImageOnMap, InfinityExpansion, InteractionVisualizer, InventoryRollbackPlus, LiteSignIn, LiteXpansion, LuckPerms, LWC, mcMMO, McMmoView, MessageAnnouncer, MissileWarfare, MobCapturer, MoneyFromMobs, Multiverse-Core, NBTAPI, Networks, NexEngine, OpenInv, PetBlocks*, PistonMOTD, PlaceholderAPI, PlayerReleaseTasks*, PlayerTitle, PlayerWarps, PlugManX (PlugMan), ProtocolLib, QuickShop-Hikari, RedstoneConnector, RelicsOfCthonia, ServerMonitor, SFCalc, Shopkeepers, SimpleMaterialGenerators, SimpleUtils, SkinsRestorer, Slimefun, SlimefunLuckyBlocks, SlimefunOreChunks, SlimefunWarfare, SlimeHUDPlus, SlimeTinker, SlimyTreeTaps, SoulJars, spark, SuperVanish, Supreme, TAB, TabTPS, Tamablefoxes, TileDataSaver, TranscEndence, TrChat, TrMenu, UltimateGenerators, UltimateTimber, Vault, ViaVersion, ViewSlimeChunk, VillagerUtil, Wildernether, WkKit, Yhfarm, ZMusic
 ```
 
 ## 本站 Github
