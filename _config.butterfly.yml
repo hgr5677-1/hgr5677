@@ -31,9 +31,10 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
-  fab fa-qq:  tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=744198767&website=b.creeper938.ml
+   fab fa-github: https://github.com/Creeper512 || Github
+   fas fa-envelope: mailto:xxxxxx@gmail.com || 邮箱
+   fab fa-qq: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=744198767&website=creeper938.ml
+   fas fa-television: https://space.bilibili.com/492917725 || B 站
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -437,7 +438,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 使用 Github + Vercel 部署
+  custom_text: 使用 <a href="https://github.com/Creeper512/hexo">Github</a> + <a href="https://vercel.com">Vercel</a> 部署
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -674,9 +675,9 @@ aside:
     description:
     button:
       enable: true
-      icon: fa fa-envelope-open
-      text: Outlook 邮箱
-      link: mailto:creeper938@outlook.com
+      icon: fa fa-rss
+      text: 订阅 RSS
+      link: https://creeper938.ml/atom.xml
   card_announcement:
     enable: false
     content: This is my Blog
@@ -828,7 +829,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
