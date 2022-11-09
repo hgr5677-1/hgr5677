@@ -12,7 +12,7 @@ cover: /images/2022/04/776274147.webp
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
 ---
 
-![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mcp3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=)
+![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mcp3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=&be=false)
 ![互通服状态](https://api.imlazy.ink/mcapi/?name=GroupServer%20%E4%BA%92%E9%80%9A&host=mcp3.rhymc.com:1079&type=image&getbg=&be=true)
 
 **点击[这里](https://api.imlazy.ink/mcapi/?name=&host=mcp3.rhymc.com:1079&getbg=&type=html)查看服务器更多状态信息!**
