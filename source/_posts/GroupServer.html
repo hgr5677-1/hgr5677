@@ -1,0 +1,2339 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="date" content="2022-03-25 08:52:05">
+<meta name="categories" content="文档">
+<meta name="tags" content=",- Minecraft,- 游戏">
+<meta name="copyright_info" content="本文章使用 &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh&quot; title=&quot;CC BY-NC-ND&quot;&gt;署名-非商业性使用-禁止演绎 4.0 国际&lt;/a&gt; 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。">
+<meta name="abbrlink" content="5131">
+<meta name="description" content="这是一篇关于 Minecraft 1.18.2 服务器 GroupServer 的游玩指南（官方文档，超详细）">
+<meta name="cover" content="/images/2022/04/776274147.webp">
+<meta name="sticky" content="1"><style>body {
+  max-width: 980px;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable,
+.markdown-body .highlighttable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr,
+.markdown-body .highlighttable {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite,
+.markdown-body .highlighttable pre,
+.markdown-body .highlighttable div.highlight {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td,
+.markdown-body .highlighttable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.markdown-body diagram-div, .markdown-body div.uml-sequence-diagram, .markdown-body, div.uml-flowchart {
+  overflow: auto;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*GitHub*/
+.highlight {background-color:#fff;color:#333333;}
+.highlight .hll {background-color:#ffffcc;}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#dd1144}
+.highlight .n{color:#333333}
+.highlight .na{color:teal}
+.highlight .nb{color:#0086b3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:teal}
+.highlight .ni{color:purple}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:navy}
+.highlight .nv{color:teal}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#dd1144}
+.highlight .sc{color:#dd1144}
+.highlight .sd{color:#dd1144}
+.highlight .s2{color:#dd1144}
+.highlight .se{color:#dd1144}
+.highlight .sh{color:#dd1144}
+.highlight .si{color:#dd1144}
+.highlight .sx{color:#dd1144}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#dd1144}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:teal}
+.highlight .vg{color:teal}
+.highlight .vi{color:teal}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+</style><title>GroupServer 入门指南</title></head><body><article class="markdown-body"><p><img alt="服务器状态" src="https://api.imlazy.ink/mcapi/?name=GroupServer&amp;host=mcp3.rhymc.com:1079&amp;type=image&amp;getmotd=%0a%0a&amp;getbg=&amp;be=false" /></p>
+<p><strong>点击<a href="https://api.imlazy.ink/mcapi/?name=&amp;host=mcp3.rhymc.com:1079&amp;getbg=&amp;type=html">这里</a>查看服务器更多状态信息!</strong></p>
+<p>{% note danger %}
+<strong>依据许可证，你绝对不能在此文章上进行更改并分发（发布），否则你就会违反<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>。某些人请不要装聋作哑看不见这个警告，尤其是星云影服务器服主及其管理。</strong>
+<strong>署名-非商业性使用-禁止演绎 许可证法律文本: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.zh-Hans">https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.zh-Hans</a></strong></p>
+<blockquote>
+<p>本许可协议是我们的六个主要许可协议中限制最严格的，只允许他人下载你的作品，在为你署名的情况下与别人共享你的作品，但不能以任何方式改变作品，或出于商业目的使用作品。
+<a href="https://creativecommons.org/licenses/">https://creativecommons.org/licenses/</a></p>
+</blockquote>
+<p>{% endnote %}</p>
+<p>{% note primary %}
+<strong>📢 重要公告</strong>
+在接下来的 4 个月内，GroupServer 和其他服务的域名会逐步转移到<code>creeper938.ml</code>这个域名。
+当域名有改动时，会在本页的这个提示框和通知群有通知，当你进不去服务器时就请打开这个指南看看。</p>
+<p _="%" endnote="endnote">提示：现在已可使用新的域名进入服务器：<code>g.creeper938.ml</code>。腐竹计划在 2023.02.19(服务器两周年) 左右废除<code>mc.groupserver.xyz</code>域名。</p>
+<p _="%" endnote="endnote">{% note success %}
+<strong>🔔 你有事吗？</strong>
+如果你有事要找腐竹的话，建议优先去闲聊群<code>966077526</code>艾特我跟我说。如果不想加群，也可以直接去给我私聊发窗口抖动（戳一戳）（没事我不会烦）。QQ 号：<code>744198767</code>
+如果你没有 QQ，也可以直接给我发邮件，建议优先给我发到 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#114;&#101;&#101;&#112;&#101;&#114;&#53;&#49;&#50;&#64;&#113;&#113;&#46;&#99;&#111;&#109;">&#99;&#114;&#101;&#101;&#112;&#101;&#114;&#53;&#49;&#50;&#64;&#113;&#113;&#46;&#99;&#111;&#109;</a>，一直没答复再发到 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#114;&#101;&#101;&#112;&#101;&#114;&#57;&#51;&#56;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">&#99;&#114;&#101;&#101;&#112;&#101;&#114;&#57;&#51;&#56;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;</a>
+如果你不会发邮件，就直接在评论区说吧，不过回复效率会奇慢</p>
+<p><strong>使用 RSS 客户端订阅<a href="https://creeper938.ml/atom.xml">本站 RSS</a>，可在本文章有更新时第一时间知晓！</strong></p>
+<h1 id="groupserver">什么是 GroupServer<a class="headerlink" href="#groupserver" title="Permanent link"></a></h1>
+<p>GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创建的 Minecraft Java 版 1.18.2（原 1.16.5，2022.10.1 升级至 1.18.2） 插件生存服务器。由Creeper233创建。 这是一个公益服务器，盈利方式为赞助后获得纪念品。
+<strong>本文虽长，但请仔细阅读，不然你会因为没发现一个功能而后悔一辈子。</strong>
+<strong>由于使用人数过少且会造成状态贴图无法正常获取服务器信息，现已停止提供基岩版进入服务器的服务！</strong></p>
+<p>你是 MC 新手但你也想要玩这个服务器？建议先阅读<a href="https://wiki.biligame.com/mc/%E6%95%99%E7%A8%8B/%E6%96%B0%E6%89%8B%E6%89%8B%E5%86%8C">Minecraft 新手教程</a>。</p>
+<h2 id="qq">QQ 群<a class="headerlink" href="#qq" title="Permanent link"></a></h2>
+<ul>
+<li><strong>服务器官方通知群（这里会发服务器的一些公告和通知，所以最好要加，本群全群禁言）</strong>：867647687 {% btn &lsquo;<a href="https://qm.qq.com/cgi-bin/qm/qr?k=QY8-4iaD8nVtlDlpd4kK53qnCIEbLPI7&amp;jump_from=webapi&amp;authKey=FG4N3CIoBkTnAwd07IsSU2xHnc4u59eaoZHFfCa5RM4o7j0H5KHYZ2mGc2bM6Iiv',快速加群,far">https://qm.qq.com/cgi-bin/qm/qr?k=QY8-4iaD8nVtlDlpd4kK53qnCIEbLPI7&amp;jump_from=webapi&amp;authKey=FG4N3CIoBkTnAwd07IsSU2xHnc4u59eaoZHFfCa5RM4o7j0H5KHYZ2mGc2bM6Iiv',快速加群,far</a> fa-plus,green block %}</li>
+<li><strong>服务器闲聊群（其实就是个普普通通的MC交流群，但里面的群文件一定有你想要的东西，而且最最重要的是，腐竹有时会在群里发福利）</strong>：966077526 {% btn &lsquo;<a href="https://qm.qq.com/cgi-bin/qm/qr?k=p-MeXsehYMJ_JPCB4WwLO3sjWEbBnehB&amp;jump_from=webapi&amp;authKey=Ky5ie8C4WhSIKwzePNysDtBqouukB1S/3pWgBDou9wVqgAofsnvIjc37LxkTzOGd',快速加群,far">https://qm.qq.com/cgi-bin/qm/qr?k=p-MeXsehYMJ_JPCB4WwLO3sjWEbBnehB&amp;jump_from=webapi&amp;authKey=Ky5ie8C4WhSIKwzePNysDtBqouukB1S/3pWgBDou9wVqgAofsnvIjc37LxkTzOGd',快速加群,far</a> fa-plus,green block %}</li>
+</ul>
+<p>你也可以选择加入我们的<a href="https://pd.qq.com/s/gtkaan5qu">QQ 频道</a>，不过目前几乎没人进。</p>
+<h1 id="_1">内容<a class="headerlink" href="#_1" title="Permanent link"></a></h1>
+<h2 id="_2">有何特色？<a class="headerlink" href="#_2" title="Permanent link"></a></h2>
+<ul>
+<li><strong>跨版本</strong> —— 从 1.18.2 到最新版本都能加入服务器。</li>
+<li><strong>公益、不盈利</strong>  —— GroupServer 始终是一个公益的 Minecraft 服务器，它永远都不会盈利，不会向玩家要一分钱，无任何氪金项目，服务器全靠玩家赞助活着</li>
+<li><strong>玩法多种多样</strong> —— 服内有着十余种玩法，比如：粘液科技、mcMMO 技能系统、血月、宠物、签到、全球市场、跑酷......等等等等</li>
+<li><strong>玩家友好和谐</strong> —— 从开服到现在，服内玩家发生冲突的事件为个位数。</li>
+<li><strong>对新人友好</strong>  —— 出生点有大量的公益建筑可供新手玩家发展，例如服务中心、交易中心&hellip;运气好可能还会碰见大佬送你装备</li>
+<li><strong>稳定、不掉线</strong> —— 使用旋律云的面板服开服，河北移动30毫秒延迟。使用Purpur服务端，TPS稳定20，在不有玩家搞事的情况下基本不会崩溃。</li>
+<li><strong>自由</strong>  —— 服内几乎所有不会破坏游戏平衡的指令全部开放，进一步提升玩家游戏体验</li>
+</ul>
+<h2 id="_3">有何特性？<a class="headerlink" href="#_3" title="Permanent link"></a></h2>
+<ul>
+<li>箱子锁 —— 使用木牌右键箱子或容器，可将其上锁，这样其他玩家都无法使用、破坏容器。</li>
+<li>家系统 —— 可以在一个位置设置家，并使用<code>/home</code>指令快速传送到家。</li>
+<li>坐下、蹲下和趴下 —— 你可以在任意位置坐下蹲下和趴下。<del>（搞hs神器）</del></li>
+<li>快捷传送 —— 你可以设置一个家，这样你之后就可以通过指令来快速回家。你还可以请求传送到别的玩家身边或请求让别的玩家传送到你的身边。</li>
+<li>每日签到 —— 签到可以获得一定的奖励。</li>
+<li>发布任务 —— 你可以发布一个任务，让别的玩家帮你打工。你也可以选择去完成一名玩家发布的任务来赚取酬劳。</li>
+<li>更多附魔 —— 添加了40多个新的附魔，可让你的装备变得更强大。</li>
+<li>称号系统 —— 购买并使用一个称号，让别人知道你是什么身份并获得 Buff。</li>
+<li>粘液科技 —— 服务器安装了多个粘液科技附属，包括异域花园、粘液匠魂、乱序技艺、FN科技、动力科技、粘土科技、魔法水晶编年史、至尊研究院2.0等。总计超过 5200 个物品，400+研究，绝对玩不腻。</li>
+<li>箱子商店 —— 仅需一个箱子即可创建商店，可以收购和出售。</li>
+<li>技能系统 —— 服务器安装了 mcMMO (大修版，v2) 插件。通过提升技能等级，可使你变的更强。</li>
+<li>免费飞行 —— 只需输入 <code>/fly</code> 指令，即可在生存模式中飞行，没有任何限制。</li>
+<li>玩家交易 —— 你可在全球市场与其他玩家进行交易，还可以发起拍卖。</li>
+<li>随机传送 —— 使用 40 金币，让你在各个世界的角落随机出现。</li>
+<li>点歌系统 —— 仅需一个模组就可听到网易云、QQ上的音乐，支持点歌。</li>
+<li>宠物功能 —— 你的宠物就是一个头颅。但是它可以走动，可以随意更改样式，还可以做你的背包和座椅。</li>
+<li>成就系统 —— 加入了一堆不同于原版的新成就，一些成就解锁后可以获得奖励。</li>
+<li>箱子整理 —— 无需安装物品整理模组。你可以在菜单开启箱子整理功能，当你打开或按下快捷键时可整理你背包/箱子里的物品。</li>
+<li>一键砍树 —— 砍树过程不再复活牛顿。砍树时，树会像现实一样倒下并掉落木头和金苹果，此外还会自动补种。</li>
+<li>作物仓库 —— 挖掘农作物时，农作物会自动存储在一个背包里<strong>（需要自己手动开启）</strong>。你可以快速地将这个背包里的作物卖出来赚金币。</li>
+<li>驯服狐狸 —— 可使用生鸡肉驯服狐狸，狐狸驯服后可以跟主人一起睡觉，还可以一起战斗（就像狼一样）。</li>
+<li>随意更换皮肤 —— 想用什么皮肤就用什么皮肤。</li>
+<li>附魔书等级叠加 —— 你可以耗费大量的经验肝出一本高等级的附魔书。（最高可以 30 级，例如 耐久 30）</li>
+<li>血月 —— 每游戏内 7 天，主世界必定会出现血月。此时主世界会出现大量强大的怪物。</li>
+<li>跑酷 —— 永远也跑不完的酷。每跑一下，获得一个金币。</li>
+<li>开放原版特性 —— 即使本服不是生电服，你也可以正常使用原版的特性刷物品。</li>
+<li>支持基岩版 —— 基岩版玩家也可进服畅玩！</li>
+<li>畅玩 FC 游戏 —— 服务器添加了 BNes 插件，可让你使用四张地图就可以玩上 FC 游戏。</li>
+<li><strong>以上内容无需模组、材质包、数据包</strong> —— 全部依靠插件实现，你无须配置任何东西，即可开玩。</li>
+</ul>
+<h2 id="gserver">游玩 GServer 的好处<a class="headerlink" href="#gserver" title="Permanent link"></a></h2>
+<ul>
+<li>玩法超多，令你眼花缭乱</li>
+<li>玩家友好，没有任何熊孩子</li>
+<li>腐竹友好，整天在群里发沙雕图，并且有足够的耐心解决你的问题</li>
+<li>公益服，用爱发电永不盈利</li>
+<li>无周目制，将永远保留你的数据</li>
+<li>服务器稳定，腐竹不跑路（跑路死爹死妈死全家）</li>
+<li>腰不酸了，腿不痛了，肝也废了！</li>
+</ul>
+<h1 id="_4">服内风光一览<a class="headerlink" href="#_4" title="Permanent link"></a></h1>
+<p _="%" endhideToggle="endhideToggle">{% hideToggle &ldquo;点我查看&rdquo; %}
+{% note success %}
+<strong>想让你的建筑出现在这里？</strong>
+请联系腐竹QQ或邮箱。
+<strong>如果你在服务器混的比较好，而且建的房子、基地之类的也很不错，你的基地截图可能会被腐竹发到这里，但请放心，不会泄漏坐标。</strong>
+{% endnote %}
+{% gallery %}
+<img alt="出生点" src="/images/2022/04/776274147.webp" />
+<img alt="腐竹的家附近" src="/images/2022/04/3943861940.webp" />
+<img alt="出生点" src="/images/2022/04/465544321.webp" />
+<img alt="一名玩家的岛屿" src="/images/2022/05/2305168161.webp" />
+<img alt="出生点" src="/images/2022/05/434836433.webp" />
+<img alt="玩家们的留言" src="/images/2022/05/507913623.webp" />
+<img alt="出生点" src="/images/2022/05/165938664.webp" />
+<img alt="服务器纪念碑" src="/images/2022/05/4137966166.webp" />
+<img alt="服务器主菜单" src="/E:/Tools/Hexo/blog/source/_posts/images/2022/09/server_menu_1.png" />
+<img alt="粘液科技菜单" src="/E:/Tools/Hexo/blog/source/_posts/images/2022/09/sf_menu_page_1.png" />
+<img alt="粘液科技菜单" src="/E:/Tools/Hexo/blog/source/_posts/images/2022/09/sf_menu_page_2.png" />
+<img alt="全息显示插件" src="/E:/Tools/Hexo/blog/source/_posts/images/2022/10/quanxi.gif" />
+<img alt="一名玩家的基地" src="/images/2022/10/2022-10-30_21.04.38.png" />
+<img alt="一名玩家的基地" src="/images/2022/10/2022-10-30_21.05.00.png" />
+{% endgallery %}</p>
+<h1 id="_5">加入服务器<a class="headerlink" href="#_5" title="Permanent link"></a></h1>
+<p>如果想要加入 GroupServer，你需要满足以下条件：</p>
+<ul>
+<li>脑子，智商不低于60 (低于 70 就已经算是智障了)</li>
+<li>一台能够运行 Minecraft Java 版 1.18.2、能够访问互联网的电脑</li>
+<li>一双能够正常使用的手和一双能够看到东西的眼睛</li>
+<li>需要知道1+1=2</li>
+<li><strong>能够做到遵守服务器规则</strong></li>
+</ul>
+<h2 id="_6">服务器规则<a class="headerlink" href="#_6" title="Permanent link"></a></h2>
+<p>你还需要遵守以下服务器规则：</p>
+<ul>
+<li>不能建造包含反动、X暗示、瑟琴内容的建筑，一经发现，封禁 7~30 天（若非常恶劣将会直接永久封禁），第二次永久封禁 IP 地址</li>
+<li>不能发送反动、广告、色情、辱骂他人的聊天信息，违者禁言 6 小时 ~ 7 天，多次禁言无效后封禁 7 天</li>
+<li>禁止使用外挂（包括战斗类外挂、透视类外挂，如杀戮光环、长臂猿、ItemESP）
+  <em>音符盒机器人、自动种地机器人、自动寻路机器人不在禁止列表内。</em>
+  违者封禁 1 ~ 30 天，多次封禁无效后永久封禁 IP 地址</li>
+<li>严禁对服务器进行DDoS攻击、压测等，否则你会实名上网</li>
+<li>请勿在服务器内挂机 1 个小时以上，尤其是在会卡服的区块旁边挂机</li>
+<li>禁止恶意毁坏公益建筑，违者按照公益建筑建造者的意愿去封禁</li>
+<li>如果你发现了服务器的刷物品（非原版）Bug，但还利用的话，你将会被封禁 7 -30 天并收回刷取的物品</li>
+<li><strong>注册多个小号刷 新人或签到奖励，或者只注册一个小号但目标却以刷奖励为目的是明令禁止的，如果被发现，你会被封禁 IP 地址 1~7 天，多次封禁/警告无效后永久封禁</strong></li>
+<li>若你的房子被其他玩家<strong>恶意破坏</strong>，可向腐竹举报，将会视严重性封禁 1 小时 - 14 天并赔偿 100 - 5000 金币
+  <strong>请勿开小号/让别人故意损毁你的建筑来获得赔偿，若发现两个人都会封禁 30 天/封禁 IP 地址 14 天</strong></li>
+<li><strong>服务器禁止任何形式的RMB交易！只要交易金额超过1元，交易者和发起交易者都会受到严厉的惩罚！</strong></li>
+<li><strong>禁止在跑酷时作弊！</strong></li>
+<li><strong>恶意破坏多个建筑，或明显想要熊服，或破坏性极其严重，将会视严重性在通知群公投封禁或直接封禁！</strong></li>
+</ul>
+<p><strong>若玩家因违反服务器规则被封禁，可能会被发到通知群社死。</strong>
+<strong>如果被误封或对处罚不满，可前往 <a href="https://creeper938.ml/gserver-appeal">https://creeper938.ml/gserver-appeal</a> 申诉。</strong></p>
+<h3 id="_7">玩家原则<a class="headerlink" href="#_7" title="Permanent link"></a></h3>
+<p>每个 GroupServer 玩家都应遵守下面的原则，但违反原则并不会受到惩罚，反而可能会被诅咒。</p>
+<blockquote>
+<ol>
+<li>玩家若想要熟悉服务器的各种玩法，应每天读一次游玩指南，游玩指南可能会每天更新。我们推荐您使用 RSS 阅读器订阅本站 RSS 来知晓本文章的更新。</li>
+<li>玩家不应在未征得他人的同意下私自改造他人的建筑或作品。如果您的一幅画在未同意的情况下被他人涂改了，您是否满意？</li>
+<li>玩家不应在其他玩家的建筑上再建一个建筑（如在别人的房顶上建家），如果有人在现实生活中在你的房子里建一个小房间当成自己的家，您是否满意？</li>
+<li>当玩家之间出现纠纷时，双方都应该要认真对待且最好不要将事情闹大，双方也应该要好好交谈而不是互相咒骂。</li>
+<li>玩家不应在服务器里炫富、攀比（指现实生活的内容）。每个玩家在现实中都应是平等的。</li>
+<li>玩家不应在自己本身就很有钱的情况下再尝试大赚一笔，最好是捐赠一点给新人。</li>
+<li>如果玩家有能力赞助服务器并且非常喜欢服务器，应该尽可能去帮助服务器发展。</li>
+<li>如果玩家有疑问，应先去阅读服务器游玩指南。</li>
+<li>除非挂机对你来说非常重要，否则我们不建议您使用挂机池来挂机。</li>
+<li>玩家不应试图把服务器变得商业化。</li>
+</ol>
+</blockquote>
+<h3 id="_8">不建议去做<a class="headerlink" href="#_8" title="Permanent link"></a></h3>
+<p>{% note info %}
+<strong>只是不建议去做，并没有禁止去做</strong>
+{% endnote %}
+* 不建议高频率跑图
+* 不建议建造复杂的红石机器
+* 建造大量粘液科技机器，尤其是乱序技艺、网络里面的东西</p>
+<h2 id="_9">加入教程<a class="headerlink" href="#_9" title="Permanent link"></a></h2>
+<ol>
+<li>用你喜欢的启动器启动 Minecraft 1.18.2。
+   如果觉得 1.18.2 很卡顿，建议安装 Fabric + 钠、锂 模组。</li>
+<li>如果你想使用离线登录，请不要在你的游戏ID内包含非英文、阿拉伯数字或下划线。（示例：我是你爸爸【×】Im_your_father【√】）</li>
+<li>启动游戏后，点击多人游戏 -&gt; 添加服务器。</li>
+<li>服务器地址填写<code>mc.groupserver.xyz</code>。
+   <strong>现推荐使用地址<code>g.creeper938.ml</code></strong>
+   此地址中的<code>g</code>是 GroupServer 的意思。</li>
+<li>然后双击进入，如果你的游戏ID从来没有在服务器注册过的话，那么服务器会要求你注册。</li>
+<li>按照聊天框里的提示进行注册。请按下<code>T</code>键打开输入框，然后输入提示里的指令来进行注册。</li>
+<li>日后进入服务器需要登录，只需输入<code>/l 你在申请注册时要使用的密码</code>即可登录。</li>
+<li><strong>强烈建议加通知群（GroupServer &amp; 其他服务通知群）而不是闲聊群（Minecraft 交流群 1 群），不然错过重要通知可别怪我。</strong></li>
+</ol>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>熊孩子请勿进服！</strong>
+从 22.9.22 开始，服务器允许玩家自助注册。如果不断有熊孩子，那么服务器可能又将会改为向腐竹申请注册的方式。
+<strong>请勿破坏别人的劳动成果，否则后果自负。</strong></p>
+<p _="%" endnote="endnote">{% note info %}
+<strong>无法使用<code>mc.groupserver.xyz</code>进入服务器？</strong>
+请尝试使用<code>mcp3.rhymc.com:1079</code>进入或备用线路<code>b.mcp3.rhymc.com:1079</code>。</p>
+<h1 id="_10">游玩手册<a class="headerlink" href="#_10" title="Permanent link"></a></h1>
+<h2 id="_11">服务器常用指令<a class="headerlink" href="#_11" title="Permanent link"></a></h2>
+<p>{% hideToggle &ldquo;常用指令及其使用示例&rdquo; %}
+* <strong>/spawn</strong>
+    这个指令可以让你快速回到主世界的固定出生点。
+* <strong>/sethome [家的名字]</strong>
+  这个指令可以给你设置一个家，设置的家可以通过<code>/home</code>指令传送。
+  如果没有加任何参数（即只输入<code>/sethome</code>指令），那么将会设置一个名字为 home 的家，这个家将可以通过<code>/home</code>指令直接传送而不用添加参数。
+  如果添加了参数（例如<code>/sethome 114514</code>），那么将会设置一个名字为参数名的家，这个家需要使用<code>/home 家的名字</code>来传送。
+  比如，张三要设置一个名字为监狱的家，那他就需要输入<code>/sethome 监狱</code>，他需要使用<code>/home 监狱</code>来回家。
+* <strong>/home [家的名字]</strong>
+  这个指令将会把你传送到名字为 [家的名字] 的家。
+* <strong>/delhome [家的名字]</strong>
+  删除名字为 [家的名字] 的家。
+* <strong>/tpa [玩家ID]</strong>
+  这个指令将会向 [玩家ID] 发送让他传送到你那里的请求。
+* <strong>/cd</strong>
+  <strong>这个指令是服务器最重要的指令，它可以打开服务器菜单。</strong>
+* <strong>/money</strong>
+  这个指令可以查询你有多少金币。
+* <strong>/pay [玩家名字] [金额]</strong>
+  这条指令将会向 [玩家名字] 转账 [金额] 个金币。
+  <strong>转账不支持退款，请在转账时不要输错玩家名字。</strong>
+* <strong>/payconfirm</strong>
+  开关转账确认功能。开启后，玩家转账需要再输入一次转账指令才能转账成功。
+* <strong>/tpahere [玩家名字]</strong>
+  请求 [玩家名字] 传送到你的身边。
+* <strong>/warps</strong>
+  查看地标列表。
+* <strong>/tpaall</strong>
+  请求所有玩家传送到你的身边。
+* <strong>/playtime</strong>
+  查询自己的服务器总计游玩时长。
+  在该指令后面加上玩家名字可查询指定玩家的游玩时长。
+* <strong>/baltop</strong>
+  查看金币榜。
+* <strong>/motd</strong>
+  查看服务器公告。
+* <strong>/pw set [地标名字]</strong>
+  在你的当前位置创建一个 PlayerWarp 插件的地标。与 Essentials 的地标不同，它拥有更多功能且支持中文名字的地标。
+* <strong>/tpauto</strong>
+  开关传送请求<strong>（仅别人请求传送到你那里）</strong>自动同意功能。</p>
+<p>{% endhideToggle %}</p>
+<h2 id="_12">服务器玩法<a class="headerlink" href="#_12" title="Permanent link"></a></h2>
+<p>{% hideToggle &ldquo;粘液科技（Slimefun）&rdquo; %}</p>
+<blockquote>
+<p>在不安装 Mod 的情况下，Slimefun 能够向原版 Minecraft 服务器添加新物品。Slimefun4 本体提供了远远超过 400 种物品和方块，其中包括：背包、核反应堆、魔法祭坛, 符文和法杖、物品传输系统、电力网络、电力机器、可编程式机器人 (挖矿机器人)、全息文字投影仪、爆炸镐，还有很多很多很多&hellip;
+<a href="https://slimefun-wiki.guizhanss.cn/Slimefun-in-a-nutshell">https://slimefun-wiki.guizhanss.cn/Slimefun-in-a-nutshell</a></p>
+</blockquote>
+<p>服务器最核心的玩法也许就是粘液科技了。服务器除了粘液科技本体外，还添加了40多个附属插件，这让服务器有了超过10000个新物品、400+个新研究。</p>
+<p>粘液科技的可玩性很高，也很肝，建议你阅读下面的教程来了解如何游玩粘液科技：
+* <a href="https://slimefun-wiki.guizhanss.cn/">https://slimefun-wiki.guizhanss.cn/</a>
+* <a href="https://slimefun-addons-wiki.guizhanss.cn/exotic-garden/Getting-Started">https://slimefun-addons-wiki.guizhanss.cn/exotic-garden/Getting-Started</a>
+* <a href="https://slimefun-addons-wiki.guizhanss.cn/slime-tinker/">https://slimefun-addons-wiki.guizhanss.cn/slime-tinker/</a>
+* <a href="https://mineplugin.org/SlimeFun">https://mineplugin.org/SlimeFun</a></p>
+<p _="%" _粘液科技专属材质（纹理）包_="&quot;粘液科技专属材质（纹理）包&quot;" hideToggle="hideToggle">{% endhideToggle %}</p>
+<p _="%" endnote="endnote">{% note info %}
+此材质来自https://ybw0014.net/post/guizhancraft-resource-pack 。</p>
+<p>这个材质更改了粘液科技界面的材质和物品材质，可以使其更加美观，无需安装 Optifine 或 Sodium，如下图：
+<img alt="l5dmljpw.png" src="/images/2022/07/2180185470.png" />
+<img alt="l5dmlyd3.png" src="/images/2022/07/1355013010.png" />
+<img alt="l5dmmg5i.png" src="/images/2022/07/2122679154.png" /></p>
+<p>下载：<a href="https://creeper233.lanzout.com/iIK5t07lo2mh">https://creeper233.lanzout.com/iIK5t07lo2mh</a>
+下载后无需解压，只需放到<code>resourcepacks</code>目录下然后在游戏内启用即可。
+{% endhideToggle %}
+{% hideToggle &ldquo;mcMMO 技能插件&rdquo; %}
+mcMMO 是一个RPG技能插件，它为服务器添加了10多种技能，技能等级越高就越好。</p>
+<p>每个 mcMMO 技能还有子技能<em>（貌似不是这样叫的，但我是这么叫的）</em>，子技能可以给你带来更好的技能效果。要想激活子技能，你可以在拿着能激活子技能的工具右键，然后迅速挖子技能对应的方块，这时就会激活子技能。子技能持续时间由技能等级来决定。</p>
+<p>要想查看你的 mcMMO 个人信息，你可以打开菜单，点击 mcMMO 个人信息来查看。</p>
+<p>你还可以输入指令<code>/mcmmo help</code>来查看 mcMMO 帮助。</p>
+<p><img alt="mcMMO 剑术技能示例" src="/images/2022/10/mcmmo.gif" />
+{% endhideToggle %}
+{% hideToggle &ldquo;使用箱子锁保护你的东西&rdquo; %}
+服务器没有领地系统，因此你不能圈地，这会让你的家变得更加容易被熊孩子们盯上。但是你可以通过箱子锁来保护你的东西。</p>
+<p>要想保护你的东西，你需要准备告示牌，然后右键支持被上锁的方块，这个方块就会被上锁，别人不能破坏、查看它，也不能用漏斗取出里面的物品。
+<img alt="l32wgm4o.webp" src="/images/2022/05/522118589.webp" /></p>
+<p>目前支持以下方块被上锁：</p>
+<ul>
+<li>箱子、陷阱箱、潜影盒、木桶</li>
+<li>熔炉、高炉、烟熏炉</li>
+<li>工作台</li>
+<li>附魔台、锻造台、织布机、制图台、酿造台</li>
+</ul>
+<p>如果想要让别人使用你被上锁的物品，你可以使用下面的任意一种方法：</p>
+<p>再在那个被上锁的方块上放一个告示牌，对着新创建的告示牌，输入指令/bl 2 &lt;玩家昵称&gt;，就可以让 &lt;玩家昵称&gt; 使用你被上锁的方块。
+对着被上锁的方块的告示牌输入指令 /bl 3 &lt;玩家昵称&gt;，就可以让 &lt;玩家昵称&gt; 使用你被上锁的方块。</p>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>因为没上锁导致被熊我不负责！</strong></p>
+<p _="%" _附魔书等级叠加_="&quot;附魔书等级叠加&quot;" hideToggle="hideToggle">{% endhideToggle %}</p>
+<p>这是肝帝必备的玩法，它可以让你突破原版限制，将附魔书的等级叠加至最高30级。
+下面是几个栗子（转自 <a href="https://www.mcbbs.net/thread-1111674-1-1.html">https://www.mcbbs.net/thread-1111674-1-1.html</a> ）：</p>
+<p><strong>让相同等级的附魔书加起来变成更高等级</strong></p>
+<ul>
+<li>锋利5 + 锋利5 = 锋利6</li>
+<li>锋利5 | 耐久I + 锋利5 = 锋利6 | 耐久I</li>
+<li>锋利5 | 耐久I + 锋利5 | 耐久I = 锋利6 | 耐久II</li>
+<li>锋利5 | 其他附魔 + 锋利5 | 其他附魔 = 锋利6 | 其他附魔</li>
+</ul>
+<p><strong>设置同等级合并升级经验增加倍数</strong></p>
+<p>锋利5 + 锋利5 = 锋利6 本来要 9经验 但是 增加倍数为 0.7
+总共需要的经验 = 9 + 9*0.7 = 11</p>
+<p><img alt="" src="/images/2022/10/2022-11-01_16.26.58.png" /></p>
+<p>{% endhideToggle %}
+{% hideToggle &ldquo;负魔&rdquo; %}
+为了增强游戏挑战性，服务器增加了一个负魔插件。
+负魔并不全是坏的，有些负魔反而可以帮助到你。</p>
+<p>下图是新增的负魔以及效果：
+<img alt="" src="https://user-images.githubusercontent.com/65019366/182375428-b02a48ea-8b45-49f2-b6b4-a425c46fd74a.png" />
+{% endhideToggle %}
+{% hideToggle &ldquo;服务器新增的附魔&rdquo; %}
+除了附魔书等级叠加之外，服务器还有个向游戏里添加了数十种新附魔的插件。
+这些附魔可以在附魔台中附魔出来。
+添加的附魔有：</p>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>部分附魔可能没有在此列表内，甚至有些附魔还没有汉化。</strong></p>
+<p><strong>战斗附魔</strong>
+* <strong>耗尽</strong> - 饥饿 <LVL> ，持续 2 * <LVL> 秒（剑斧）
+* <strong>冰寒</strong> - 给予 缓慢  <LVL> ，持续  2 * <LVL> 秒（剑斧）
+* <strong>迷惑</strong> - 反胃 <LVL> ，持续 2 * <LVL> 秒（剑斧）
+* <strong>致盲</strong> -  有15%的几率给予目标 失明  <LVL> ，持续 2 * <LVL> 秒（剑斧）
+* <strong>毒液</strong> - 中毒 <LVL> ，持续 2 * <LVL> 秒（剑斧）
+* <strong>凋零</strong> - 凋零 <LVL> ，持续 2 * <LVL> 秒（剑斧）
+* <strong>怒气</strong> -  (3 * <LVL>)% 的几率获得3秒的 力量 <LVL>（斧）
+* <strong>行刑者</strong> -  (4 * <LVL>)% 的几率获得敌人的头（剑斧）
+* <strong>火箭</strong> - (2 * <LVL>)% 的几率把敌人发射到空中（剑）
+* <strong>饮血</strong> - 20% 的几率治疗你 <LVL> 血（剑）
+* <strong>经验</strong> - 杀怪获得更多 (<LVL> * 10)% 的经验（剑）
+* <strong>破甲</strong> - (1 * <LVL>)% 的几率脱下敌人的装备,并且降低装备25%的耐久度（剑斧）
+* <strong>惊喜</strong> - 5%的几率给予敌人5秒随机药水效果（剑）
+* <strong>麻痹</strong> -  5%的几率给予敌人缓慢 V 和挖掘疲劳V，持续 2 * <LVL> 秒（剑斧）
+* <strong>双重打击</strong> - (2 * <LVL>)%的几率造成双倍伤害（剑斧）
+* <strong>拾荒者</strong> - 可基于怪物类型获得额外的掉落物（剑斧）
+* <strong>宽恕</strong> - 有几率在击杀生物时获得该类型生物的刷怪蛋（剑斧）
+* <strong>暴击</strong> - 暴击时造成更多伤害（剑斧）
+* <strong>雷击</strong> - 攻击时有几率触发闪电（剑斧）
+* 归彘（zhì）- 将僵尸猪灵变成猪（剑斧）
+* 村庄捍卫者 - 对抢夺者造成更多伤害（剑斧）
+* 下界杀手 - 对下界生物造成额外伤害
+* 炼狱 - 发射烈焰三叉戟</p>
+<p><strong>工具附魔</strong>
+* <strong>神之触</strong> -  (7 * <LVL>)%的几率挖掘获得刷怪笼（镐）
+* <strong>熔炼</strong> - (15 * <LVL>)%的几率熔炼物品（工具）
+* <strong>财宝</strong> - (1 * <LVL>)%的几率在挖掘方块时获得财宝（工具）
+* <strong>穿隧</strong> - 增加破坏方块的范围（镐锹）
+* <strong>急迫</strong> - 获得急迫效果（工具）
+* <strong>心灵致动</strong> - 地面上的物品会直接进到你的背包里（工具）
+* <strong>爆破开采</strong> - 挖掘方块时产生爆炸（镐）
+* <strong>幸运矿工</strong> - 挖矿获得更多经验（镐）
+* <strong>搬箱</strong> - 挖掘箱子时保留其中的物品（斧）
+* 补种 - 自动补种作物</p>
+<p><strong>护甲附魔</strong>
+* <strong>冷钢</strong> - 给予伤害你的人挖掘疲劳 <LVL / 2> ，持续 1 * <LVL> 秒（胸甲）
+* <strong>圣光</strong> - 使玩家发光
+* <strong>饱食</strong> - 每10秒获得 <LVL> 饱食度
+* <strong>海王</strong> - 获得永久的水下呼吸效果（头盔）
+* <strong>鹰眼</strong> - 获得永久的夜视效果（胸甲）
+* <strong>灵跃</strong> - 获得永久的跳跃提升<LVL> 效果（鞋子）
+* <strong>音速</strong> - 获得永久的速度 <LVL> 效果（鞋子）
+* <strong>自爆</strong>- 在你死亡时有50%的几率造成大爆炸 (取决于附魔等级) （胸甲）（会破坏地形）
+* <strong>硬化</strong> - 受伤时获得抗性提升的效果（胸甲）
+* <strong>烈焰行者</strong> - 可以在岩浆上行走（鞋子）</p>
+<p _="%" endnote="endnote"><strong>弓弩附魔</strong>
+* <strong>毒箭</strong> - 使目标中毒 <LVL> ，持续 2 * <LVL> 秒.
+* <strong>凋零之弓</strong> - 使目标凋零 <LVL> ，持续 2 * <LVL> 秒.
+* <strong>爆破弓</strong> - 弓箭有(3 * <LVL>)% 的几率爆炸（会破坏地形）
+* <strong>恶魂之弓</strong> - 你的弓可以发射火球.
+* <strong>轰炸弓</strong> - (3 * <LVL>)%的几率发射TNT.
+* <strong>末影弓</strong> - 传送你到箭落地之处.
+{% endhideToggle %}
+{% hideToggle &ldquo;使用快捷键和指令快速整理你的箱子&rdquo; %}
+{% note success %}
+<strong>现在你可以在菜单选择开关背包整理功能。</strong></p>
+<p>你可以通过使用快捷键或指令来整理你的箱子/背包/物品栏，不必再手动整理。</p>
+<p><strong>指令</strong></p>
+<ul>
+<li><code>/invsort</code>或<code>/isort</code>- 整理玩家背包（不包括快捷栏）</li>
+<li><code>/chestsort</code>或<code>/sort</code>- 启用或关闭自动整理箱子</li>
+<li><code>/invsort hotbar</code>或<code>/isort hotbar</code>- 整理玩家快捷栏物品</li>
+<li><code>/invsort all</code>或<code>/isort all</code>- 整理玩家背包和快捷栏物品</li>
+</ul>
+<p><strong>快捷键</strong></p>
+<ul>
+<li>鼠标中键 - 在任意格子内点击即可触发</li>
+<li>潜行点击 - 在空格子内按下潜行键（默认Shift）+左击 触发</li>
+<li>双击 - 在空格子内双击触发</li>
+<li>潜行右击 - 在空格子内按下潜行键（默认Shift）+右击 触发</li>
+</ul>
+<p>{% endhideToggle %}
+{% hideToggle &ldquo;使用 CoreProtect 查询方块记录&rdquo; %}
+{% note info %}
+<strong>CoreProtect 的数据库已于 2022.10.16 重置过一次。</strong>
+为了节省服务器空间，此插件的数据库已经于 2022.10.16 重置过。
+这会导致你无法查询 2022.10.16 以前的数据。</p>
+<p><strong>从 2022.11.08 开始，服务器将每隔 120 天删除一次 CoreProtect 数据库。</strong>
+{% endnote %}
+一觉醒来，打开电脑，启动Minecraft 1.18.2，进入服务器，然后——<strong>我焯！我家怎么变成了这样！</strong>
+你一定有过这样的经历。在Minecraft这个游戏没有监控没有能帮你找到真凶的工具你要怎么才能找到那个把你家淦了的人呢？
+腐竹向服务器添加了一个名为CoreProtect的插件，这个插件可以查询方块记录。什么意思呢？就是它可以如果有一个玩家在某处挖了/放了一个方块，你可以查询出来。
+利用这个插件，你可以查询某处的各种详细信息。</p>
+<p><strong>指令</strong></p>
+<ul>
+<li>/co help
+  获取 CoreProtect 的帮助。</li>
+<li>/co near
+  查询你半径10方块内的数据记录。</li>
+<li>/co inspect
+  开启或关闭方块检查模式。
+  开启后，你可以左击你要查询数据的方块。
+  若要关闭，请再次执行一遍这条指令。</li>
+<li>/co lookup
+  高级方块数据查询。
+  你需要指定参数才能使用此指令，比如<code>t:10m</code>就是一个参数。
+  参数使用示例：
+   <code>/co lookup t:10m</code> - 查询半径为10方块的十分钟内的方块数据
+   <code>/co lookup t:10m r:20</code> - 查询半径为20方块的十分钟内的方块数据
+   <code>/co lookup t:1h user:Creeper233_</code> - 查询玩家 Creeper233_ 的半径10方块，一小时内的方块数据
+   <code>/co lookup user:Creeper233_ block:dirt</code> - 查询玩家 Creeper233_ 的半径10方块内的有关方块泥土的方块数据
+  可用的参数有：t（时间）、user（玩家/实体）、block（方块）、r（半径）
+  当未指定r时，默认查询10方块内的数据
+  <code>/co near</code>本质就是<code>/co lookup r:10</code></li>
+</ul>
+<p><img alt="" src="/images/2022/10/2022-11-01_16.27.39.png" /></p>
+<p>{% endhideToggle %}
+{% hideToggle &ldquo;使用任意图片制作一张地图画&rdquo; %}
+服务器有个名字叫做 ImageOnMap 的插件，使用它，你可以随便找一张图片把它搞到游戏里。
+听起来是不是觉得很不戳？别急，让我一步一步的教你。</p>
+<p>首先，你需要一张格式为 webp 或 jpg/jpeg 的图片。
+然后你可能还需要调整一下图片大小以获得更好的效果，下面是调整图片大小的教程 <strong>（这步其实可以略过，但是如果想让效果更好的话就搞吧）</strong> 。</p>
+<p _="%" endhideToggle="endhideToggle">{% hideToggle &ldquo;如何调整图片大小&rdquo; %}
+首先，确保你的电脑是 Windows 7 或更高版本的操作系统，因为这里是拿画图来做演示的。如果你不想用画图，也可以使用别的图片调整软件，如 Photoshop、paint.net。
+打开你电脑上的画图。
+<img alt="l2syggwt.webp" src="/images/2022/05/1145286338.webp" />
+用画图打开你想要搞到游戏里的图片。
+<img alt="l2syuh17.webp" src="/images/2022/05/4136603035.webp" />
+点击<code>重新调整大小</code>，选择像素并取消勾选保持纵横比。
+<img alt="l2szru4k.webp" src="/images/2022/05/224592855.webp" />
+众所周知，Minecraft中的一个地图展示框长高为64像素。那么如果我想让这张图片在游戏中铺满2展示框长、1展示框高就把水平设为128，垂直设为64.
+<img alt="l2t020zy.webp" src="/images/2022/05/2867818818.webp" />
+调整完图片后可能会看着有些别扭，不过又不是不能看
+调整完后继续进行之后的操作。</p>
+<p _="%" endhideToggle="endhideToggle">图片整好后，就需要进行图片上传的操作了。你需要找一个图床来上传你的图片，这里推荐<a href="https://imgtu.com/">路过图床</a>。
+以路过图床为例。将你的图片上传后，复制下面的图片URL链接。
+<img alt="l2t0fet2.webp" src="/images/2022/05/1313842204.webp" />
+在服务器内输入<code>/maptools new 图片链接</code>，然后等待服务器下载图片并进行渲染，你就会获得一张地图。地图上会显示你应该要用多少个物品展示框。
+摆放好物品展示框后，右键物品展示框的最左下角，这时你的地图画就搞好了。
+如果想要移除这个地图画，请<code>Shift+左键</code>物品展示框的最左下角。</p>
+<p _="%" endhideToggle="endhideToggle">{% hideToggle &ldquo;显示TPS和MSPT、延迟&rdquo; %}
+* 要在Bossbar（Boss血条）中显示TPS等信息，输入<code>/tabtps toggle bossbar</code>。
+* 要在Actionbar（小标题栏/动作栏）中显示TPS等信息，输入<code>/tabtps toggle actionbar</code>。
+* 要关闭显示，请再输入一次指令。
+* 要查看延迟，输入<code>/ping</code>或按下TAB。</p>
+<p>{% hideToggle &ldquo;驯服狐狸&rdquo; %}
+你可以使用生鸡肉右键狐狸（任何狐狸都行，只要是没被驯服的），有33%的几率成功驯服狐狸，驯服成功后，会出现一个界面让你给你的狐狸命名。
+狐狸被驯服后，拥有以下特性：</p>
+<ul>
+<li>可以饲养被驯服的狐狸</li>
+<li>拥有野生狐狸状态下的大多数普通行为(捕食其他动物)</li>
+<li>向攻击目标跳跃</li>
+<li>主人睡觉时,被驯服的狐狸也会跟着睡觉</li>
+<li>狐狸会自动跟随主人（就像狼一样）</li>
+<li>你可以按住<code>SHIFT+右键</code>让狐狸叼着你手中的物品</li>
+<li>右键单击让狐狸坐下</li>
+<li>空手按住鼠标右键,安抚狐狸睡觉</li>
+<li>如果狐狸叼着一个不死图腾,狐狸死亡后会消耗不死图腾并复活</li>
+<li>狐狸会攻击主人的攻击目标</li>
+<li>狐狸会和狗一样攻击向主人发动进攻的生物</li>
+<li>狐狸会攻击兔子和鸡</li>
+<li>可以驯服雪狐和赤狐</li>
+<li>被驯服的狐狸被击杀后会显示消息</li>
+<li>玩家可以驯服的狐狸数量上限</li>
+<li>狐狸会和主人一起睡在床上</li>
+<li><strong>如果要培育狐狸，可以使用浆果</strong></li>
+</ul>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>狐狸只有一条命，请好好抚养你的小狐狸精。</strong>
+你最多只能驯服五只狐狸。</p>
+<p>你还可以使用<code>/givefox 玩家名</code>指令将你的狐狸给予给其他玩家。</p>
+<p><img alt="" src="/images/2022/10/2022-11-01_16.25.01.png" /></p>
+<p>{% endhideToggle %}</p>
+<p>{% hideToggle &ldquo;造个简易的电梯&rdquo; %}</p>
+<p _="%" endnote="endnote">{% note info %}
+电梯存在未知问题，导致有时候电梯失灵，无法正常使用。推荐使用粘液科技里的 &ldquo;简易电梯&rdquo;。</p>
+<p>首先要在某一层放一个白色混凝土和红石块（白色混凝土在石英下面），然后再在这个结构的上面也做一个这样的结构才能做出一个电梯。
+你可以按空格键（跳跃）来上，SHIFT（潜行键）来下。</p>
+<p><img alt="" src="/images/2022/10/2022-11-01_16.29.08.png" />
+{% endhideToggle %}
+{% hideToggle &ldquo;VIP 食用教程&rdquo; %}
+VIP 可在菜单→购买物品中购买，价格为 8888 金币/永久。
+VIP 拥有以下可以装逼但没啥用的特权：
+* 支持创建地标（/createwarp）
+* 支持创建 10 个家（非VIP只能创建3个）
+* 支持将任意物品佩戴到头上（/hat）
+* 支持使用指令打开工作台
+* <strong>支持使用指令给自己整个昵称，伪装自己</strong> 
+* 在传送时移动不会取消传送
+* 支持使用指令来自杀（/suicide）
+* 购买时附赠<code>[VIP]</code>称号
+* 可查看所指的粘液科技物品详情（就像 WAILA、Jade 模组一样）</p>
+<p>{% tabs vip %}
+<!-- tab 创建地标 -->
+地标是指可以通过 /warp 指令快速传送的一个地方。比如，有一个名字为 fishinghouse 的地标，输入 /warp fishinghouse 可以快速传送到那里。
+像不像 /sethome 指令设置的家？这个和家的唯一区别就是地标任何人都可以传送。
+要创建地标，请使用 /createwarp 指令。
+比如，李天所在坐标为 114 51 4 的地方。如果他想创建一个名为 1919810 的地标，就输入 /createwarp 1919810。
+创建完成后，所有人都可使用 /warp 1919810 传送到坐标为 114 51 4 的地方。
+<!-- endtab -->
+<!-- tab 佩戴物品到头上 -->
+你可以将任意物品佩戴到头上。如果你的手里正在拿着一个玻璃，输入 /hat 指令就可以将你手里的玻璃配戴到头上。
+佩戴到头上的物品与原版可佩戴到头上的物品并无区别。
+<!-- endtab -->
+<!-- tab 设置一个昵称 -->
+或许是 VIP 最大的卖点。你可以使用 /nick 指令来给自己起一个昵称。
+比如，张三想要伪装自己是 Notch，他原本的游戏ID是 ZhangSan。他输入指令 /nick Notch 就可以把自己的游戏ID伪装成Notch。
+设置昵称后，TAB、聊天信息里的游戏ID都会变为你设置的昵称。
+如果想要清除设置的昵称，输入 /nick off。
+<!-- endtab -->
+<!-- tab 查询史莱姆区块 -->
+可以使用<code>/slime</code>指令查询周围的史莱姆区块，这个小地图是上北下南的朝向。
+<img alt="" src="/images/2022/10/QQ截图20221021203819.png" />
+<img alt="" src="/images/2022/10/QQ截图20221021203912.png" />
+<!-- endtab -->
+{% endtabs %}
+{% endhideToggle %}
+{% hideToggle &ldquo;绑定邮箱并在忘记密码时重置密码&rdquo; %}
+{% tabs passwd %}
+<!-- tab 绑定邮箱 -->
+<strong>必须要已经登录账号才能绑定邮箱。</strong>
+输入<code>/email 你的邮箱 再一次输入你的邮箱</code>，例如下图：
+<img alt="" src="/images/2022/09/QQ图片20220927204139.png" />
+<strong>绑定时无需接收验证码以确认这个邮箱是你的。</strong>
+你可以输入<code>/email show</code>查看你当前绑定的邮箱。
+<!-- endtab -->
+<!-- tab 重置密码 -->
+重置密码流程可以在你还没有登录的时候进行。
+输入<code>/email recover 你当时绑定的邮箱</code>。
+<img alt="" src="/images/2022/09/QQ图片20220927204147.png" />
+耐心等待几秒钟，服务器会给你发送一封验证邮件。
+<img alt="" src="/images/2022/09/QQ图片20220927204151.png" />
+<strong>如果没收到请检查垃圾邮件箱！</strong>
+使用<code>/email code 邮件上的验证码</code>来输入验证码。
+输入成功后，使用<code>/email setpassword 新密码</code>来修改密码。
+修改成功后，即可使用新密码来登录。
+<img alt="" src="/images/2022/09/QQ图片20220927204104.png" />
+<!-- endtab -->
+{% endtabs %}
+{% endhideToggle %}
+{% hideToggle &ldquo;展示手中物品和背包、末影箱&rdquo; %}
+* 在聊天中发送<code>[i]</code>可以展示手中的物品。
+* 在聊天中发送<code>[inv]</code>可以向其他玩家展示你的背包。
+* 在聊天中发送<code>[ender]</code>可以向其他玩家展示你的末影箱。
+{% endhideToggle %}
+{% hideToggle &ldquo;召唤一个 BOSS&rdquo; %}
+Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击败此插件所添加的 BOSS 能获得极为变态的武器奖励。</p>
+<p><strong>如何召唤 Boss？</strong>
+懒得写了，请去读这个文档（这是插件搬运者写的）：<a href="https://shimo.im/docs/bdfbb67029a04a6e/read">https://shimo.im/docs/bdfbb67029a04a6e/read</a>
+如果你想了解一下这个插件，请去看：<a href="https://www.mcbbs.net/thread-1072242-1-1.html">https://www.mcbbs.net/thread-1072242-1-1.html</a>
+{% endhideToggle %}
+{% hideToggle &ldquo;箱子商店&rdquo; %}
+<strong>创建商店</strong>
+* 在一个空地放置一个箱子。
+* 手持你要卖出的物品左键箱子并输入价格。
+* 打开箱子，在里面放上你要出售的物品（只能是你当时左键箱子的物品）</p>
+<p>看不懂？
+<img alt="" src="/images/2022/10/qs-create.gif" /></p>
+<p><strong>删除商店</strong>
+* 对着一个箱子商店输入<code>/qs remove</code>即可。</p>
+<p><strong>更多指令</strong>
+* 使用<code>/qs help</code>查看所有箱子商店的指令。
+{% endhideToggle %}
+{% hideToggle &ldquo;一键砍树&rdquo; %}
+可以使用<code>/ut toggle</code>开关一键砍树。</p>
+<p><img alt="一键砍树示例" src="/images/2022/10/ut-expmale.gif" />
+{% endhideToggle %}
+{% hideToggle &ldquo;坐下 / 躺下 / 趴下&rdquo; %}
+玩家可以使用指令来在任意位置坐下，躺下和趴下。
+* 如果要坐下，使用指令<code>/sit</code>。
+* 如果要躺下，使用指令<code>/glay</code>。
+* 如果要趴下，使用指令<code>/crawl</code>。</p>
+<p>此外，还可以<strong>空手右键</strong>任何台阶、楼梯来坐下。</p>
+<p>{% gallery %}
+<img alt="" src="/images/2022/10/2022-10-15_21.15.30.png" />
+<img alt="" src="/images/2022/10/2022-10-15_21.15.41.png" />
+<img alt="" src="/images/2022/10/2022-10-15_21.15.58.png" />
+{% endgallery %}
+{% endhideToggle %}
+{% hideToggle &ldquo;在 MC 中玩 FC 游戏&rdquo; %}
+这不是开玩笑，BNes 插件真的可以实现在 MC 中玩 FC 中的游戏。</p>
+<p><img alt="" src="/images/2022/10/2022-10-30_20.07.11.png" /></p>
+<p><strong>1. 购买游戏卡带</strong>
+前往 GroupStore (可使用<code>/warp groupstore</code>快速传送) 的二楼使用金币来购买你心仪的游戏卡带。注意：有些卡带的游戏没有中文。
+<img alt="" src="/images/2022/10/2022-10-30_19.31.32.png" /></p>
+<p><strong>推荐卡带：俄罗斯方块、趣味方块、超级玛丽、吃豆人</strong></p>
+<p><strong>2. 创建游戏机</strong>
+首先确保你的背包有 4 个空位。输入指令<code>/bnes create 你要创建的游戏机的名字</code>，花费 15 金币来创建。
+此时你的背包会出现四个地图，请按照地图上面的数字顺序来在物品展示框摆放。如果摆放的顺序不正确，会降低 114514% 的游戏体验。
+<img alt="" src="/images/2022/10/nes.gif" /></p>
+<p>摆放好后，你的游戏机就创建成功了。此时游戏机上面是一个测试 ROM 的画面。</p>
+<p><strong>3. 使用卡带</strong>
+如果不去购买卡带，你的游戏机和没创建没有什么区别。获取到卡带后，拿着卡带右键游戏机的展示框，此时就会成功更换卡带。
+如果游戏机没有反应，那是因为它为了节省宽带资源而冻结了。默认情况下游戏机会在没人使用 30 秒后自动冻结。冻结后只需要坐下再右键一次游戏机即可唤醒。</p>
+<p><img alt="" src="/images/2022/10/nes-use-card.gif" /></p>
+<p><strong>4. 开始玩！</strong>
+在你的游戏机的前面放个台阶或楼梯或者任何能让玩家坐下的东西，然后空手右键来坐下，或者在你想坐的位置使用<code>/sit</code>指令。
+坐下后，右键游戏机的物品展示框即可。要退出游戏只需按下<code>SHIFT (潜行)</code>键。
+游戏机最多支持两个人游玩。前提是你所玩的卡带支持多人游戏，比如俄罗斯方块、吃豆人。</p>
+<p><strong>按键</strong>
+* <strong>移动方向键</strong> (<code>W/A/S/D</code>) - 手柄方向
+* <strong>跳跃键</strong> - 手柄 A
+* <strong>交换副手</strong> (<code>F</code>) - 手柄 B
+* <strong>左键 或 丢弃物品键</strong> (<code>Q</code>) - 选择 (<code>SELECT</code>) 键
+* <strong>右键</strong> - 暂停或开始键 (<code>START</code>)</p>
+<p _="%" endnote="endnote">{% note info %}
+<strong>没有你想要的游戏卡带？</strong>
+欢迎向腐竹提供一个你想要的 FC 游戏。如果你有 FC 资源，可以直接发给腐竹，请确保它能正常运行且是 NES 格式。
+目前游戏卡带还在持续添加中。</p>
+<p>{% endhideToggle %}</p>
+<p>{% hideToggle &ldquo;使用 ZMusic 听你想听的音乐&rdquo; %}
+服务器安装了 ZMusic 插件，可能够使用指令来点歌或播放网易云、QQ、酷狗、酷我上面的歌曲。</p>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>注意：想要听到声音你必须要安装 AllMusic 模组，这里提供一个 Fabric 1.18.1+ 的版本下载链接：</strong><a href="https://creeper233.lanzout.com/iHMfn0ex3bsf">https://creeper233.lanzout.com/iHMfn0ex3bsf</a>
+如果没有你的模组加载器或 Minecraft 版本的 AllMusic 模组，请前往阿里网盘下载：<a href="https://www.aliyundrive.com/s/fKHnLh1N5nC/folder/628f5a18e108ef84cb934b6ca4301be905f1a653">https://www.aliyundrive.com/s/fKHnLh1N5nC/folder/628f5a18e108ef84cb934b6ca4301be905f1a653</a>
+若要下载阿里网盘里面的请下载<code>[你的模组加载器(fabric/forge)-你的mc版本]AllMusic-x.x.x.jar</code></p>
+<p><strong>点歌指令</strong>
+* <code>/zm help</code> - 查看帮助
+* <code>/zm music &lt;音乐平台&gt; &lt;歌名，支持空格&gt;</code> - 全服点歌
+* <code>/zm play &lt;音乐平台&gt; &lt;歌名，支持空格&gt;</code> - 给自己播放音乐
+* <code>/zm search &lt;音乐平台&gt; &lt;歌名，支持空格&gt;</code> - 在<code>&lt;音乐平台&gt;</code>上搜索<code>&lt;歌名&gt;</code>，会列出十个结果，不支持翻页</p>
+<p>音乐平台可以是：<code>qq (QQ 音乐)</code>、<code>163 (网易云音乐)</code>、<code>kuwo (酷我音乐</code>、<code>kugou (酷狗音乐)</code>
+点歌会花费 8 金币，VIP 免费。播放音乐不会花费。
+<strong>由于插件原因，你可能无法正常使用网易云点歌，建议使用酷我、酷狗来点歌。</strong></p>
+<p>若要查看更多指令的帮助请使用<code>/zm help</code>。
+如果播放歌曲失败，请检查该歌曲是否为需要 VIP/付费 的歌曲。
+如果听不到声音，请确保你看上面了。</p>
+<p>{% endhideToggle %}</p>
+<h2 id="_13">粘液科技游玩指南<a class="headerlink" href="#_13" title="Permanent link"></a></h2>
+<p>建议先阅读以下文档，这些是写的最详细的：
+* <strong>粘液科技入门</strong> <a href="https://slimefun-wiki.guizhanss.cn/Getting-Started">https://slimefun-wiki.guizhanss.cn/Getting-Started</a></p>
+<p>以下为附属指南：</p>
+<ul>
+<li><strong>Bump 魔法</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/bump/">https://slimefun-addons-wiki.guizhanss.cn/bump/</a></li>
+<li><strong>魔法水晶编年史</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/crystamae-historia/">https://slimefun-addons-wiki.guizhanss.cn/crystamae-historia/</a></li>
+<li><strong>动力科技</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/dyna-tech/">https://slimefun-addons-wiki.guizhanss.cn/dyna-tech/</a></li>
+<li><strong>异域花园</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/exotic-garden/">https://slimefun-addons-wiki.guizhanss.cn/exotic-garden/</a></li>
+<li><strong>蓬松机器</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/fluffy-machines/">https://slimefun-addons-wiki.guizhanss.cn/fluffy-machines/</a></li>
+<li><strong>神秘科技</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/foxy-machines/">https://slimefun-addons-wiki.guizhanss.cn/foxy-machines/</a></li>
+<li><strong>无尽贪婪</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/infinity-expansion/">https://slimefun-addons-wiki.guizhanss.cn/infinity-expansion/</a></li>
+<li><strong>网络</strong> <a href="https://slimefun-addons-wiki.guizhanss.cn/networks/">https://slimefun-addons-wiki.guizhanss.cn/networks/</a>  </li>
+</ul>
+<h1 id="_14">服务器资讯<a class="headerlink" href="#_14" title="Permanent link"></a></h1>
+<h2 id="_15">服务器更新日志<a class="headerlink" href="#_15" title="Permanent link"></a></h2>
+<p>这个章节将最多记录一年内的更新日志。
+服务器通常保持每月一更，每次更新至少都会加入一个新东西。</p>
+<p _="%" endnote="endnote">{% note default %}
+<strong>提示！</strong>服务器从2022年2月才开始记录更新日志，不要问我更久的更新日志哪去了！</p>
+<p>{% hideToggle &ldquo;2022年11月更新&rdquo; %}
+<strong>玩法相关</strong>
+* 粘液科技更新到最新的汉化版的开发版。(<a href="https://github.com/StarWishsama/Slimefun4/actions/runs/3354345808">https://github.com/StarWishsama/Slimefun4/actions/runs/3354345808</a>)</p>
+<p><strong>其他</strong>
+* 试图提高刷怪效率。
+* <del>加入挂机验证码插件，玩家必须每隔 15 分钟输入一次验证码防止被踢（无论是否处于挂机状态之中）。</del> <strong>玩家反馈降低了游戏体验，已删除</strong>
+* 死亡提示信息的生物名称现在是中文了，且更改了一些死亡提示。
+* <strong>删除了 Geyser-Spigot，因为使用人数过少且状态贴图不能正常获取服务器状态信息，还占资源。</strong>
+{% endhideToggle %}
+{% hideToggle &ldquo;2022年10月更新&rdquo; %}
+<strong>Minecraft</strong>
+* 更新到 Minecraft 1.18.2。这是自服务器成立以来第二次更新 Minecraft 版本。（上一次是 1.16.1 -&gt; 1.16.5）</p>
+<p><strong>玩法相关</strong>
+* 加入了十多个粘液科技新附属。
+* 由于 MyPet 插件无法在 1.18.2 上启动，宠物插件被替换为了 PetBlock 插件。
+* <del>由于 BossLand 无法在 1.18.2 上运行，腐竹移除了此插件。</del><strong>（2022.10.15: 该插件已回归）</strong>
+* 加入 GSit 插件，玩家可以在任意位置躺下、坐下或趴下。
+* 现在玩家击杀生物会掉落一些金币。
+* 加入负魔书插件，玩家在附魔时有几率出现负魔，至于负魔是什么，你懂的
+* 支持玩家绑定哔哩哔哩（B站）账号，如果已绑定，玩家给服务器宣传视频三连或给腐竹B站账号关注会获得奖励。
+* <del>加入音符盒音乐插件</del>，同时点歌插件ZMusic回归。
+* 加入 Tamable Foxes 插件，可以驯服狐狸。
+* 加入箱子商店插件，同时移除 BUG 贼多的全球市场插件。
+* 加入 BNes 插件，可在 Minecraft 游玩 FC 游戏。</p>
+<p><strong>其他</strong>
+* 优化菜单样式，并修复一些介绍中的小错误。
+* 死亡信息现在更加接地气。
+* 如果玩家持有 CDK，那么玩家可以在<code>菜单-我的-兑换CDK</code>使用CDK。
+* 进一步防止矿透。
+* 为防止有人滥用昵称功能，昵称现在不可以使用颜色代码。
+* 优化封禁功能。
+* 现在服务器会自动备份你的背包和末影箱。
+* 现在<strong>也许</strong>可以利用无头活塞、破基岩之类的特性了。
+* 试图将刷怪效率恢复到原版的样子。
+* 更换MOTD插件为 PistonMOTD。
+* 关闭了死亡掉落。
+* <strong>现在又可以使用飞行了。</strong>
+* VIP 玩家可以使用指令查询周围的史莱姆区块。
+* <strong>现在基岩版的玩家可以进入服务器了。</strong></p>
+<p><strong>性能优化</strong>
+* 服务器迁移到旋律云的面板服。
+* 客户端视距最大可达到12。
+* 更换服务端为 Purpur。（Spigot -&gt; Paper -&gt; Purpur -&gt; Tuinity -&gt; Pufferfish -&gt; Purpur）</p>
+<p><strong>安全</strong>
+* 现在每个 IP 最多只能注册 2 个账号，最多只能同时登录 2 个账号。</p>
+<p _="%" _2022年9月更新_="&quot;2022年9月更新&quot;" hideToggle="hideToggle">{% endhideToggle %}<strong>玩法相关</strong>
+* 开启了死亡掉落，增加游戏挑战性。
+* 加入了 10+ 个粘液科技新附属。
+* <del><strong>(To-do)</strong> VIP 现在可以花费 100-300 金币来购买远程操作容器的功能。</del></p>
+<p _="%" endhideToggle="endhideToggle"><strong>其他</strong>
+* BossBar、ActionBar 可以显示服务器 TPS、MSPT 和你的延迟。（需手动开启）
+* 现在允许玩家自助注册。
+* <strong>关闭了飞行</strong>。</p>
+<p>{% hideToggle &ldquo;2022年8月更新&rdquo; %}
+<strong>信息显示</strong></p>
+<ul>
+<li>更换菜单插件为付费开源的 TrMenu。并完全重新制作菜单界面，新的菜单更加强大。
+  现在菜单的指令是<strong><code>/cd</code></strong>。</li>
+<li>进一步修改登录插件信息提示。</li>
+<li>移除 DeluxeJoin 插件，使用 ESS 来修改玩家加入 / 退出时的信息提示。</li>
+</ul>
+<p><strong>技术性调整</strong></p>
+<ul>
+<li>更换 Java 为 Java 16。</li>
+<li>LuckPerms 现在使用 MySQL 存储数据，比 YAML 速度更快。</li>
+</ul>
+<p><strong>玩法相关</strong></p>
+<ul>
+<li>移除了多个没用的粘液科技附属。</li>
+<li><strong>mcMMO 版本更新至 v2 (大修版本)，玩法更多。</strong></li>
+<li>更新 mcMMO View 插件至最新版本，同时修复了长期以来一直存在的无法打开信息界面的 BUg。</li>
+<li>关闭了许多玩家抱怨的 mcMMO 硬核模式。（死亡掉等级）</li>
+<li>更新粘液科技至 2022.07。</li>
+<li><strong>加入了 9 个粘液科技附属。</strong></li>
+<li><del>现在支持玩家之间互相发送邮件（测试中）。</del></li>
+<li>由于更新到了 Java 16，导致血月（Blood Night）插件无法正常使用，因此腐竹将血月插件替换为了 BloodMoon 插件。</li>
+<li>更新 Essentials 至最新版本（2.19.7）。</li>
+<li><strong>由于找不到合适的网易云 API 接口（自行部署也用不了，被网易屏蔽请求了），点歌插件（ZMusic）已被删除。</strong></li>
+</ul>
+<p><strong>跨版本</strong></p>
+<ul>
+<li>更新 ViaVersion 插件，服务器现在支持 Minecraft 1.19.1 进入服务器。</li>
+</ul>
+<p><strong>其他调整</strong></p>
+<ul>
+<li>删除了全息显示插件，因为可能会导致粘液科技远古祭坛无法正常使用。另外还有可能会导致 Fabric 客户端卡顿 + 疯狂报错。</li>
+<li>删除了家具插件。</li>
+<li>现在支持在服务器官网更换你的皮肤。</li>
+<li>
+<p><del>加入了反作弊插件，目前正在测试中。</del>
+{% endhideToggle %}
+{% hideToggle &ldquo;2022年7月更新&rdquo; %}
+<strong>信息显示</strong></p>
+</li>
+<li>
+<p>美化 TAB 布局。</p>
+</li>
+</ul>
+<p><strong>技术性调整</strong></p>
+<ul>
+<li>Xss 现在为 340k。</li>
+<li>更换服务端为 Tuinity，以前为 Purpur（基于 Paper）。</li>
+<li>视距现在为 6。如果想要看得更远，可以安装 Fabric 的 Bobby 模组，它将缓存服务器的区块，以让玩家的视距可以超出服务器视距。</li>
+</ul>
+<p><strong>玩法相关</strong></p>
+<ul>
+<li>加入了 BetterRTP 插件，玩家可以在菜单内进行随机传送。</li>
+<li>添加多个粘液科技附属，现在附属数量：22 个。</li>
+<li>粘液科技现在支持鬼斩制作的粘液科技材质包。</li>
+<li>加入了 yhFarm 插件，玩家可以将采集到的农作物放入此插件的仓库，并一键卖出。</li>
+<li>新手礼包将在玩家第一次进入服务器时自动发放。</li>
+<li>更改玩家死亡提示。</li>
+</ul>
+<p><strong>跨版本</strong></p>
+<ul>
+<li>更新 ViaVersion 插件，服务器现在支持 Minecraft 1.19 进入服务器。</li>
+</ul>
+<p><strong>漏洞修复</strong></p>
+<ul>
+<li>删除了此功能，因为销号确认指令有一个特别严重的漏洞，可以让别的玩家给另一个玩家销号。</li>
+</ul>
+<p><strong>其他调整</strong></p>
+<ul>
+<li _="%" _2022年6月更新_="&quot;2022年6月更新&quot;" hideToggle="hideToggle">加入了物品整理、返回出生点和宠物菜单。
+{% endhideToggle %}</li>
+</ul>
+<p><strong>Bug修复</strong></p>
+<ul>
+<li>修复了亿堆Bug。</li>
+</ul>
+<p><strong>外置登录</strong></p>
+<ul>
+<li>现在服务器抛弃了外置登录。</li>
+<li>通行证已于 2022.6 中旬关闭。</li>
+</ul>
+<p><strong>皮肤</strong></p>
+<ul>
+<li>加入了皮肤插件。</li>
+<li>
+<p>玩家可以使用<code>/skin</code>指令更改皮肤。
+{% endhideToggle %}
+{% hideToggle &ldquo;2022年5月更新&rdquo; %}
+<strong>VIP</strong></p>
+</li>
+<li>
+<p>加入了 VIP 特权。</p>
+</li>
+<li>玩家可以花费 23333 金币来购买（永久）</li>
+</ul>
+<p><strong>技术性调整</strong>
+* 通过使用 SRV 解析将服务器源地址成功隐藏。
+* 玩家必须使用新的服务器地址（mc.groupserver.xyz）才可进入服务器。</p>
+<p><strong>点歌</strong>
+* 现在点歌不再需要花费金币了。</p>
+<p><strong>菜单</strong>
+* 加入了统计菜单，可以从主菜单进入。
+* 移除了一个无效的功能。</p>
+<p><strong>邀请功能</strong>
+* 正式加入邀请功能。</p>
+<p><strong>任务</strong>
+* 加入了任务插件。</p>
+<p><strong>优化</strong>
+* 修改了服务器的一些网络配置。现在你在玩服务器的时候掉线次数应该会比平时少了点，延迟也应该更低了一些。</p>
+<p><strong>其他</strong>
+* 更新了一些插件的版本。
+{% endhideToggle %}
+{% hideToggle &ldquo;2022年4月更新&rdquo; %}
+<strong>粘液科技（重大改进）</strong></p>
+<ul>
+<li>更新粘液科技版本至 2022.4。</li>
+<li>加入了10多个新的附属，带来了400+个全新的物品。</li>
+<li>修改了一些特性。</li>
+</ul>
+<p><strong>技术性调整 &amp; 性能优化</strong></p>
+<ul>
+<li>-Xss 现在为 330K，这让服务器内存占用降低了约6%。目前没有任何异常情况，如果出现了崩服的情况，我们可能会调整回512K。</li>
+<li>加入了LaggRemover插件，它可以定期卸载无用的区块，可以节省服务器内存消耗。</li>
+</ul>
+<p><strong>邀请插件</strong></p>
+<ul>
+<li>加入了邀请码插件，玩家可以通过邀请新玩家来获得奖励。</li>
+</ul>
+<p><strong>菜单</strong></p>
+<ul>
+<li>进行了一些修改。</li>
+</ul>
+<p><strong>DiscordSRV（Discord 互通）</strong></p>
+<ul>
+<li>
+<p _="%" _2022年3月更新_="&quot;2022年3月更新&quot;" hideToggle="hideToggle">由于使用人数过少，我们移除了此插件。
+{% endhideToggle %}<strong>官网</strong></p>
+</li>
+<li>
+<p>现在官网、Wiki、数据总览等页面启用了Cloudflare，这有利于服务器的安全性。</p>
+</li>
+</ul>
+<p><strong>登录机制（重大改进）</strong></p>
+<ul>
+<li>现在登录方法改为外置登录，这有利于服务器的安全和玩家的便利。</li>
+<li>你可以在 <a href="https://server-auth.groupserver.xyz">https://server-auth.groupserver.xyz</a> 注册通行证。</li>
+<li>玩家可以在通行证页面更换皮肤甚至是披风。</li>
+<li>这种方法虽然让服务器变得更加安全和便利，但一些使用PvP端或官启玩服务器的玩家可能要遭殃了。</li>
+</ul>
+<p><strong>地牢</strong></p>
+<ul>
+<li>加入了地牢世界。</li>
+<li>你可以在菜单中进入。</li>
+<li>
+<p _="%" _2022年2月更新_="&quot;2022年2月更新&quot;" hideToggle="hideToggle">这个世界将会有着一个地牢。
+{% endhideToggle %}<strong>数据统计</strong></p>
+</li>
+<li>
+<p>加入了数据统计（Plan）插件。</p>
+</li>
+<li>玩家可以在 <a href="https://stats.groupserver.xyz">https://stats.groupserver.xyz</a> 查看数据信息。</li>
+</ul>
+<p><strong>经济系统</strong></p>
+<ul>
+<li>正式加入了经济系统。</li>
+<li>货币名称为“金币”。</li>
+<li>加入了签到功能，玩家签到可获得奖励。</li>
+<li>加入了购买、收购矿石的功能。</li>
+<li>加入了全球市场，玩家可以在那里收购、购买或拍卖商品。</li>
+</ul>
+<p><strong>跑酷</strong></p>
+<ul>
+<li>加入了跑酷插件。</li>
+<li>玩家可以在菜单中开始跑酷，跑酷可以获得矿物和金币。</li>
+<li>可以输入<code>/parkourtop</code>来查看跑酷排行榜。</li>
+</ul>
+<p><strong>抽奖</strong></p>
+<ul>
+<li>加入了抽奖插件。</li>
+<li>玩家可以在 GroupStore 的二楼购买钥匙抽奖。</li>
+</ul>
+<p><strong>菜单</strong></p>
+<ul>
+<li>加入了菜单界面。</li>
+<li>玩家可以输入 /menu 来打开菜单。</li>
+</ul>
+<p><strong>聊天</strong></p>
+<ul>
+<li>更换了聊天插件。</li>
+<li>加入了更多的敏感词。</li>
+<li>管理员可以通过聊天信息后面的 [√] 来禁言玩家或删除消息。</li>
+<li>目前无法使用物品展示功能。</li>
+</ul>
+<p><strong>Discord 互通</strong></p>
+<ul>
+<li>加入了 DiscordSRV 插件，可以与 Discord 互通。</li>
+<li>玩家加入/退出服务器、死亡、获得成就的信息都会发送到 Discord 上。</li>
+<li>在 Discord #服务器互通 频道上发送的消息都会同步到游戏中，反之亦然。</li>
+</ul>
+<p><strong>物品整理</strong></p>
+<ul>
+<li>加入了物品整理插件，这是由玩家建议加入的。</li>
+</ul>
+<p><strong>称号</strong></p>
+<ul>
+<li>加入了称号插件。</li>
+<li>称号可以在聊天信息中显示。</li>
+<li>可以在菜单中购买/管理称号。</li>
+</ul>
+<p><strong>白名单</strong></p>
+<ul>
+<li>更改了不在白名单的信息提示。</li>
+</ul>
+<p><strong>MOTD</strong></p>
+<ul>
+<li>更改了Logo和信息。</li>
+</ul>
+<p><strong>TAB</strong></p>
+<ul>
+<li>更改了信息。</li>
+</ul>
+<p><strong>权限组</strong></p>
+<ul>
+<li>移除了可能会导致滥用的权限。</li>
+<li>加入了可以改善游戏体验的权限。</li>
+</ul>
+<p><em>???</em></p>
+<ul>
+<li>加入了彩蛋。</li>
+</ul>
+<p><strong>ArtMap</strong></p>
+<ul>
+<li>由于使用人数很少（几乎没有），服主移除了此插件。</li>
+</ul>
+<p><strong>CCTV（摄像头）</strong></p>
+<ul>
+<li>由于摄像头几乎没用，服主移除了此插件。</li>
+</ul>
+<p><strong>刷物品漏洞</strong></p>
+<ul>
+<li>开放了大部分的漏洞。</li>
+</ul>
+<p><strong>NekoMaid</strong></p>
+<ul>
+<li _="%" endhideToggle="endhideToggle">移除了此插件。</li>
+</ul>
+<h1 id="_16">你不知道吗？<a class="headerlink" href="#_16" title="Permanent link"></a></h1>
+<ul>
+<li>服务器一直都是腐竹一个人在维护，管理只是帮玩家办事的</li>
+<li>每天签到可以获得 30 金币，签到7天可获得 233 金币</li>
+<li>截至目前，跑酷依然是服务器赚钱速度最快的方法</li>
+<li>管理员不会知道你的账号密码，因为没有查询密码的指令且数据库是加密的</li>
+</ul>
+<h1 id="_17">常见问题解答<a class="headerlink" href="#_17" title="Permanent link"></a></h1>
+<p>{% hideToggle &ldquo;点我查看&rdquo; %}
+<strong>玩家：能不能加XXX模组？</strong>
+腐竹：抱歉，服务器不是模组服，加不了Mod，而且我也不想加</p>
+<p><strong>玩家：为什么我!@#$%^&amp;()</strong></p>
+<blockquote>
+<p><strong>Troubleshooting any problem without the error log is like driving with your eyes closed.</strong>
+在没有错误日志的情况下解决任何问题，就像闭着眼睛开车一样。
+<a href="https://httpd.apache.org/docs/2.4/zh-cn/getting-started.html#:~:text=Troubleshooting%20any%20problem%20without%20the%20error%20log%20is%20like%20driving%20with%20your%20eyes%20closed.">Apache 官方文档，Getting Started - Log Files and Troubleshooting 章节</a></p>
+</blockquote>
+<p><strong>玩家：有没有死亡不掉落？</strong>
+腐竹：有，开了</p>
+<p><strong>玩家：赞助服务器能获得什么？</strong>
+腐竹：赞助服务器会获得一个什么效果都没有的，只能用来纪念的 [赞助者] 称号。除此之外，你还能上官网。（赞助0.01也能上官网）</p>
+<p><strong>玩家：我发现一个逆天的服务器BUG！</strong>
+腐竹：请立即私聊QQ744198767<strong>描述清楚</strong>Bug详细信息，腐竹确认是Bug后你将会获得500-10000金币（视BUG严重性）</p>
+<p><strong>玩家：能不能给我点XXXX</strong>
+腐竹：你搁着玩创造呢？</p>
+<p><strong>玩家：跑酷有 BUG</strong>
+腐竹：跑酷插件 Bug 实在是太多了，已经不能通过修改配置文件来修复了。我不会 Java，而且这个插件也不是开源的，我无能为力啊。</p>
+<p><strong>玩家：有没有限制高频红石和原版漏洞？</strong>
+腐竹：没有，一个都没有限制。但高频不要用太多，物品也不要刷太多</p>
+<p><strong>玩家：可以用自动钓鱼吗？</strong>
+腐竹：可以，但在本服，因为 mcMMO 的原因，自动钓鱼的效率可能十分低下。建议你使用粘液科技里的钓鱼机器人来实现自动钓鱼（你不在也能给你钓鱼）</p>
+<p><strong>玩家：你这个网站怎么搞的？</strong>
+腐竹：这个博客是使用静态站点生成器<a href="https://hexo.io">Hexo</a>和<a href="https://butterfly.js.org/posts/21cfbf15/">Butterfly 主题</a>搞得，直接放到了前端代码托管网平台<a href="https://vercel.com">Vercel</a>上。</p>
+<p><strong>玩家：我想开挂行不行？</strong>
+腐竹：绝对不行。尽管没有反作弊，但我发现你开寄后我分分钟把你封了。不过 Fabric 的辅助模组 Tweakeroo 里的所有功能可以随便用，不会禁止（尽管这个有灵魂出窍，挂也有）</p>
+<p><strong>玩家：为什么服务器维护了没通知？？？</strong>
+腐竹：仅当服务器在线人数超过3名玩家时维护才会在通知群发送通知。如果少于3名玩家，则只会在被踢出时有提醒。</p>
+<p><strong>玩家：怎么展示手中的物品？</strong>
+腐竹：发送<code>[i]</code></p>
+<p><strong>玩家：这个服务器可以更新到 1.19 或更高版本吗？</strong>
+腐竹：一段时间内是不可能更新的了，就算赞助也不行</p>
+<p><strong>玩家：与星云影服务器是什么关系？</strong>
+腐竹：抄袭者（星云影）和被抄袭者关系。</p>
+<p><strong>玩家：这个服务器平时在线多少人？</strong>
+腐竹：节假日能够 3-10 人左右，非节假日顶多 4 人。</p>
+<p><strong>玩家：文档是什么？</strong>
+腐竹：就是你现在正在看的这个游玩指南</p>
+<p><strong>玩家：我给你 114514 元，你能不能给我 OP（管理）？</strong>
+腐竹：你在做梦吗？快醒醒！这是<strong>公益服务器</strong>。无论你给我多少钱，就算是1000个亿我都不会给你除了纪念称号以外的任何东西。</p>
+<p><strong>玩家：为什么 MSPT 经常 20 以上？</strong>
+腐竹：那是因为粘液科技的一个附属乱序技艺比较卡服，有玩家建造了大量的这个附属里的机器，导致这个附属变得很占资源。这个附属本身优化似乎也不怎么好。</p>
+<p><strong>玩家：为什么我进去经常提示我已经再现了？进去的速度还很慢</strong>
+腐竹：这可能是你的网络原因。建议在提示已经在线后等待 30 秒左右的时间再尝试进入。</p>
+<p><strong>玩家：中国版可不可以进服务器？</strong>
+腐竹：这是不可能的。</p>
+<p _="%" endhideToggle="endhideToggle"><strong>玩家：服务器以后会不会变成商业服？</strong>
+腐竹：同上，不可能。</p>
+<h1 id="_18">其他<a class="headerlink" href="#_18" title="Permanent link"></a></h1>
+<h2 id="_19">管理人员名单<a class="headerlink" href="#_19" title="Permanent link"></a></h2>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>仔细辨别是否为真的管理。</strong>
+谨防他人假冒管理！如果是使用<code>/nick</code>指令修改的昵称，那么他发送的聊天文本上的游戏 ID 会是白色而不是未使用<code>/nick</code>修改的灰色！
+管理不会询问你的密码。
+另外，管理发送的聊天信息上面的玩家昵称是红色而不是灰色或白色。</p>
+<table>
+<thead>
+<tr>
+<th align="left">游戏内 ID</th>
+<th align="left">职务</th>
+<th align="left">QQ 号</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Creeper233_</td>
+<td align="left">腐竹</td>
+<td align="left">744198767</td>
+<td align="left">有事优先问腐竹，非节假日晚 8-10 点在线</td>
+</tr>
+<tr>
+<td align="left">CYASB</td>
+<td align="left">管理</td>
+<td align="left">3268574489</td>
+<td align="left">最优秀的管理，职务从 2021.09 - 现在</td>
+</tr>
+</tbody>
+</table>
+<p><strong>目前服务器没有招募管理员的计划。</strong></p>
+<h2 id="_20">敏感词库<a class="headerlink" href="#_20" title="Permanent link"></a></h2>
+<p>适用于 Bukkit 的 <a href="https://github.com/TrPlugins/TrChat">TrChat</a> 聊天插件的敏感词库，共有 200+ 个敏感词，包含ZZ、SQ和亿些常见敏感词还有一些日语、俄语、德语、英语的敏感词，误报率很小，不影响玩家正常聊天。不定时更新。在插件配置文件中设置云端词库即可使用：<a href="https://creeper938.ml/resource/trchat-filter.json">敏感词库 JSON 链接</a></p>
+<p>若要使用此敏感词库，你需要打开 <code>TrChat/filter.yml</code>，将配置文件的 <code>Cloud-Thesaurus</code> 字段改成下面这样：</p>
+<div class="highlight"><pre><span class="l l-Scalar l-Scalar-Plain">Cloud-Thesaurus</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">Enabled</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="l l-Scalar l-Scalar-Plain">Ignored</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;nt&#39;</span><span class="p p-Indicator">]</span>
+  <span class="l l-Scalar l-Scalar-Plain">Urls</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="s">&#39;https://creeper938.ml/resource/trchat-filter.json&#39;</span> <span class="c1"># 感谢南城提供的词库</span>
+</pre></div>
+
+<p>保存此文件，重启你的服务器。</p>
+<h2 id="_21">服务器宣传视频<a class="headerlink" href="#_21" title="Permanent link"></a></h2>
+<p>{% note info %}
+<strong>官方制作</strong>
+* <a href="https://www.bilibili.com/video/BV11P411H7Px/">https://www.bilibili.com/video/BV11P411H7Px/</a>
+* <a href="https://www.bilibili.com/video/BV1fV4y1T7fk/">https://www.bilibili.com/video/BV1fV4y1T7fk/</a></p>
+<p _="%" endnote="endnote"><strong>社区（玩家）制作</strong>
+* <a href="https://www.bilibili.com/video/BV1VS4y1V7xH">https://www.bilibili.com/video/BV1VS4y1V7xH</a>
+* <a href="https://www.bilibili.com/video/BV1Dm4y1d7Jj">https://www.bilibili.com/video/BV1Dm4y1d7Jj</a>
+* <a href="https://www.bilibili.com/video/BV1Aa41117XD">https://www.bilibili.com/video/BV1Aa41117XD</a>
+{% endnote %}
+{% note success %}
+<strong>你也发了个宣传视频？</strong>
+可以联系腐竹，发给他视频链接，腐竹看完后你的视频链接就会出现在上面。</p>
+<h2 id="_22">服务器所装插件<a class="headerlink" href="#_22" title="Permanent link"></a></h2>
+<div class="highlight"><pre>2022.11.09
+
+Plugins (107): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEnchantBook*, BetterRTP, BiliReward*, BlockLocker, BloodMoon, BNes, BossLand, Bump, ChestSort, ClayTech, ColoredEnderChests, CoreProtect, CrystamaeHistoria, DeathMessages, DeEnchantment, DyedBackpacks, DynaTech, EcoPower, ElectricSpawners, Elevator, Endrex, Essentials, EssentialsSpawn, ExcellentEnchants, ExoticGarden, ExtraGear, ExtraHeads, ExtraTools, FartherViewDistance, FinalTECH, FluffyMachines, FNAmplifications, FoxyMachines, GeneticChickengineering, Geyser-Spigot, GSit, GuizhanCraft, GuizhanLibPlugin, HotbarPets, ImageOnMap, InfinityExpansion, InteractionVisualizer, InventoryRollbackPlus, LiteSignIn, LiteXpansion, LuckPerms, LWC, mcMMO, McMmoView, MessageAnnouncer, MissileWarfare, MobCapturer, MoneyFromMobs, Multiverse-Core, NBTAPI, Networks, NexEngine, OpenInv, PetBlocks*, PistonMOTD, PlaceholderAPI, PlayerReleaseTasks*, PlayerTitle, PlayerWarps, PlugManX (PlugMan), ProtocolLib, QuickShop-Hikari, RedstoneConnector, RelicsOfCthonia, ServerMonitor, SFCalc, Shopkeepers, SimpleMaterialGenerators, SimpleUtils, SkinsRestorer, Slimefun, SlimefunLuckyBlocks, SlimefunOreChunks, SlimefunWarfare, SlimeHUDPlus, SlimeTinker, SlimyTreeTaps, SoulJars, spark, SuperVanish, Supreme, TAB, TabTPS, Tamablefoxes, TileDataSaver, TranscEndence, TrChat, TrMenu, UltimateGenerators, UltimateTimber, Vault, ViaVersion, ViewSlimeChunk, VillagerUtil, Wildernether, WkKit, Yhfarm, ZMusic
+</pre></div>
+
+<h2 id="github">本站 Github<a class="headerlink" href="#github" title="Permanent link"></a></h2>
+<p>为了方便部署和管理，也为了方便玩家帮助纠正、补充此文档，本网站的所有文件已在 Github 公开，欢迎提交 PR。
+<strong>建议把 PR 提交到 dev 分支，方便合并。</strong>
+每一个 Commit 提交后都会被 Vercel 部署。
+{% inlineImg <a href="https://img.shields.io/github/forks/Creeper512/hexo">https://img.shields.io/github/forks/Creeper512/hexo</a> 20px %}{% inlineImg <a href="https://img.shields.io/github/stars/Creeper512/hexo">https://img.shields.io/github/stars/Creeper512/hexo</a> 20px %}{% inlineImg <a href="https://img.shields.io/github/repo-size/Creeper512/hexo">https://img.shields.io/github/repo-size/Creeper512/hexo</a> 20px %}{% inlineImg <a href="https://img.shields.io/github/last-commit/Creeper512/hexo">https://img.shields.io/github/last-commit/Creeper512/hexo</a> 20px %}
+地址：<a class="magiclink magiclink-github magiclink-repository" href="https://github.com/Creeper512/hexo" title="GitHub Repository: Creeper512/hexo">Creeper512/hexo</a>
+如果访问不了，请尝试使用魔法工具或 Steam++ 里的加速工具。</p>
+<h2 id="_23">一些细节<a class="headerlink" href="#_23" title="Permanent link"></a></h2>
+<p>可能对部分人（如玩生电的）有所帮助。
+* <strong>服务端</strong>: Purpur 1.18.2
+* <strong>服务器视距</strong>: 仅 8 个区块的距离会被运算，4个区块仅会渲染不会运算
+* <strong>怪物限制量</strong> (<code>spawn-limits.monsters</code>): 80
+* <strong>动物限制量</strong> (<code>spawn-limits.animals</code>): 6
+* <strong>服务器重启频率</strong>: N 天重启一次
+* <strong>玩家挂机判断</strong>: 180 秒未活动视为挂机，10 分钟未活动会被踢出。下面的行为会被解除挂机状态：输入指令、发送消息、击打、移动</p>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>如果你要给我提建议，下面的建议我不会采纳：</strong>
+* 还原 1.8.9 以前的战斗机制
+* 更新 Minecraft 版本
+* 安装模组
+* 安装语音聊天插件
+* 做一个 QQ 互通机器人
+* 搞一个官方 Discord、KOOK 服务器
+* 赞助者称号加 Buff
+* 改成商业服、⭕💰<strong>（如果你提了这个建议后续反而可能会被针对）</strong>
+* 以及任何反人类的建议&hellip;</p>
+<h2 id="_24">我想赞助服务器<a class="headerlink" href="#_24" title="Permanent link"></a></h2>
+<p _="%" endhideToggle="endhideToggle">支持微信支付和QQ钱包、支付宝支付，建议优先使用微信支付或支付宝。<strong>如果你想获得赞助者称号请在支付备注中填写你的游戏ID。</strong>
+提示：服务器每个月需要 21 元。
+<strong>服务器目前已续费至<code>2023-02-28</code>。</strong>
+{% note danger %}
+<strong>赞助前必读</strong>
+1. <strong>赞助服务器你不会得到除了称号以外的任何东西</strong>
+2. <strong>赞助后不支持退款</strong>
+3. 赞助前请三思而后行，请勿后悔
+4. <strong>务必看好你赞助的是谁，微信和支付宝真实姓名是 XX毅，QQ号是744198767，请勿赞助错了！只有这两个号才会接赞助，别的号都是假的！</strong>
+{% endnote %}
+{% hideToggle &ldquo;点我查看赞助二维码&rdquo; %}
+{% gallery %}
+<img alt="QQ钱包" src="/images/qq.webp" />
+<img alt="微信支付" src="/images/wechat.webp" />
+<img alt="支付宝" src="/images/alipay.webp" />
+{% endgallery %}</p>
+<h2 id="_25">封神榜（封禁名单）<a class="headerlink" href="#_25" title="Permanent link"></a></h2>
+<p>本榜单会展示从 2022.10.01 以来到现在的被封禁玩家列表，方便服内正常玩家拉黑和注意。</p>
+<table>
+<thead>
+<tr>
+<th align="left">玩家昵称</th>
+<th align="left">封禁时间</th>
+<th align="left">封禁原因</th>
+<th align="left">封禁时长</th>
+<th align="left">QQ 号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">zvysgzuishuai</td>
+<td align="left">2022.10.01</td>
+<td align="left">多次毁坏玩家建筑、多次毁坏公益建筑、跑酷作弊、挑衅</td>
+<td align="left">7 天（封禁 IP 地址）</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">hgr2233</td>
+<td align="left">2022.10.14</td>
+<td align="left">使用小号刷 新人礼包（此人是 zvy 小号）、伪装其他玩家</td>
+<td align="left">12 小时（已解封）</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Minecraft_HU</td>
+<td align="left">2022.06.??</td>
+<td align="left"><strong>违反服务器多项规则，行为恶劣</strong></td>
+<td align="left">未知（已解封）</td>
+<td align="left">3177520647</td>
+</tr>
+<tr>
+<td align="left">Bilibili_hh</td>
+<td align="left">2022.10.22</td>
+<td align="left"><strong>抄袭本服务器，行为极其恶劣，年龄14岁（初三），来自北京大兴</strong></td>
+<td align="left">永久</td>
+<td align="left">3177520647</td>
+</tr>
+<tr>
+<td align="left">Ragebot</td>
+<td align="left">2022.10.0?</td>
+<td align="left">多次毁坏玩家、公益建筑，使用外挂并有机器人特征</td>
+<td align="left">12 小时（已解封）</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">zhezhifeiji</td>
+<td align="left">2022.10.0?</td>
+<td align="left">多次毁坏玩家建筑、多次毁坏公益建筑、有明显的熊服特征</td>
+<td align="left">12 小时（封禁 IP 地址、已解封）</td>
+<td align="left">2028586200</td>
+</tr>
+<tr>
+<td align="left">idid_2</td>
+<td align="left">2022.10.24</td>
+<td align="left">多次烧毁玩家建筑和公益建筑，有明显的熊服特征</td>
+<td align="left">10 天</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">xiaoyu666</td>
+<td align="left">2022.11.05</td>
+<td align="left">使用矿物透视 XRay 且多次警告无效</td>
+<td align="left">30 分钟</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">hgr5677</td>
+<td align="left">2022.11.01</td>
+<td align="left">多次辱骂玩家，且警告无效</td>
+<td align="left">12 小时</td>
+<td align="left">3312387175</td>
+</tr>
+</tbody>
+</table>
+<p _="%" endnote="endnote">{% note warning %}
+<strong>注意事项</strong>
+一旦有人被封禁，就会出现在这个榜单上，且不可被擦除，你当初搞事的时候怎么没想想后果呢？
+如果玩家行为极其恶劣，可能会被公布IP地址、年龄</p>
+<p><strong>如果被误封或对处罚不满，可前往 <a href="https://creeper938.ml/gserver-appeal">https://creeper938.ml/gserver-appeal</a> 申诉。</strong></p>
+<h2 id="_26">玩家评论精选<a class="headerlink" href="#_26" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th align="left">昵称</th>
+<th align="left">评价内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Lis******me</td>
+<td align="left">怎么说呢，我一开始找服务器是想控制我自己不开创造和多设备同步，也是为了和朋友一起玩（虽然说并没有人愿意陪我玩(悲)），然后我就发现了@我是老爷爷123 的宣传视频(传送门：【我的世界无正版验证生存服务器——GroupServer-哔哩哔哩】 <a href="https://b23.tv/4e7D49U">https://b23.tv/4e7D49U</a>)。一开始的我还有点怕腐竹，蛋是我很快发现，腐竹就是个傻辶……(被撅了)<br>服务器玩法很多(肝*你)(bushi)，具体的话……我再写一篇教程吧。<br>All in all(总而总之)，真**好玩⊙▽⊙</td>
+</tr>
+<tr>
+<td align="left">CY**B</td>
+<td align="left">very good</td>
+</tr>
+<tr>
+<td align="left">1**4</td>
+<td align="left">还是牛的，毕竟是公益服，性能还不错，而且腐竹也很友好，模组也很多。当然，福利也是有很多的。能搞一些红石和建筑什么的。</td>
+</tr>
+<tr>
+<td align="left">Th*****564</td>
+<td align="left">原来这是科技服务器！我还以为是建筑服务器。٩(ˊᗜˋ*)و</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_27">致谢<a class="headerlink" href="#_27" title="Permanent link"></a></h2>
+<p><strong>排名不分前后</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">玩家昵称</th>
+<th align="center">做出的贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">匿名 (F**M)</td>
+<td align="center">赞助 30 元</td>
+</tr>
+<tr>
+<td align="center">Benson0419</td>
+<td align="center">赞助了2个月的轻量云服务器</td>
+</tr>
+<tr>
+<td align="center">The_bug564</td>
+<td align="center">总计赞助了200余元</td>
+</tr>
+<tr>
+<td align="center">Lovely_Turtles</td>
+<td align="center">赞助服务器一元并录制了服务器宣传视频发到了B站</td>
+</tr>
+<tr>
+<td align="center">old_grandfather</td>
+<td align="center">录制了服务器宣传视频发到了B站</td>
+</tr>
+<tr>
+<td align="center">CYASB</td>
+<td align="center">录制了服务器宣传视频发到了B站并赞助了服务器0.33元</td>
+</tr>
+<tr>
+<td align="center">1_1024</td>
+<td align="center">赞助服务器20+元</td>
+</tr>
+<tr>
+<td align="center">Creepaid</td>
+<td align="center">赞助服务器3+元</td>
+</tr>
+<tr>
+<td align="center">ListenSlime</td>
+<td align="center">赞助了服务器（数额未知）</td>
+</tr>
+<tr>
+<td align="center">Hanstress</td>
+<td align="center">赞助服务器 42 元</td>
+</tr>
+</tbody>
+</table>
+<p>还有许多没有做出贡献但依然热爱服务器的玩家们&hellip;</p>
+<p><strong>下一个赞助服务器的人 / 给服务器宣传的人会是谁，会是你吗？</strong> </p>
+<p _="%" endnote="endnote">{% note success %}
+觉得服务器好玩不妨在评论区分享你的游戏体验吧，这样可能会吸引更多玩家加入服务器</p></article></body></html>
