@@ -125,6 +125,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 ![玩家们的留言](/images/2022/05/507913623.webp)
 ![出生点](/images/2022/05/165938664.webp)
 ![服务器纪念碑](/images/2022/05/4137966166.webp)
+![出生点附近](/images/2022/11/2022-11-12_18.35.08.png)
 ![服务器主菜单](images/2022/09/server_menu_1.png)
 ![粘液科技菜单](images/2022/09/sf_menu_page_1.png)
 ![粘液科技菜单](images/2022/09/sf_menu_page_2.png)
@@ -767,6 +768,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * 加入了无底科技2粘液科技附属。
 * 更新多个粘液科技附属至最新版本。
 * 调整部分生物的掉钱概率和掉落金币数量。
+* 粘液科技的研究有 10% 的几率解锁失败。
 
 **其他**
 * 试图提高刷怪效率。 (注：效果显著)
@@ -1088,6 +1090,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * 每天签到可以获得 30 金币，签到7天可获得 233 金币
 * 截至目前，跑酷依然是服务器赚钱速度最快的方法
 * 管理员不会知道你的账号密码，因为没有查询密码的指令且数据库是加密的
+* 只有主世界的最大视距才能够达到 16！在其他世界只能达到 8 个区块
 
 # 常见问题解答
 {% hideToggle "点我查看" %}
@@ -1193,16 +1196,16 @@ Cloud-Thesaurus:
 保存此文件，重启你的服务器。
 
 ## 服务器宣传视频
-{% note info %}
 **官方制作**
-* https://www.bilibili.com/video/BV11P411H7Px/
-* https://www.bilibili.com/video/BV1fV4y1T7fk/
+* https://www.bilibili.com/video/BV11P411H7Px
+* https://www.bilibili.com/video/BV1fV4y1T7fk
 
-**社区（玩家）制作**
+**玩家制作**
 * https://www.bilibili.com/video/BV1VS4y1V7xH
 * https://www.bilibili.com/video/BV1Dm4y1d7Jj
 * https://www.bilibili.com/video/BV1Aa41117XD
-{% endnote %}
+* https://www.bilibili.com/video/BV1ZW4y147KU
+
 {% note success %}
 **你也发了个宣传视频？**
 可以联系腐竹，发给他视频链接，腐竹看完后你的视频链接就会出现在上面。
@@ -1211,9 +1214,9 @@ Cloud-Thesaurus:
 ## 服务器所装插件
 
 ```text
-2022.11.09
+2022.11.13
 
-Plugins (107): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEnchantBook*, BetterRTP, BiliReward*, BlockLocker, BloodMoon, BNes, BossLand, Bump, ChestSort, ClayTech, ColoredEnderChests, CoreProtect, CrystamaeHistoria, DeathMessages, DeEnchantment, DyedBackpacks, DynaTech, EcoPower, ElectricSpawners, Elevator, Endrex, Essentials, EssentialsSpawn, ExcellentEnchants, ExoticGarden, ExtraGear, ExtraHeads, ExtraTools, FartherViewDistance, FinalTECH, FluffyMachines, FNAmplifications, FoxyMachines, GeneticChickengineering, Geyser-Spigot, GSit, GuizhanCraft, GuizhanLibPlugin, HotbarPets, ImageOnMap, InfinityExpansion, InteractionVisualizer, InventoryRollbackPlus, LiteSignIn, LiteXpansion, LuckPerms, LWC, mcMMO, McMmoView, MessageAnnouncer, MissileWarfare, MobCapturer, MoneyFromMobs, Multiverse-Core, NBTAPI, Networks, NexEngine, OpenInv, PetBlocks*, PistonMOTD, PlaceholderAPI, PlayerReleaseTasks*, PlayerTitle, PlayerWarps, PlugManX (PlugMan), ProtocolLib, QuickShop-Hikari, RedstoneConnector, RelicsOfCthonia, ServerMonitor, SFCalc, Shopkeepers, SimpleMaterialGenerators, SimpleUtils, SkinsRestorer, Slimefun, SlimefunLuckyBlocks, SlimefunOreChunks, SlimefunWarfare, SlimeHUDPlus, SlimeTinker, SlimyTreeTaps, SoulJars, spark, SuperVanish, Supreme, TAB, TabTPS, Tamablefoxes, TileDataSaver, TranscEndence, TrChat, TrMenu, UltimateGenerators, UltimateTimber, Vault, ViaVersion, ViewSlimeChunk, VillagerUtil, Wildernether, WkKit, Yhfarm, ZMusic
+Plugins (106): AdvancedAchievements, AdvancedBan, ajParkour, AuthMe, BetterEnchantBook*, BetterRTP, BiliReward*, BlockLocker, BloodMoon, BNes, BossLand, Bump, ChestSort, ClayTech, ColoredEnderChests, CoreProtect, CrystamaeHistoria, DeathMessages, DeEnchantment, DyedBackpacks, DynaTech, EcoPower, ElectricSpawners, Elevator, Endrex, Essentials, EssentialsSpawn, ExcellentEnchants, ExoticGarden, ExtraGear, ExtraHeads, ExtraTools, FartherViewDistance, FinalTECH, FluffyMachines, FNAmplifications, FoxyMachines, GeneticChickengineering, GSit, GuizhanCraft, GuizhanLibPlugin, HardcoreSlimefun, HotbarPets, ImageOnMap, InfinityExpansion, InteractionVisualizer, InventoryRollbackPlus, LiteSignIn, LiteXpansion, LuckPerms, mcMMO, McMmoView, MessageAnnouncer, MissileWarfare, MobCapturer, MoneyFromMobs, Multiverse-Core, NBTAPI, Networks, NexEngine, OpenInv, PetBlocks*, PistonMOTD, PlaceholderAPI, PlayerReleaseTasks*, PlayerTitle, PlayerWarps, PlugManX (PlugMan), ProtocolLib, QuickShop-Hikari, RedstoneConnector, RelicsOfCthonia, ServerMonitor, SFCalc, Shopkeepers, SimpleMaterialGenerators, SimpleUtils, SkinsRestorer, Slimefun, SlimefunLuckyBlocks, SlimefunOreChunks, SlimefunWarfare, SlimeHUDPlus, SlimeTinker, SlimyTreeTaps, SoulJars, spark, SuperVanish, Supreme, TAB, TabTPS, Tamablefoxes, TileDataSaver, TranscEndence, TrChat, TrMenu, UltimateGenerators, UltimateTimber, Vault, ViaVersion, ViewSlimeChunk, VillagerUtil, Wildernether, WkKit, Yhfarm, ZMusic
 ```
 
 ## 本站 Github
