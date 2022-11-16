@@ -752,7 +752,7 @@ readmode: false
 
 # dark mode
 darkmode:
-  enable: false
+  enable: true
   # Toggle Button to switch dark/light mode
   button: true
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
