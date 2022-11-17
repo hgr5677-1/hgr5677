@@ -8,3 +8,4 @@ public/
 _multiconfig.yml
 .update*
 tool.bat
+yarn.lock
