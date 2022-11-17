@@ -513,9 +513,11 @@ mcMMO 是一个RPG技能插件，它为服务器添加了10多种技能，技能
 图片整好后，就需要进行图片上传的操作了。你需要找一个图床来上传你的图片，这里推荐[路过图床](https://imgtu.com/)。
 以路过图床为例。将你的图片上传后，复制下面的图片URL链接。
 ![l2t0fet2.webp](/images/2022/05/1313842204.webp)
-在服务器内输入`/maptools new 图片链接`，然后等待服务器下载图片并进行渲染，你就会获得一张地图。地图上会显示你应该要用多少个物品展示框。
+在服务器内输入`/tomap 图片链接`，然后等待服务器下载图片并进行渲染，你就会获得一张地图。地图上会显示你应该要用多少个物品展示框。
 摆放好物品展示框后，右键物品展示框的最左下角，这时你的地图画就搞好了。
 如果想要移除这个地图画，请`Shift+左键`物品展示框的最左下角。
+
+![效果](/images/2022/11/2022-11-17_10.13.07.png)
 {% endhideToggle %}
 
 {% hideToggle "显示TPS和MSPT、延迟" %}
@@ -523,6 +525,12 @@ mcMMO 是一个RPG技能插件，它为服务器添加了10多种技能，技能
 * 要在Actionbar（小标题栏/动作栏）中显示TPS等信息，输入`/tabtps toggle actionbar`。
 * 要关闭显示，请再输入一次指令。
 * 要查看延迟，输入`/ping`或按下TAB。
+
+开启在 Boss 血条显示的功能后，效果如下：
+![](/images/2022/11/tabtps.gif)
+
+延迟、TPS和MSPT的文字颜色以及血条颜色（跟随 MSPT）会随着其数值的增长而变化。
+![](/images/2022/11/tabtps-color.gif)
 {% endhideToggle %}
 
 {% hideToggle "驯服狐狸" %}
@@ -728,6 +736,8 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 **注意：想要听到声音你必须要安装 AllMusic 模组，这里提供一个 Fabric 1.18.1+ 的版本下载链接：**https://creeper233.lanzout.com/iHMfn0ex3bsf
 如果没有你的模组加载器或 Minecraft 版本的 AllMusic 模组，请前往阿里网盘下载：https://www.aliyundrive.com/s/fKHnLh1N5nC/folder/628f5a18e108ef84cb934b6ca4301be905f1a653
 若要下载阿里网盘里面的请下载`[你的模组加载器(fabric/forge)-你的mc版本]AllMusic-x.x.x.jar`
+
+![如果正确的安装了模组，应该会是这样的效果](/images/2022/11/2022-11-17_10.12.26.png)
 {% endnote %}
 
 **点歌指令**
@@ -750,6 +760,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 支持在聊天、告示牌中打出彩色字体。
 
 你可以在服务器内使用`/kit color`来获取关于全部颜色代码的一本书。
+![](/images/2022/11/2022-11-17_10.23.48.png)
 {% endhideToggle %}
 
 # 服务器资讯
