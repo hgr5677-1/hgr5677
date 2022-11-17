@@ -737,8 +737,9 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 如果没有你的模组加载器或 Minecraft 版本的 AllMusic 模组，请前往阿里网盘下载：https://www.aliyundrive.com/s/fKHnLh1N5nC/folder/628f5a18e108ef84cb934b6ca4301be905f1a653
 若要下载阿里网盘里面的请下载`[你的模组加载器(fabric/forge)-你的mc版本]AllMusic-x.x.x.jar`
 
-![如果正确的安装了模组，应该会是这样的效果](/images/2022/11/2022-11-17_10.12.26.png)
 {% endnote %}
+
+![如果正确的安装了模组，应该会是这样的效果](/images/2022/11/2022-11-17_10.12.26.png)
 
 **点歌指令**
 * `/zm help` - 查看帮助
