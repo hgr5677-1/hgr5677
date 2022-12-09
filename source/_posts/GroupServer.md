@@ -6,7 +6,7 @@ tags:
     - Minecraft
     - 游戏
 description: 这是一篇关于 Minecraft 1.18.2 服务器 GroupServer 的游玩指南（官方文档，超详细）
-sticky: 1
+sticky: 2
 categories: 文档
 cover: /images/2022/04/776274147.webp
 license: CC BY-NC-ND 4.0

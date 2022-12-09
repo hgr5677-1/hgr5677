@@ -4,7 +4,7 @@ tags:
   - 游戏
   - GroupServer
 description: 这是一篇 GroupServer 附属服务器模组服的游玩教程 —— 从入门到去世
-sticky: 2
+sticky: 1
 categories: 文档
 license: CC BY-NC-ND 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'
@@ -40,6 +40,7 @@ date: 2022-12-07 21:18:35
 由于我个人过于懒惰，列表中的内容可能更新速度很慢。
 **不包含前置类（Lib 库）模组。**
 
+| :--- | :--- | :--- |
 | 模组名称 | 类型 | 简介 |
 | Quark (夸克) | 实用 | 让 MC 更有趣，更有挑战性，可玩性更好 |
 | IC2 (工业时代 2) | 科技 | 老牌的大型科技模组 |
