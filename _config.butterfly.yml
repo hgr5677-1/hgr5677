@@ -266,7 +266,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Twikoo # Valine,Disqus
+  use: Waline # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -331,6 +331,8 @@ waline:
     emoji: [
       'https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji'
     ]
+    recaptchaV3Key: 6LeDxWgjAAAAANrbr2eEjqAAHBqB7V-qMV8C8v9v
+    wordLimit: 1145
 
 # utterances
 # https://utteranc.es/
@@ -917,7 +919,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    # twikoo:
+    # twikoo: 
     # waline_js:
     # waline_css:
     # sharejs:
