@@ -5,6 +5,7 @@ tags:
     - 游戏
 description: 这是一篇关于 Terraria 1.4.4.9+ 服务器 GroupTr 的游玩指南（官方文档，超不详细）
 categories: 文档
+cover: /images/2023/01/Terraria_wvRS2elXWc.png
 license: CC BY-NC-ND 4.0
 license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
@@ -15,6 +16,10 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 **本文档部分特性可能还没实装在服务器中。**
 **本文档还未完善，会时不时更新。**
 {% endnote %}
+
+# 服务器截图
+![](/images/2023/01/Terraria_2MDsMP4WcN.png)
+![](/images/2023/01/Terraria_UgAncwyxXR.png)
 
 # 服务器规则
 **务必仔细阅读这些规则，否则可能会被封。**
@@ -28,12 +33,14 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 * 若你家没圈地被人熊我不追查。
 
 # 加入服务器
-{% note warning %}
+{% note info %}
 **ℹ 注意！**
 不支持使用 tModLoader 进入服务器，会提示“不支持此版本”。
 {% endnote %}
 
 1. 首先你需要有个支持多人游戏且可加入服务器的泰拉瑞亚客户端，Steam/GOG/电脑 上的，手机上的都可以。
+   **确保游戏版本是最新的 1.4.4.9.虽然服务器有跨版本插件，可以让最低版本为 1.4.4 的客户端进入服务器，但是用低版本进服可能会出现一些Bug！**
+   没￥买正版？去三大妈找找看有没有资源。
 2. 启动泰拉瑞亚，点击“多人模式”。
 3. 选择“通过IP加入”。
 4. 如果你还没有创建玩家，请先创建一个。
@@ -55,10 +62,20 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
   回到世界出生点或你的重生点。
 * `/tp <玩家昵称>`
   将自己传送到任意玩家，无需对方同意。
+* `/tpallow`
+  禁止或允许其他玩家传送到你的身边。
 * `/spawn`
   返回世界出生点。
-* `/veinminer`
-  开启连锁挖矿。
+* `/online`
+  查看在线玩家列表。
+* `/rules`
+  查看服务器规则。
+* `/password`
+  更改密码。
+* `/progress`
+  查看服务器击杀 BOSS 的进度。
+* `/lookbag [玩家名]`
+  查看某个玩家的背包。
 {% endhideToggle %}
 
 # 设置领地
@@ -84,6 +101,15 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 * region protect 领地名称 true/false --是否开启保护某个领地
 * region z 领地名称 优先等级 --设置领地的优先权
 
+# 审核员权限
+审核员可以帮助服务器踢出或封禁违反规则的玩家们。
+目前审核员共有两位：`Toad-dog`和`你妈`。
+审核员们可以使用`/kick`指令踢出玩家，也可以使用`/ban`指令封禁玩家。还可以使用`/bwl`指令管理白名单、`/pm`指令查看玩家背包。
+审核员必须按照服规来封禁或踢出玩家。如果发现有玩家不开新角色进服也可以直接踢出或封禁。
+想成为审核员？先确认一下你和腐竹的关系是不是很不错，然后再联系他。
+
 # 注意事项
-## 自动重置
-本服会在月球领主被击杀6次后自动重置世界且不保留任何备份，重置后将会开启新的一周目。
+* 一些动作可能会被 Tshock 误判为作弊，导致你的行为被限制。
+* 炸弹扔出去后可能会延迟爆炸，暂不知道是什么原因。
+* 为了节省资源，服务器会在每天凌晨0点自动关服并备份，在早上6点会自动开服。
+
