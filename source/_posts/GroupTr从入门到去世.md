@@ -3,7 +3,7 @@ title: GroupTr 从入门到去世
 tags: 
     - 泰拉瑞亚
     - 游戏
-description: 这是一篇关于 Terraria 1.4.4.9+ 服务器 GroupTr 的游玩指南（官方文档，超不详细）
+description: 这是一篇关于泰拉瑞亚模组服务器 GroupTr 的游玩指南（官方文档，超不详细）
 categories: 文档
 cover: /images/2023/01/Terraria_wvRS2elXWc.png
 license: CC BY-NC-ND 4.0
@@ -35,81 +35,42 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 # 加入服务器
 {% note info %}
 **ℹ 注意！**
-不支持使用 tModLoader 进入服务器，会提示“不支持此版本”。
+不支持使用原版泰拉瑞亚版本进入服务器，会提示需要安装模组。
 {% endnote %}
 
-1. 首先你需要有个支持多人游戏且可加入服务器的泰拉瑞亚客户端，Steam/GOG/电脑 上的，手机上的都可以。
-   **确保游戏版本是最新的 1.4.4.9.虽然服务器有跨版本插件，可以让最低版本为 1.4.4 的客户端进入服务器，但是用低版本进服可能会出现一些Bug！**
+1. 首先你需要有个版本为`2022.9.47.21` (泰拉瑞亚版本 `1.4.3.6`) 的 tModLoader 客户端。
    没￥买正版？去三大妈找找看有没有资源。
-2. 启动泰拉瑞亚，点击“多人模式”。
+2. 启动 tModLoader，点击“多人模式”。
 3. 选择“通过IP加入”。
 4. 如果你还没有创建玩家，请先创建一个。
    **注意** 玩家名字不能包含侮辱性的内容，此外强烈不建议包含特殊符号。
    **注意** 请勿选择“旅行模式”。如果你不知道该选择哪个模式，就选“普通”。
    **注意** 若后续改名可能需要再向腐竹申请一次加入白名单。
-5. 联系腐竹（QQ744198767），申请加入白名单。
-6. 双击你要进入服务器的玩家，服务器IP地址输入`103.239.245.112`，端口输入`20092`。
-7. 如果提示需要密码，输入密码`11451919`。
-8. 进入服务器后若发现无法建造、移动、攻击，请按下`ENTER`键打开聊天栏，然后使用指令`/register`注册账号，再使用`/login`登录账号。
+5. 双击你要进入服务器的玩家，服务器IP地址输入`103.239.245.112`，端口输入`20092`。
+   客户端会自动下载模组并加载。
 
-# 服务器指令
-服务器支持使用多个指令，你可以按下`ENTER`键打开聊天栏来使用这些指令。
-
-{% hideToggle "点我查看" %}
-* `/help`
-  获取指令列表。
-* `/home`
-  回到世界出生点或你的重生点。
-* `/tp <玩家昵称>`
-  将自己传送到任意玩家，无需对方同意。
-* `/tpallow`
-  禁止或允许其他玩家传送到你的身边。
-* `/spawn`
-  返回世界出生点。
-* `/online`
-  查看在线玩家列表。
-* `/rules`
-  查看服务器规则。
-* `/password`
-  更改密码。
-* `/progress`
-  查看服务器击杀 BOSS 的进度。
-* `/lookbag [玩家名]`
-  查看某个玩家的背包。
-{% endhideToggle %}
-
-# 设置领地
-> 使用稿子在一个长方形的左上角敲一下，之后输入region set 1
-> 使用稿子在同一个长方形的右下角敲一下，之后输入region set 2
-> 输入region define 名称 设置成自己的私有领地吧！
-> 私有领地不可被除领主之外的人破坏或建筑，除非共享给某个玩家。
-> https://tieba.baidu.com/p/3770859135
-
-领地相关指令（转自贴吧）：
-* region set 1/2 --设置临时边界点。
-* region clear --清除设置的临时边界点
-* region define 名字 --给刚才设置的临时边界起名，将其变成私有领地。
-* region delete 领地名称 --删除某一个私有领地
-* region name -显示当前位置的领地名称
-* region list 【页码】 --显示当前所有领地
-* region resize 领地名称 --重新设置领地大小
-* region allow 玩家名称 领地名称 --将某一领地分享给另一位玩家
-* region remove 玩家名称 领地名称 --取消将某一领地分享给某位玩家
-* region allowg 用户组名称 领地名称 --将某一领地分享给某一个用户组
-* region removeg 用户组名称 领地名称 --将某一领地的分享权限取消至某个用户组
-* region info 领地名称 --显示领地信息
-* region protect 领地名称 true/false --是否开启保护某个领地
-* region z 领地名称 优先等级 --设置领地的优先权
-
-# 审核员权限
-审核员可以帮助服务器踢出或封禁违反规则的玩家们。
-目前审核员共有两位：`Toad-dog`和`你妈`。
-审核员们可以使用`/kick`指令踢出玩家，也可以使用`/ban`指令封禁玩家。还可以使用`/bwl`指令管理白名单、`/pm`指令查看玩家背包。
-审核员必须按照服规来封禁或踢出玩家。如果发现有玩家不开新角色进服也可以直接踢出或封禁。
-想成为审核员？先确认一下你和腐竹的关系是不是很不错，然后再联系他。
-
-# 注意事项
-* 一些动作可能会被 Tshock 误判为作弊，导致你的行为被限制。
-* 炸弹扔出去后可能会延迟爆炸，暂不知道是什么原因。
-* 为了节省资源，服务器会在每天凌晨0点自动关服并备份，在早上6点会自动开服。
-
+# 模组列表
+```json
+[
+  "BetterBossBar",
+  "BossChecklist",
+  "BossCursor",
+  "CalamityCN",
+  "CalamityMod",
+  "CalamityModMusic",
+  "DialogueTweak",
+  "ImproveGame",
+  "Lights",
+  "miningcracks_take_on_luiafk",
+  "MultiplayerSpectator",
+  "NoFishingQuests",
+  "OreExcavator",
+  "PointShop",
+  "QOS",
+  "RecipeBrowser",
+  "ShopExpander",
+  "Twaila",
+  "WeaponDisplay",
+  "WMITF"
+]
+```
