@@ -32,7 +32,7 @@ copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by
 
 # 什么是 GroupServer
 
-GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创建的 Minecraft Java 版 1.18.2（原 1.16.5，2022.10.1 升级至 1.18.2） 插件生存服务器。由Creeper233创建。 这是一个公益服务器，盈利方式为赞助后获得纪念品。
+GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创建的 Minecraft Java 版 1.18.2（原 1.16.5，2022.10.1 升级至 1.18.2） 插件生存服务器。由Creeper938创建。 这是一个公益服务器，盈利方式为赞助后获得纪念品。
 **本文虽长，但请仔细阅读，不然你会因为没发现一个功能而后悔一辈子。**
 **由于使用人数过少且会造成状态贴图无法正常获取服务器信息，现已停止提供基岩版进入服务器的服务！**
 
