@@ -168,6 +168,9 @@ footer_beautify:
     - link: https://github.com/Creeper512/hexo/
       shields: https://img.shields.io/github/repo-size/Creeper512/hexo?label=%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F&logo=files&style=flat-square
       message: 本博客仓库大小
+    - link: https://badges.toozhao.com/badges/01GM9SE146A8AQGY92AP2HH2N7/green.svg)](https://badges.toozhao.com/stats/01GM9SE146A8AQGY92AP2HH2N7
+      shields: https://badges.toozhao.com/badges/01GM9SE146A8AQGY92AP2HH2N7/green.svg)](https://badges.toozhao.com/stats/01GM9SE146A8AQGY92AP2HH2N7
+      message: 本博客总浏览量
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js

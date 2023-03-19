@@ -13,9 +13,6 @@ license: CC BY-NC-ND 4.0
 license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
 ---
-
-[![Page Views Count](https://badges.toozhao.com/badges/01GM9SE146A8AQGY92AP2HH2N7/green.svg)](https://badges.toozhao.com/stats/01GM9SE146A8AQGY92AP2HH2N7 "Get your own page views count badge on badges.toozhao.com")
-
 ![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mcp3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=&be=false)
 
 **点击[这里](https://api.imlazy.ink/mcapi/?name=&host=mcp3.rhymc.com:1079&getbg=&type=html)查看服务器更多状态信息!**
@@ -228,6 +225,8 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
   开关传送请求**（仅别人请求传送到你那里）**自动同意功能。
 * **/isb toggle**
   开关计分板显示。
+* **/trade [玩家名字]**
+  向 [玩家名字] 发送交易请求。
 
 {% endhideToggle %}
 
@@ -784,6 +783,11 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * 加入了地皮功能。
 * 加入了公会插件，但目前无法正常使用，所以未添加在菜单和指南中。
 * 加入了可以举起、扔掉玩家/实体的功能。
+* 加入了动态物价商店插件。
+* 当在线玩家数量超过服务器记录时，会发送一条通知。
+* 加入了资源世界，每隔一周重置一次。
+* 加入了主城。现在玩家进入服务器会默认在主城生成了。
+  **主城目前漏洞较多，若有建议请积极向腐竹反馈！**
 {% endhideToggle %}
 {% hideToggle "2023年2月更新" %}
 **漏洞修复**
@@ -1249,6 +1253,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * 你和他人进行了 RMB 交易，但金额不多
 * 你利用漏洞刷了金币，但刷的不多
 * 你只用了很少的金币就买到了一堆非常牛逼的东西
+* 你多次使用金币、点券涉嫌诈骗
 
 如果玩家收到了交易封禁，将会无法使用打工功能、向其他玩家转账、购买 VIP 权限（如果之前已经购买过 VIP，也将会被回收）、进入金币排行榜、兑换 CDK、购买和使用称号。但其他玩家仍可向这名玩家进行转账。如果玩家连续三次收到了交易封禁，那么他的账号将会被封禁 30 天。
 
