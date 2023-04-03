@@ -32,7 +32,7 @@ copy:
 #   icon: link || the description
 social:
    fab fa-github: https://github.com/Creeper512 || Github
-   fas fa-envelope: mailto:xxxxxx@gmail.com || 邮箱
+   fas fa-envelope: mailto:creeper938@outlook.com || 邮箱
    fab fa-qq: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=744198767&website=creeper938.ml
    fas fa-television: https://space.bilibili.com/492917725 || B 站
 
@@ -331,8 +331,7 @@ waline:
     emoji: [
       'https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji'
     ]
-    recaptchaV3Key: 6LeDxWgjAAAAANrbr2eEjqAAHBqB7V-qMV8C8v9v
-    wordLimit: 1145
+    wordLimit: 600
 
 # utterances
 # https://utteranc.es/
