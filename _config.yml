@@ -154,10 +154,10 @@ footer_beautify:
   runtime_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.js
   runtime_css: https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css
   # 徽标部分配置项
-  swiperpara: 5 #若非0，则开启轮播功能，每行徽标个数
+  swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:
     - link: https://github.com/Creeper512/hexo/ #徽标指向网站链接
-      shields: https://img.shields.io/github/commit-activity/m/Creeper512/hexo?label=%E6%AF%8F%E6%9C%88%E6%8F%90%E4%BA%A4&logo=github&style=flat-square #徽标API
+      shields: https://img.shields.io/github/commit-activity/m/Creeper512/hexo?label=%E6%9C%AC%E6%9C%88%E6%8F%90%E4%BA%A4&logo=github&style=flat-square #徽标API
       message: 本博客仓库的本月提交 (Commit) 次数 #徽标提示语
     - link: https://github.com/Creeper512/hexo/
       shields: https://img.shields.io/github/last-commit/Creeper512/hexo?label=%E4%B8%8A%E6%AC%A1%E6%8F%90%E4%BA%A4&logo=github&style=flat-square
@@ -168,9 +168,9 @@ footer_beautify:
     - link: https://github.com/Creeper512/hexo/
       shields: https://img.shields.io/github/repo-size/Creeper512/hexo?label=%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F&logo=files&style=flat-square
       message: 本博客仓库大小
-    - link: https://badges.toozhao.com
-      shields: https://badges.toozhao.com/badges/01GWBQY01XJD8HBA8QJMAXPG8R/green.svg
-      message: 本博客总浏览量
+    - link: https://hexo.io
+      shields: https://img.shields.io/github/package-json/dependency-version/Creeper512/hexo/hexo?label=Hexo%20%E7%89%88%E6%9C%AC&logo=hexo&style=flat-square
+      message: Hexo 版本
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
   swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
