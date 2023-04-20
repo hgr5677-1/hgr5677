@@ -85,7 +85,7 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: false
+disable_top_img: true
 
 # The banner image of home page
 index_img: /images/page/index.jpg
@@ -501,7 +501,7 @@ theme_color:
   enable: true
   main: "#2b88d8"
 #  paginator: "#00c4b6"
-#   button_hover: "#FF7242"
+  button_hover: "#74c0fc"
   text_selection: "#74c0fc"
 #   link_color: "#99a9bf"
 #   meta_color: "#858585"
@@ -806,8 +806,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: modern
-  icons: true
+  style: flat
+  icons: false
   border_radius: 2
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.

@@ -5,6 +5,7 @@ tags:
   - GroupServer
 description: 这是一篇 GroupServer 附属服务器模组服的游玩教程 —— 从入门到去世
 sticky: 1
+hide: true
 categories: 文档
 license: CC BY-NC-ND 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'
@@ -20,6 +21,10 @@ date: 2022-12-07 21:18:35
 
 **点击[这里](https://api.imlazy.ink/mcapi/?name=&host=mcp3.rhymc.com:1118&getbg=&type=html)查看服务器更多状态信息!**
 **该贴图的API服务可能无法正常获取到服务器状态信息，实际以游戏内为准。**
+
+{% note danger %}
+**本文所述的模组服已倒闭，本文失效**
+{% endnote %}
 
 {% note success %}
 **🔔 你有事吗？**
