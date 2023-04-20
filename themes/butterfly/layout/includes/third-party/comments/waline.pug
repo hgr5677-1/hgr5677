@@ -9,7 +9,7 @@ script.
         serverURL: '!{serverURL}',
         pageview: !{lazyload ? false : pageview},
         dark: 'html[data-theme="dark"]',
-        path: url_for(page.path),
+        path: window.location.pathname,
         comment: !{lazyload ? false : count},
       }, !{JSON.stringify(option)}))
     }
