@@ -7,6 +7,7 @@ menu:
    归档: /archives/ || fas fa-archive
    分类: /categories/ || fas fa-folder-open
    标签: /tags/ || fas fa-tags
+   关于我: /about || fa-solid fa-face-grin-wide
    RSS: /atom.xml || fa fa-rss
 
 # Code Blocks (代碼相關)
@@ -180,7 +181,7 @@ anchor: true
 # toc (目錄)
 toc:
   post: true
-  page: false
+  page: true
   number: true
   expand: true
   style_simple: false # for post
@@ -209,10 +210,10 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  url: https://github.com/Creeper512/hexo/edit/main/source/
 
 # Related Articles
 related_post:

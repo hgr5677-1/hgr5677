@@ -1317,7 +1317,6 @@ Cloud-Thesaurus:
 {% endnote %}
 {% hideToggle "点我查看赞助二维码" %}
 {% gallery %}
-![QQ钱包](/images/qq.webp)
 ![微信支付](/images/wechat.webp)
 ![支付宝](/images/alipay.webp)
 {% endgallery %}
