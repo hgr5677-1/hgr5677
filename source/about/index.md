@@ -22,6 +22,39 @@ date: 2023-04-21 11:54:42
 | 邮箱 | creeper938@outlook.com<br />creeper938@163.com<br />creeper512@qq.com |
 | 电报 | {% hideInline @nonameuser789 %} |
 
+# 人格
+{% span center logo large gray, <strong>调停者</strong> %}
+{% span center logo small green, <strong>INFP-T</strong> %}
+
+* 调停者是富有诗意、善良、利他的个体，总是渴望帮助一项有益的事业。
+
+{% progress 21 gray 外向型 %}
+{% progress 79 blue 内向型 %}
+
+* 内向型的个体往往更喜欢较少但深入且有意义的社交互动，并且常常被平静的环境所吸引。
+
+{% progress 45 gray 现实型 %}
+{% progress 55 yellow 直觉型 %}
+
+* 直觉型的个体非常富有想象力、思想开放并充满好奇。他们重视原创性，专注于隐含的意义和遥远的可能性。
+
+{% progress 39 gray 逻辑型 %}
+{% progress 61 green 感受型 %}
+
+* 感受型的个体重视情感表达和敏感性。他们非常重视同理心、社会和谐及合作。
+
+{% progress 37 gray 计划型 %}
+{% progress 61 cyan 展望型 %}
+
+* 展望型的个体非常擅长即兴创作和适应机会。他们往往是灵活的不墨守成规者，他们把新颖性看得高于稳定性。
+
+{% progress 39 gray 坚决 %}
+{% progress 61 red 谨慎 %}
+
+* 谨慎型的个体自我意识强，对压力敏感。他们在情绪上有一种紧迫感，倾向于成功驱动、完美主义并渴望进步。
+
+[了解调停者](https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC)，或前往[16Personalities](https://www.16personalities.com/ch/%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95)看看你是哪种人格。
+
 # 各大平台状态
 <center>
 {% inlineImg https://img.shields.io/badge/dynamic/json?color=ff69b4&label=B%20%E7%AB%99%E7%B2%89%E4%B8%9D&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D492917725&style=for-the-badge&logo=bilibili 30px %}

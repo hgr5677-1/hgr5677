@@ -2,9 +2,6 @@
 .toggle {
     margin-bottom: 6px;
 }
-body {
-    line-height: 1.9;
-}
 /* 缩短提示框高度 */
 .note {
     margin: 0 0 16px;

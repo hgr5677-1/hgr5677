@@ -203,9 +203,6 @@ reward:
      - img: /images/donate/alipay.webp
        link: /images/alipay.webp
        text: 支付宝
-     - img: /images/donate/qq.webp
-       link: /images/qq.webp
-       text: QQ 钱包
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -714,9 +711,7 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
-    sort_order: # Don't modify the setting unless you know how it works
-  card_hitokoto: 
-    enable: true    
+    sort_order: # Don't modify the setting unless you know how it works 
 
 # busuanzi count for PV / UV in site
 # 訪問人數

@@ -5,10 +5,8 @@ date: 2022-04-04 19:22:00
 tags: 
     - Minecraft
     - 游戏
-    - 待发布
 description: 23 年 7 月 10 日，GroupServer 将转为周目制。
 sticky: 3
-hide: true
 cover: https://creeper938.ml/images/2023/04/周目宣传图.png
 categories: 公告
 license: CC BY-NC-ND 4.0
