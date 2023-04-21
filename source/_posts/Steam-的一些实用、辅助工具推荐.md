@@ -7,6 +7,7 @@ tags:
 description: 推荐些给 Steam 用的浏览器扩展、软件等给大家 (保证无毒)
 date: 2023-04-21 20:28:12
 updated: 2023-04-21 20:28:12
+cover: /images/2023/04/0422-cover.png
 ---
 
 {% note success %}
