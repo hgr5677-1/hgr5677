@@ -55,7 +55,7 @@ body {
 
 /* 滚动条 */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
     height: 8px;
 }
 
@@ -309,7 +309,7 @@ body {
 
 /* 让主页的卡片更紧凑一些 */
 #recent-posts>.recent-post-item {
-    height: 15.5em
+    height: 14em
 }
 
 /* 文章页背景 */
@@ -333,3 +333,7 @@ body {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
+
+#recent-posts>.recent-post-item:not(:first-child) {
+    margin-top: 13px;
+}
