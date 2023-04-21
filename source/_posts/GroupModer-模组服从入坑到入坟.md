@@ -4,8 +4,6 @@ tags:
   - 游戏
   - GroupServer
 description: 这是一篇 GroupServer 附属服务器模组服的游玩教程 —— 从入门到去世
-sticky: 1
-hide: true
 categories: 文档
 license: CC BY-NC-ND 4.0
 license_url: 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh'

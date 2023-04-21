@@ -133,6 +133,12 @@ CP++ (CopyPaste++)
 {% checkbox times red checked, MinecraftInCMDLauncher (已弃坑) %}
 {% checkbox times red checked, BatBox (已弃坑) %}
 
+# 资源分享
+21 年的时候白嫖了巨硬的 E5，嫖了 5*25T 的 OneDrive 网盘。然后整了个资源分享网盘：
+{% link 资源分享网盘, https://creepe512-my.sharepoint.com/:f:/g/personal/creeper233_creepe512_onmicrosoft_com/EiTqFHcgesBAk4dDjr6A1_sBIFcoqr2lj9MeL5TX-eRIqg?e=HL2MLy, https://onedrive.com/favicon.ico %}
+
+里面有一堆实用软件和乱七八糟的玩意，随缘更新
+
 # 赞助
 我是个穷逼
 
