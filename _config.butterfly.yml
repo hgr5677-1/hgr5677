@@ -881,6 +881,7 @@ inject:
   head:
      - <link rel="stylesheet" href="/css/font_6.css">
      - <link rel="stylesheet" href="/css/other_custom_7.css">
+     - <script src="js/check_ga.js"></script>
   bottom:
     # - <script src="xxxx"></script>
 
