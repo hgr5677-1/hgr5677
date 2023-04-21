@@ -439,7 +439,7 @@ footer:
   owner:
     enable: true
     since: 2022
-  custom_text: 使用 <a href="https://github.com/Creeper512/hexo">Github</a> + <a href="https://vercel.com">Vercel</a> 部署
+  custom_text: 使用 <a href="https://github.com/Creeper512/hexo">Github</a> + <a href="https://vercel.com">Vercel</a> 部署<br />背景图来自 <a href="https://unsplash.com/photos/kvZ8m7KaL-w">Unsplash</a>
   copyright: true # Copyright of theme and framework
 
 # Analysis

@@ -45,3 +45,11 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
     include ./rightside.pug
     include ./additional-js.pug
+
+if !is_post()
+  if (footerBg === true)
+    - var footer_bg = 'background-color: transparent;'
+  else
+    - var footer_bg = 'background-color: transparent;'
+else
+  - var footer_bg = 'background-color: transparent;'
