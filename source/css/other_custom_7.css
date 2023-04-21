@@ -328,10 +328,10 @@ body {
 
 
 #footer {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     color: #000;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
   }
 
 #recent-posts>.recent-post-item:not(:first-child) {
