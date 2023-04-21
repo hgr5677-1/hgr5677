@@ -137,7 +137,7 @@ error_img:
 error_404:
   enable: true
   subtitle: '页面不存在'
-  background: /img/404.jpg
+  background: /images/404.png
 
 post_meta:
   page: # Home Page
@@ -573,7 +573,7 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true # open particle animation (冒光特效)
   shake: false #  open shake (抖動特效)
   mobile: false
@@ -685,8 +685,8 @@ aside:
       text: 订阅 RSS
       link: https://creeper938.ml/atom.xml
   card_announcement:
-    enable: false
-    content: This is my Blog
+    enable: true
+    content: <strong> 本博客的 URL 链接格式改了一下，以前的文章链接可能会 404，在这个链接的后面加个<code>.html</code>即可恢复正常。</strong><br />例如 https://creeper938.ml/posts/5131 -> https://creeper938.ml/posts/5131.html
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all
@@ -855,8 +855,8 @@ pangu:
 lazyload:
   enable: true
   field: site # site/post
-  placeholder: /images/loading.webp
-  blur: false
+  placeholder: 
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline

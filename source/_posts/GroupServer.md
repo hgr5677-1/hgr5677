@@ -12,6 +12,9 @@ cover: /images/2022/04/776274147.webp
 license: CC BY-NC-ND 4.0
 license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh
 copyright_info: 本文章使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" title="CC BY-NC-ND">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议，你可以向其他人共享此文章，但是必须署名是由 Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
+alias:
+  - /5131
+  - /5131/
 ---
 ![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer&host=mcp3.rhymc.com:1079&type=image&getmotd=%0a%0a&getbg=&be=false)
 
