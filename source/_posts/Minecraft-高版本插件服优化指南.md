@@ -7,6 +7,7 @@ description: 这是一篇教你优化你的 Minecraft 服务器的教程
 categories: 教程
 abbrlink: 14390
 date: 2022-09-13 17:29:37
+updated: 2022-12-10 00:00:00
 ---
 这是一篇教你优化你的 Minecraft 服务器的教程，这篇文章里的所有配置都是 GroupServer 正在使用的配置。
 

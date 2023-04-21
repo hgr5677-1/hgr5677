@@ -6,6 +6,7 @@ tags:
 description: 这是一篇在温都四系统上搭建 Geyser 让鸡眼版的Van家进入Jvav版服务器的教程
 abbrlink: 28839
 date: 2022-10-15 16:58:59
+updated: 2022-12-10 00:00:00
 ---
 
 # 啥是 Geyser

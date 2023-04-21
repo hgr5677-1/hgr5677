@@ -5,6 +5,7 @@ tags:
 description: 在你的电脑上搭建个 AdGuard Home DNS 服务器来拦截各种小广告
 abbrlink: 9953
 date: 2022-11-02 12:32:21
+updated: 2022-12-10 00:00:00
 ---
 
 # 什么是 AdGuard Home

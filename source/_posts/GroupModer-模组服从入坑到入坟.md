@@ -15,6 +15,7 @@ copyright_info: >-
   Creeper938 编写的。你不可将此文章用于商业用途，如果你再混合、转换、或者基于该文章创作，你不可以分发修改后的文章。
 abbrlink: 55922
 date: 2022-12-07 21:18:35
+updated: 2022-12-10 00:00:00
 ---
 
 ![服务器状态](https://api.imlazy.ink/mcapi/?name=GroupServer%0模组服&host=mcp3.rhymc.com:1118&type=image&getmotd=%0a%0a&getbg=&be=false)

@@ -8,6 +8,7 @@ cover: 'https://www.hualigs.cn/image/631d8826c564a.jpg'
 abbrlink: 47332
 date: 2022-09-11 13:18:09
 sitemap: false
+updated: 2022-09-11 14:00:00
 ---
 ![](https://www.hualigs.cn/image/631d8826c564a.jpg)
 Butterfly 是一个非常强大的 Hexo 主题，本站就在用，上图是这个主题的功能。
