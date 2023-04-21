@@ -22,6 +22,34 @@ date: 2023-04-21 11:54:42
 | 邮箱 | creeper938@outlook.com<br />creeper938@163.com<br />creeper512@qq.com |
 | 电报 | {% hideInline @nonameuser789 %} |
 
+# 各大平台状态
+<center>
+{% inlineImg https://img.shields.io/badge/dynamic/json?color=ff69b4&label=B%20%E7%AB%99%E7%B2%89%E4%B8%9D&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D492917725&style=for-the-badge&logo=bilibili 30px %}
+{% inlineImg https://img.shields.io/badge/dynamic/json?color=success&label=%E9%85%B7%E5%AE%89%E7%B2%89%E4%B8%9D&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D1686693&style=for-the-badge&logo=android 30px %}
+</center>
+
+![STEAM 个人信息](https://www.steamsignature.com/status/schinese//76561199137737784.png)
+![STEAM 最近游玩的游戏](https://www.steamidfinder.com/signature/76561199137737784.png)
+
+# 爱好
+{% btns 样式参数 %}
+{% cell 喝水, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-glass-water %}
+{% cell 眨眼, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-eye %}
+{% cell 睡觉, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-bed %}
+{% cell 心跳, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-heart-pulse %}
+{% cell 活着, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-person %}
+{% endbtns %}
+
+{% hideInline 真相 其实没有爱好，就平时喜欢瞎折腾 %}
+
+# 技能
+* 擅长word、excel、ppt、wind等软件的安装与卸载
+* 熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机
+* 精通 Ctrl+V、Ctrl+C 等快捷键的使用
+
+## 已学会的编程语言
+CP++ (CopyPaste++)
+
 # 设备
 ## 我的电脑配置
 | 类别 | 型号 | 特性 / 备注 |
@@ -38,6 +66,14 @@ date: 2023-04-21 11:54:42
 | 资料盘 | 三星 HD322HJ 320GB ( 5000 RPM / 垂直 / 16 MB 缓存) | 上古机械盘，但是现在还没有坏道 |
 | 显示器 | 创维 F24G40F ( 1920x1080 / 144 Hz ) | HDR / 1 MS / 130% sRGB |
 
+**三弟马克分数**
+* Time Spy: https://www.3dmark.com/3dm/88254835
+* CPU Profile: https://www.3dmark.com/cpu/1024844
+* Night Raid: https://www.3dmark.com/nr/869876
+* Fire Strike Extreme: https://www.3dmark.com/fs/29823957
+
+娱乐大师也就 66 万多点
+
 ## 其他设备
 | 类别 | 型号 |
 | :-- | :-- |
@@ -52,6 +88,9 @@ date: 2023-04-21 11:54:42
 一些￥是网络上的好兄弟们赞助的
 {% endnote %}
 
+# 为什么搞了个博客
+一开始我是没想搞博客的，后来开了个 MC 服务器 GroupServer。随着服务器玩法、指令什么的越来越多，我有了个搞服务器文档来帮助玩家们熟悉服务器的想法。一开始我想用 VuePress 写文档，后来发现自己玩不明白这玩意，遂放弃。然后看上了一个不需要数据库的 Wiki 框架 DokuWiki，然后我就用这个东西开始写服务器的 Wiki (百科)。再后来，为了方便文章的编辑，以及有了个开博客的想法，我就用 Typecho 搞了个博客。然后看上了一个叫 Handsome 的主题，但是买不起，用了一段时间的 PJ 版。后来又看上了一款叫 Joe 的主题，很强大，然后就一直用了。再后来，21 年 10 月左右，由于云服务器的到期，我不得不试图用 Hexo 搭建博客。然后就没有然后了。
+
 # 画大饼
 {% checkbox NoobServerHelper MC 开服器 (五年内做完) %}
 {% checkbox times red checked, CModTool 3.0 (已弃坑) %}
@@ -62,7 +101,7 @@ date: 2023-04-21 11:54:42
 {% checkbox times red checked, BatBox (已弃坑) %}
 
 # 赞助
-你要是赞助我可不困了啊
+我是个穷逼
 
 **该赞助多少钱？**
 * `0.01 ￥` 就可上榜
@@ -98,11 +137,12 @@ date: 2023-04-21 11:54:42
 所有文件都是公开透明的。你可以自己下载所有文件后挖掘一下我的黑历史，也可以参考一下我的博客设置、魔改等
 
 ## 如何在本地部署我的博客
+{% hideToggle "点击查看" %}
 十分简单甚至九分简单。首先，众所周知，Hexo 是一个基于 Node.js 的框架，所以你需要下载个 Node.js。
 
 **完整步骤**
 * 前往[Node.js 官网](https://nodejs.org/zh-cn)下载 Node.js。
-* 安装完成后，如果你居住在大陆，你可能需要使用`npm config set registry https://registry.npm.taobao.org`指令来加快 NPM 包的下载速度。
+* 安装完成后，如果你居住在瓷器大陆，你可能需要使用`npm config set registry https://registry.npm.taobao.org`指令来加快 NPM 包的下载速度。
 * 使用 Git for Windows 克隆 https://github.com/Creeper512/hexo 或直接在[这里](https://github.com/Creeper512/hexo/archive/refs/heads/main.zip)下载博客仓库的压缩包。**(你可能需要某些特殊工具才能完成此步骤)**
 * 如果你选择下载压缩包，解压压缩包到一个空文件夹。如果你是直接克隆的，直接打开克隆到的那个目录。
 * 在此处打开命令提示符或 Windows Powershell 窗口，执行`npm install`以安装依赖项。
@@ -151,6 +191,20 @@ $ gulp # 如果安装了 gulp，在 Hexo 生成静态文件后，你可以使用
 ```
 * **但是我并不希望你用我的博客文件直接开你的博客网站。**
 
+{% endhideToggle %}
+
 {% note danger %}
 **若无另行声明，本站所有文件均采用[署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)协议，你必须遵守此协议。**
 {% endnote %}
+
+{% poem 唐多令·芦叶满汀洲,刘过 %}
+安远楼小集，侑觞歌板之姬黄其姓者，
+乞词于龙洲道人，为赋此《唐多令》。
+同柳阜之、刘去非、石民瞻、周嘉仲、
+陈孟参、孟容。时八月五日也。
+
+芦叶满汀洲，寒沙带浅流。二十年重过南楼。
+柳下系船犹未稳，能几日，又中秋。
+黄鹤断矶头，故人今在否？旧江山浑是新愁。
+欲买桂花同载酒，终不似，少年游。
+{% endpoem %}
