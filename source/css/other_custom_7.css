@@ -319,7 +319,7 @@ body {
 
 #web_bg {
     /* 背景图像的地址（url括号里）  */
-    background: url(https://s2.xptou.com/2023/04/21/6441ef3394875.webp);
+    background: url(https://api.dujin.org/bing/1920.php);
     /* 背景图像不重复 */
     background-repeat: no-repeat;
     /* 背景图像大小 */

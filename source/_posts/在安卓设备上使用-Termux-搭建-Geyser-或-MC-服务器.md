@@ -4,9 +4,10 @@ tags:
   - 游戏
   - 教程
 description: 这篇文章将教你如何使用 Termux 在 Android 设备上搭建一个 Minecraft 服务器
+cover: /images/2023/04/0421-cover.png
+abbrlink: 65426
 date: 2023-04-21 14:53:23
 updated: 2023-04-21 14:53:23
-cover: /images/2023/04/0421-cover.png
 ---
 
 # 介绍 Termux

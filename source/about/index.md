@@ -31,7 +31,7 @@ date: 2023-04-21 11:54:42
 | 内存 | 16 GB ( 8GB 金士顿 FURY DDR4 3200MHz *2 ) | 不敢开 XMP 怕电脑黑了 |
 | 显卡 | AMD Radeon RX 6400 ( 4 GB / 华硕 ) | 光线追踪 / 入门级 (高端亮机卡) |
 | 散热 | 九州风神玄冰 AG400 ( 最高 2000 RPM ) | 关不掉的 RGB |
-| 系统 | Microsoft Windows 11 专业版 | 原版 / 23H1 | - |
+| 系统 | Microsoft Windows 11 专业版 | 原版 / 23H1 |
 | 机箱 | 先马风致 240 ( 1*HDD 1*HDD / SSD 1* SSD ) | - |
 | 系统盘 | 铠侠 TC10 ( 480 GB / SATA 3 固态硬盘 / 无缓 ) | 乐色 |
 | 游戏盘 | 希捷酷鱼 ST2000DM008 2TB ( 7200 RPM / 叠瓦 / 256 MB 缓存 ) | 乐色 |
