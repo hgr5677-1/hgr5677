@@ -148,7 +148,7 @@ CP++ (CopyPaste++)
 * `300.00 ￥` 让我能清空我的 Steam 愿望单
 
 {% note danger %}
-{% p center logo large red, 不支持退款！更不要没钱偷别人的钱赞助！ %}
+{% p center logo large red, 不支持退款！更不要因为没钱就偷别人的钱赞助！ %}
 {% endnote %}
 
 {% hideToggle "码" %}
@@ -166,8 +166,12 @@ CP++ (CopyPaste++)
 * 所用框架: 开源静态博客框架 [Hexo](https://hexo.io)
 * 所用主题: 开源的 Hexo 主题 [Butterfly](https://butterfly.js.org/)
 * 主题魔改: 参考了一堆网站、教程魔改的，比如 https://akilar.top/
+* 统计工具: 使用 [Railway](https://railway.app) 部署 [umami](https://umami.is) 和 [Google Analytics](https://analytics.google.com/) 
+* 评论系统: 使用 [Vercel](https://vercel.com) 部署 [Waline](https://waline.js.org)
+* 数据库: [MongoDB Cloud](https://mongodb.com/)、[Supabase](https://supabase.com/)
 
 成本总计 **0 元**。
+上述所有服务全部使用免费计划，不产生任何费用。
 
 ## 想帮我修正某篇文章上的错误吗？
 这是本博客的仓库:
@@ -247,3 +251,13 @@ $ gulp # 如果安装了 gulp，在 Hexo 生成静态文件后，你可以使用
 黄鹤断矶头，故人今在否？旧江山浑是新愁。
 欲买桂花同载酒，终不似，少年游。
 {% endpoem %}
+
+{% hideToggle "彩蛋" %}
+{% p center logo h1, 名人名言 %}
+
+{% poem 逆天说,云容 %}
+我妈是从拼夕夕拼的，
+能批发。
+我爸死了我还怎么躺平啊。
+{% endpoem %}
+{% endhideToggle %}
