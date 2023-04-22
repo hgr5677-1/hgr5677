@@ -4,8 +4,9 @@ block content
   #post
     if top_img === false
       include includes/header/post-info.pug
-
-    article#article-container.post-content!=page.content
+    article(data-clarity-region="article")
+      article#article-container.post-content!=page.content
+    | </article>
     include includes/post/post-copyright.pug
     .tag_share
       if (theme.post_meta.post.tags)
