@@ -1,0 +1,18 @@
+User-agent: *
+
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /page/
+Allow: /tags/
+
+Disallow: /css/
+Disallow: /gserver-appeal/
+Disallow: /images/
+Disallow: /js/
+
+Disallow: /*.js
+Disallow: /*.css
+
+Sitemap: https://creeper938.ml/sitemap.xml
+Sitemap: https://creeper938.ml/sitemap.txt
