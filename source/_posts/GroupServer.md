@@ -24,7 +24,7 @@ alias:
 
 ---
 
-# 关于服务器即将转为周目制的公告
+## 关于服务器即将转为周目制的公告
 {% note warning %}
 **新玩家必须阅读。**
 详见：https://creeper938.ml/posts/48963
@@ -32,7 +32,7 @@ alias:
 
 ---
 
-# 什么是 GroupServer
+## 什么是 GroupServer
 
 GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创建的 Minecraft Java 版 1.18.2（原 1.16.5，2022.10.1 升级至 1.18.2） 插件生存服务器。由Creeper938创建。 这是一个公益服务器，盈利方式为赞助后获得纪念品。
 **本文虽长，但请仔细阅读，不然你会因为没发现一个功能而后悔一辈子。**
@@ -40,13 +40,13 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 
 你是 MC 新手但你也想要玩这个服务器？建议先阅读[Minecraft 新手教程](https://wiki.biligame.com/mc/%E6%95%99%E7%A8%8B/%E6%96%B0%E6%89%8B%E6%89%8B%E5%86%8C)。
 
-## QQ 群
+### QQ 群
 
 * **服务器官方通知群（这里会发服务器的一些公告和通知，所以最好要加，本群全群禁言）**：867647687 {% btn 'https://qm.qq.com/cgi-bin/qm/qr?k=QY8-4iaD8nVtlDlpd4kK53qnCIEbLPI7&jump_from=webapi&authKey=FG4N3CIoBkTnAwd07IsSU2xHnc4u59eaoZHFfCa5RM4o7j0H5KHYZ2mGc2bM6Iiv',快速加群,far fa-plus,green block %}
 * **服务器闲聊群（其实就是个普普通通的MC交流群，但里面的群文件一定有你想要的东西，而且最最重要的是，腐竹有时会在群里发福利）**：966077526 {% btn 'https://qm.qq.com/cgi-bin/qm/qr?k=p-MeXsehYMJ_JPCB4WwLO3sjWEbBnehB&jump_from=webapi&authKey=Ky5ie8C4WhSIKwzePNysDtBqouukB1S/3pWgBDou9wVqgAofsnvIjc37LxkTzOGd',快速加群,far fa-plus,green block %}
 
-# 内容
-## 有何特色？
+## 内容
+### 有何特色？
 
 -  **跨版本** —— 从 1.18.2 到最新版本都能加入服务器。
 -  **公益、不盈利**  —— GroupServer 始终是一个公益的 Minecraft 服务器，它永远都不会盈利，不会向玩家要一分钱，无任何氪金项目，服务器全靠玩家赞助活着
@@ -56,7 +56,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 -  **稳定、不掉线** —— 使用旋律云的面板服开服，河北移动30毫秒延迟。使用Purpur服务端，TPS稳定20，在不有玩家搞事的情况下基本不会崩溃。
 -  **自由**  —— 服内几乎所有不会破坏游戏平衡的指令全部开放，进一步提升玩家游戏体验
 
-## 有何特性？
+### 有何特性？
 
 * 气球 —— 你可以使用任意物品创建一个气球。
 * 箱子锁 —— 使用木牌右键箱子或容器，可将其上锁，这样其他玩家都无法使用、破坏容器。
@@ -89,7 +89,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 * 畅玩 FC 游戏 —— 服务器添加了 BNes 插件，可让你使用四张地图就可以玩上 FC 游戏。
 * **以上内容无需模组、材质包、数据包** —— 全部依靠插件实现，你无须配置任何东西，即可开玩。
 
-# 服内风光一览
+## 服内风光一览
 
 {% hideToggle "点我查看" %}
 {% note success %}
@@ -116,13 +116,13 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 {% endgallery %}
 {% endhideToggle %}
 
-# 加入服务器
+## 加入服务器
 如果想要加入 GroupServer，你需要满足以下条件：
 
 * 一台能够运行 Minecraft Java 版 1.18.2、能够访问互联网的电脑
 * **能够做到遵守服务器规则**
 
-## 服务器规则
+### 服务器规则
 你还需要遵守以下服务器规则：
 
 * 不能建造包含反动、X暗示、瑟琴内容的建筑，一经发现，封禁 7~30 天（若非常恶劣将会直接永久封禁），第二次永久封禁 IP 地址
@@ -145,7 +145,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 **若玩家因违反服务器规则被封禁，可能会被发到通知群丢人。**
 **如果被误封或对处罚不满，可前往 https://creeper938.ml/gserver-appeal 申诉。**
 
-## 加入教程
+### 加入教程
 1. 用你喜欢的启动器启动 Minecraft 1.18.2。
    如果觉得 1.18.2 很卡顿，建议安装 Fabric + 钠、锂 等模组。
 2. 如果你想使用离线登录，请不要在你的游戏ID内包含非英文、阿拉伯数字或下划线。（示例：我是你爸爸【×】Im_your_father【√】）
@@ -162,8 +162,8 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 **请勿破坏别人的劳动成果，否则后果自负。**
 {% endnote %}
 
-# 游玩手册
-## 服务器常用指令
+## 游玩手册
+### 服务器常用指令
 
 {% hideToggle "常用指令及其使用示例" %}
 * **/spawn**
@@ -212,7 +212,7 @@ GroupServer（简称 “GS” 或 “GServer”） 是一个于 2021.02.19 创�
 
 {% endhideToggle %}
 
-## 服务器玩法
+### 服务器玩法
 
 {% hideToggle "粘液科技（Slimefun）" %}
 
@@ -752,7 +752,6 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 **注意：并不是所有的生物都可以被举起。**
 {% endhideToggle %}
 
-# 服务器资讯
 ## 服务器更新日志
 这个章节将最多记录一年内的更新日志。
 服务器几乎每天都在更新，某个月内的更新会被总结为 "xxxx年xx月更新"，如果月份为 11 月或 12 月，则这个月的更新还会有一个称呼，例如 "寒冬更新"、"年终更新"。
@@ -1134,13 +1133,13 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * 移除了此插件。
 {% endhideToggle %}
 
-# 你不知道吗？
+## 你不知道吗？
 * 服务器一直都是腐竹一个人在维护，管理只是帮玩家办事的
 * 每天签到可以获得 30 金币，签到7天可获得 233 金币
 * 管理员不会知道你的账号密码，因为没有查询密码的指令且数据库是加密的
 * 只有主世界的最大视距才能够达到 16！在其他世界只能达到 8 个区块
 
-# 常见问题解答
+## 常见问题解答
 {% hideToggle "点我查看" %}
 **玩家：能不能加XXX模组？**
 腐竹：抱歉，服务器不是模组服，加不了Mod，而且我也不想加
@@ -1205,7 +1204,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 腐竹：同上，不可能。
 {% endhideToggle %}
 
-# 已知 Bug
+## 已知 Bug
 
 这些是已经被发现的 Bug(漏洞)，但却无法被修复的 Bug 列表。
 **刷物品等恶性 Bug 不在此列表内。**
@@ -1214,8 +1213,8 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 * **2023-01** 使用带有搬箱附魔的物品挖掘包含物品的箱子可能会导致箱子内的物品部分丢失或全部丢失。
 {% endhideToggle %}
 
-# 其他
-## 红信封禁 (未上线)
+## 其他
+### 红信封禁 (未上线)
 {% note warning %}
 **本章节所描述的内容还未上线。**
 但它已经开发完毕，将于二周目上线。
@@ -1226,7 +1225,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 如果收到了红信封禁但认为自己没做错，可联系腐竹进行解封，其他的管理员可能都无法帮到你。
 
 ### 交易封禁
-收到交易封禁通常是因为：
+受到交易封禁通常是因为：
 * 你和他人进行了 RMB 交易，但金额不多
 * 你利用漏洞刷了金币，但刷的不多
 * 你只用了很少的金币就买到了一堆非常牛逼的东西
@@ -1237,7 +1236,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 一旦玩家收到了交易封禁，那么他的金币和点券都会被清零，但仍可获得金币。
 收到交易封禁的玩家发送的每条聊天消息后面都会被加上`&c[已被交易封禁]`字样。
 
-## 管理人员名单
+### 管理人员名单
 
 {% note warning %}
 **仔细辨别是否为真的管理。**
@@ -1253,7 +1252,7 @@ Bossland 添加的 BOSS 可让玩家通过自行搭建结构来召唤 BOSS，击
 
 **目前服务器没有招募管理员的计划。**
 
-## 敏感词库
+### 敏感词库
 适用于 Bukkit 的 [TrChat](https://github.com/TrPlugins/TrChat) 聊天插件的敏感词库，共有 200+ 个敏感词，包含ZZ、SQ和亿些常见敏感词还有一些日语、俄语、德语、英语的敏感词，误报率很小，不影响玩家正常聊天。不定时更新。在插件配置文件中设置云端词库即可使用：[敏感词库 JSON 链接](https://creeper938.ml/resource/trchat-filter.json)
 
 若要使用此敏感词库，你需要打开 `TrChat/filter.yml`，将配置文件的 `Cloud-Thesaurus` 字段改成下面这样：
@@ -1283,13 +1282,6 @@ Cloud-Thesaurus:
 **你也发了个宣传视频？**
 可以联系腐竹，发给他视频链接，腐竹看完后你的视频链接就会出现在上面。
 {% endnote %}
-
-## 本站 Github
-为了方便部署和管理，也为了方便玩家帮助纠正、补充此文档，本网站的所有文件已在 Github 公开，欢迎提交 PR。
-每一个 Commit 提交后都会被 Vercel 部署。
-{% inlineImg https://img.shields.io/github/forks/Creeper512/hexo 20px %}{% inlineImg https://img.shields.io/github/stars/Creeper512/hexo 20px %}{% inlineImg https://img.shields.io/github/repo-size/Creeper512/hexo 20px %}{% inlineImg https://img.shields.io/github/last-commit/Creeper512/hexo 20px %}
-地址：https://github.com/Creeper512/hexo
-如果访问不了，请尝试使用魔法工具或 Steam++ 里的加速工具。
 
 {% note warning %}
 **如果你要给我提建议，下面的建议我不会采纳：**
