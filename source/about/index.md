@@ -16,7 +16,7 @@ date: 2023-04-21 11:54:42
 | :-- | :-- |
 | QQ | 744198767 |
 | Bilibili | https://space.bilibili.com/492917725 |
-| Steam | https://steamcommunity.com/id/Creeper938 |
+| Steam | https://steamcommunity.com/id/Creeper938 {% bdage SteamDB,点击查看,steamdb||000000,https://steamdb.info/calculator/76561199137737784/,||style=flat-square %} |
 | GayHub | [@Creeper512](https://github.com/Creeper512/hexo) |
 | 微信 | wxid_ehss9xl7iii822 |
 | 邮箱 | creeper938@outlook.com<br />creeper938@163.com<br />creeper512@qq.com |
@@ -193,7 +193,7 @@ CP++ (CopyPaste++)
 * 如果你是命令提示符 (CMD)，在当前位置重新打开一次 CMD。
 * 执行`hexo`指令，看看 Hexo 是否已被正确安装。
 * 如果执行该指令后还输出了以下内容，则代表你已顺利完成了前面的所有步骤：
-```shell
+```bash
 PS G:\Tools\Hexo\hexo> hexo
 INFO  Validating config
 INFO  
@@ -212,17 +212,9 @@ Commands:
   clean        Remove generated files and cache.
   config       Get or set configurations.
   deploy       Deploy your website.
-  generate     Generate static files.
-  help         Get help on a command.
-  hidden:list  Show a list of all hidden articles.
-  init         Create a new Hexo folder.
-  list         List the information of the site
-  migrate      Migrate your site from other system to Hexo.
-  new          Create a new post.
-  publish      Moves a draft post from _drafts to _posts folder.
-  render       Render files with renderer plugins.
-  server       Start the server.
-  version      Display version information.
+
+...
+
 ```
 * 现在，你可以自由地修改博客文件，然后查看效果了。你也可以在修改后使用`git`提交一个 PR，来让本博客的所有访客看到你的成果。
 * 你可以使用这些指令部署博客:
@@ -239,6 +231,39 @@ $ gulp # 如果安装了 gulp，在 Hexo 生成静态文件后，你可以使用
 {% note danger %}
 **若无另行声明，本站所有文件均采用[署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)协议，你必须遵守此协议。**
 {% endnote %}
+
+---
+
+<center>
+{% inlineImg https://img.shields.io/badge/%E4%B8%BB%E5%8A%9B%E6%9C%BA-Nokia%207-124191?style=flat-square&logo=nokia 22px %}
+{% inlineImg https://img.shields.io/badge/%E5%A4%87%E7%94%A8%E6%9C%BA-%E8%8D%A3%E8%80%80%E7%95%85%E7%8E%A9%207-FF0000?style=flat-square&logo=huawei 22px %}
+{% inlineImg https://img.shields.io/badge/%E6%89%8B%E7%8E%AF-%E5%8D%8E%E4%B8%BA%E6%89%8B%E7%8E%AF%206-FF0000?style=flat-square&logo=huawei 22px %}
+{% inlineImg https://img.shields.io/badge/%E6%89%8B%E7%8E%AF-%E5%B0%8F%E7%B1%B3%E6%89%8B%E7%8E%AF%205-FF6900?style=flat-square&logo=xiaomi 22px %}
+{% inlineImg https://img.shields.io/badge/%E6%98%BE%E7%A4%BA%E5%99%A8-%E5%88%9B%E7%BB%B4%20F24G40F-0072C9?style=flat-square&logo=sky 22px %}
+{% inlineImg https://img.shields.io/badge/%E4%B8%BB%E6%9D%BF-ASUS%20A320M%20F-000000?style=flat-square&logo=asus 22px %}
+{% inlineImg https://img.shields.io/badge/CPU-AMD%20Ryzen%205%204600G-ED1C24?style=flat-square&logo=amd 22px %}
+{% inlineImg https://img.shields.io/badge/GPU-AMD%20Radeon%20RX%206400-ED1C24?style=flat-square&logo=amd 22px %}
+{% inlineImg https://img.shields.io/badge/RAM-Kingston%20FURY%20DDR4%203200%20MHZ%20-000000?style=flat-square&logo=kingstontechnology 22px %}
+<br />
+{% inlineImg https://img.shields.io/badge/%E5%9F%9F%E5%90%8D-Freenom-0094F5?style=flat-square&logo=dotnet 22px %}
+{% inlineImg https://img.shields.io/badge/%E5%9F%9F%E5%90%8D%20DNS%20/%20CDN-Cloudflare-F38020?style=flat-square&logo=cloudflare 22px %}
+{% inlineImg https://img.shields.io/badge/%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1-Github-black?style=flat-square&logo=github 22px %}
+{% inlineImg https://img.shields.io/badge/%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1-Vercel-black?style=flat-square&logo=vercel 22px %}
+{% inlineImg https://img.shields.io/badge/%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1%20(umami)-Railway-white?style=flat-square&logo=railway 22px %}
+{% inlineImg https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6-Hexo-blue?style=flat-square&logo=hexo 22px %}
+{% inlineImg https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-Butterfly-green?style=flat-square&logo=bigbluebutton 22px %}
+{% inlineImg https://img.shields.io/badge/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-Waline-9cf?style=flat-square&logo=theconversation 22px %}
+{% inlineImg https://img.shields.io/badge/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-umami-white?style=flat-square&logo=ello 22px %}
+{% inlineImg https://img.shields.io/badge/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-Microsoft%20Clarity-blue?style=flat-square&logo=microsoft 22px %}
+{% inlineImg https://img.shields.io/badge/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93-MongoDB%20Cloud-brightgreen?style=flat-square&logo=mongodb 22px %}
+{% inlineImg https://img.shields.io/badge/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93-Supabase-3ECF8E?style=flat-square&logo=supabase 22px %}
+{% inlineImg https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-Butterfly-green?style=flat-square&logo=bigbluebutton 22px %}
+{% inlineImg https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE-CC%20BY%20NC%20SA%204.0-EF9421?style=flat-square&logo=creativecommons 22px %}
+{% inlineImg https://img.shields.io/badge/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87-Bing%20%E6%AF%8F%E6%97%A5%E5%9B%BE%E7%89%87-258FFA?style=flat-square&logo=microsoftbing 22px %}
+{% inlineImg https://img.shields.io/badge/POWERED%20BY-MOTIVATION-F15A2C?style=flat-square&logo=unraid 22px %}
+</center>
+
+---
 
 {% poem 唐多令·芦叶满汀洲,刘过 %}
 安远楼小集，侑觞歌板之姬黄其姓者，
