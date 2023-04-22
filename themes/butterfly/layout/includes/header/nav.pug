@@ -13,6 +13,8 @@ nav#nav
           i.fas.fa-search.fa-fw
           span=' '+_p('search.title')
     !=partial('includes/header/menu_item', {}, {cache: true})
+      center(id="name-container")
+        a(id="page-name" href="javascript:scrollToTop()") PAGE_NAME
 
     #toggle-menu
       a.site-page(href="javascript:void(0);")
