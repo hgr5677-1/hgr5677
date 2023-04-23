@@ -7,7 +7,8 @@ menu:
    归档: /archives/ || fas fa-archive
    分类: /categories/ || fas fa-folder-open
    标签: /tags/ || fas fa-tags
-   关于我: /about || fa-solid fa-face-grin-wide
+   说说: /shuoshuo/ || fa-solid fa-quote-right
+   关于我: /about/ || fa-solid fa-face-grin-wide
    RSS: /atom.xml || fa fa-rss
 
 # Code Blocks (代碼相關)
