@@ -821,7 +821,8 @@ note:
 pjax:
   enable: true
   exclude:
-    # - xxxx
+    - /shuoshuo
+    - /shuoshuo/
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
