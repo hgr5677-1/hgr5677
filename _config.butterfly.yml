@@ -5,10 +5,10 @@
 menu:
    首页: / || fas fa-home
    归档: /archives/ || fas fa-archive
-   分类: /categories/ || fas fa-folder-open
-   标签: /tags/ || fas fa-tags
-   说说: /shuoshuo/ || fa-solid fa-quote-right
-   关于我: /about/ || fa-solid fa-face-grin-wide
+   分类: /categories.html || fas fa-folder-open
+   标签: /tags.html || fas fa-tags
+   说说: /shuoshuo.html || fa-solid fa-quote-right
+   关于我: /about.html || fa-solid fa-face-grin-wide
    RSS: /atom.xml || fa fa-rss
 
 # Code Blocks (代碼相關)
@@ -823,6 +823,7 @@ pjax:
   exclude:
     - /shuoshuo
     - /shuoshuo/
+    - /shuoshuo.html
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
