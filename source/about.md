@@ -15,8 +15,8 @@ date: 2023-04-21 11:54:42
 | 平台 | 账号 |
 | :-- | :-- |
 | QQ | 744198767 |
-| Bilibili | https://space.bilibili.com/492917725 |
-| Steam | https://steamcommunity.com/id/Creeper938 {% bdage SteamDB,点击查看,steamdb||000000,https://steamdb.info/calculator/76561199137737784/,||style=flat-square %} |
+| Bilibili | [UID 492917725](https://space.bilibili.com/492917725) |
+| Steam | [Creeper938](https://steamcommunity.com/id/Creeper938) {% bdage SteamDB,点击查看,steamdb||000000,https://steamdb.info/calculator/76561199137737784/,||style=flat-square %} |
 | GayHub | [@Creeper512](https://github.com/Creeper512/hexo) |
 | 微信 | wxid_ehss9xl7iii822 |
 | 邮箱 | creeper938@outlook.com<br />creeper938@163.com<br />creeper512@qq.com |
@@ -65,15 +65,7 @@ date: 2023-04-21 11:54:42
 ![STEAM 最近游玩的游戏](https://www.steamidfinder.com/signature/76561199137737784.png)
 
 # 爱好
-{% btns 样式参数 %}
-{% cell 喝水, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-glass-water %}
-{% cell 眨眼, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-eye %}
-{% cell 睡觉, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-bed %}
-{% cell 心跳, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-heart-pulse %}
-{% cell 活着, https://www.bilibili.com/video/BV1va411w7aM/, fa-solid fa-person %}
-{% endbtns %}
-
-{% hideInline 真相 其实没有爱好，就平时喜欢瞎折腾 %}
+无
 
 # 技能
 * 擅长word、excel、ppt、wind等软件的安装与卸载
@@ -253,10 +245,12 @@ $ gulp # 如果安装了 gulp，在 Hexo 生成静态文件后，你可以使用
 {% inlineImg https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6-Hexo-blue?style=flat-square&logo=hexo 22px %}
 {% inlineImg https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-Butterfly-green?style=flat-square&logo=bigbluebutton 22px %}
 {% inlineImg https://img.shields.io/badge/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F-Waline-9cf?style=flat-square&logo=theconversation 22px %}
+{% inlineImg https://img.shields.io/badge/%E8%AF%B4%E8%AF%B4%20JS-Artitalk.js-165c7e?style=flat-square&logo=databricks&logoColor=009ec7 22px %}
 {% inlineImg https://img.shields.io/badge/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-umami-white?style=flat-square&logo=ello 22px %}
 {% inlineImg https://img.shields.io/badge/%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-Microsoft%20Clarity-blue?style=flat-square&logo=microsoft 22px %}
 {% inlineImg https://img.shields.io/badge/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93-MongoDB%20Cloud-brightgreen?style=flat-square&logo=mongodb 22px %}
 {% inlineImg https://img.shields.io/badge/%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93-Supabase-3ECF8E?style=flat-square&logo=supabase 22px %}
+{% inlineImg https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E5%BA%93-LeanCloud-00A4FD?style=flat-square&logo=databricks&logoColor=00a4fd 22px %}
 {% inlineImg https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98-Butterfly-green?style=flat-square&logo=bigbluebutton 22px %}
 {% inlineImg https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE-CC%20BY%20NC%20SA%204.0-EF9421?style=flat-square&logo=creativecommons 22px %}
 {% inlineImg https://img.shields.io/badge/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87-Bing%20%E6%AF%8F%E6%97%A5%E5%9B%BE%E7%89%87-258FFA?style=flat-square&logo=microsoftbing 22px %}
