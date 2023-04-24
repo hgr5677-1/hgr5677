@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate;gulp",
+    "build": "hexo algolia;hexo generate;gulp",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
@@ -24,6 +24,7 @@
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-admonition": "^1.1.2",
+    "hexo-algolia": "^1.3.2",
     "hexo-butterfly-footer-beautify": "^1.0.6",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
     "hexo-deployer-git": "^3.0.0",

@@ -248,3 +248,8 @@ gitcalendar:
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
+
+algolia:
+  applicationID: '8977E5GYTO'
+  apiKey: 'f9e6911fc4005a21078c54780a619d3e'
+  indexName: 'hexo'
