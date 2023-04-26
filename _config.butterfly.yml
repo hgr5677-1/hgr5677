@@ -684,7 +684,7 @@ aside:
       text: 订阅 RSS
       link: https://creeper938.ml/atom.xml
   card_announcement:
-    enable: true
+    enable: false
     content: <strong> 本博客的 URL 链接格式改了一下，以前的文章链接可能会 404，在这个链接的后面加个<code>.html</code>即可恢复正常。</strong><br />例如 https://creeper938.ml/posts/5131 -> https://creeper938.ml/posts/5131.html
   card_recent_post:
     enable: true
@@ -882,7 +882,6 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-     - <link rel="stylesheet" href="/css/font_6.css">
      - <link rel="stylesheet" href="/css/other_custom_7.css">
      - <script async src="https://a.creeper938.ml/script.js" data-website-id="8dc64618-0b2f-483a-9cc3-618d9c2eaaa9"></script>
   bottom:

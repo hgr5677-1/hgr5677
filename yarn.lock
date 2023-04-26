@@ -3920,6 +3920,13 @@ hexo-algolia@^1.3.2:
     algoliasearch "^3.35.1"
     p-each-series "^1.0.0"
 
+hexo-butterfly-artitalk-pro@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmmirror.com/hexo-butterfly-artitalk-pro/-/hexo-butterfly-artitalk-pro-1.0.5.tgz"
+  integrity sha512-sqQtTCBR7noR4IjLuVa5HRzB0GsVsjNAUmiuoAUftNcdVa9CE0axUaWPhJjmb04XWW1zIhmnwBFwU11LNe48Kw==
+  dependencies:
+    pug "^3.0.0"
+
 hexo-butterfly-footer-beautify@^1.0.6:
   version "1.0.6"
   resolved "https://registry.npmmirror.com/hexo-butterfly-footer-beautify/-/hexo-butterfly-footer-beautify-1.0.6.tgz"
