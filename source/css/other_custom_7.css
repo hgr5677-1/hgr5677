@@ -334,3 +334,10 @@
 #recent-posts>.recent-post-item:not(:first-child) {
     margin-top: 13px;
 }
+
+body {
+    font-family: 'PingFang SC', 'Segoe UI', 'Microsoft YaHei UI';
+}
+.post-content {
+    line-height: 22px;
+}

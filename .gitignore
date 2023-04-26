@@ -9,3 +9,4 @@ _multiconfig.yml
 .update*
 tool.bat
 yarn.lock
+package-lock.json

@@ -10,6 +10,7 @@ Disallow: /css/
 Disallow: /gserver-appeal/
 Disallow: /images/
 Disallow: /js/
+Disallow: https://cf.creeper938.ml/*
 
 Disallow: /*.js
 Disallow: /*.css
