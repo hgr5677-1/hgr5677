@@ -215,11 +215,11 @@ neat_html:
 gitcalendar:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
+  enable_page: /about.html # 应用页面
   # butterfly挂载容器
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: page
     index: 0
   # volantis挂载容器
   # layout:
