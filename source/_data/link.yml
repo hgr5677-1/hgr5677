@@ -1,0 +1,7 @@
+- class_name: 友链
+  class_desc: 
+  link_list:
+    - name: 占位符
+      link: https://www.bilibili.com/video/BV1va411w7aM/
+      avatar: https://ts1.cn.mm.bing.net/th?id=OIP.aPkmDGG8qzfzhMLsTvRzEwAAAA&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&o=6&cdv=1&pid=18.2
+      descr: 目前还没有友链
