@@ -253,39 +253,3 @@ algolia:
   applicationID: '8977E5GYTO'
   apiKey: 'f9e6911fc4005a21078c54780a619d3e'
   indexName: 'hexo'
-
-# artitalk see https://artitalk.js.org/
-# hexo-butterfly-artitalk-pro
-# see https://akilar.top/posts/f1004b1d/
-artitalk:
-  enable:
-    card: true # 侧边栏开关
-    page: false #页面开关
-  # 侧栏相关配置项
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  layout: # 挂载容器类型
-    type: class
-    name: sticky_layout
-    index: 0
-  # 页面相关配置项
-  path: shuoshuo
-  front_matter:
-    title: 说说
-    comment: false
-  # 公共配置项
-  appId: KWijoJOUBhTqYDh4JWnCnMJT-MdYXbMMI
-  appKey: tZlvjyI7CEFHN1RS8Jq1NObz
-  exclude:
-    - /shuoshuo/
-    - /posts/ #需要abbrlink插件支持
-  js: https://npm.elemecdn.com/artitalk
-  card_css: https://npm.elemecdn.com/hexo-butterfly-artitalk-pro/lib/card.css
-  card_visual_js: https://npm.elemecdn.com/hexo-butterfly-artitalk-pro/lib/card_visual.js
-  option:
-    serverURL: https://lc.creeper938.ml #将此处的********替换为你的appId前八位
-    lang: zh
-    pageSize: 1
-    color1: '#49b1f5'
-    color2: '#00c4b6'
-    cssUrl: 'css/artitalk.css'
