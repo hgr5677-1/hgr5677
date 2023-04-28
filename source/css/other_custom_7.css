@@ -336,7 +336,7 @@
 }
 
 body {
-    font-family: 'PingFang SC', 'Segoe UI', 'Microsoft YaHei UI';
+    font-family: 'PingFang SC', 'Segoe UI', 'Microsoft YaHei UI', 'Arial', sans-serif;
 }
 .post-content {
     line-height: 22.8px;
@@ -346,4 +346,17 @@ body {
 }
 .article-container p {
     line-height: 26px;
+}
+.table-wrap {
+    overflow-x: hidden;
+}
+.toggle>.toggle-button {
+    background: #ffffffad;
+}
+#page-header.not-top-img #nav {
+    background: rgb(255 255 255 / 25%);
+    backdrop-filter: blur(8px);
+}
+#nav *::after{
+    background-color: transparent!important;
 }
